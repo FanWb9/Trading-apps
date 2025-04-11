@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-transparent font-inter  overflow-x-hidden;
+ 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 @layer components {
   .sub-menu {

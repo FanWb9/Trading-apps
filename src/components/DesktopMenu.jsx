@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function DesktopMenu({ menu }) {
   const [isHover, toggleHover] = useState(false);
@@ -34,9 +35,7 @@ export default function DesktopMenu({ menu }) {
   return (
     <motion.li
       className="group/link"
-      onHoverStart={() => {
-        toggleHoverMenu();
-      }}
+      onHoverStart={toggleHoverMenu}
       onHoverEnd={toggleHoverMenu}
       key={menu.name}
     >
@@ -62,25 +61,27 @@ export default function DesktopMenu({ menu }) {
                 : "grid-cols-1"
             }`}
           >
-            {hasSubMenu &&
-              menu.subMenu.map((submenu, i) => (
-                <div className="relative cursor-pointer" key={i}>
-                  {menu.gridCols > 1 && menu?.subMenuHeading?.[i] && (
-                    <p className="text-sm mb-4 text-gray-500">
-                      {menu?.subMenuHeading?.[i]}
-                    </p>
-                  )}
-                  <div className="flex-center gap-x-4 group/menubox">
-                    <div className="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-emerald-600 group-hover/menubox:text-gray-900 duration-300">
-                      {submenu.icon && <submenu.icon />}
-                    </div>
-                    <div>
-                      <h6 className="font-semibold">{submenu.name}</h6>
-                      <p className="text-sm text-gray-400">{submenu.desc}</p>
-                    </div>
+            {menu.subMenu.map((submenu, i) => (
+              <div className="relative cursor-pointer" key={i}>
+                {menu.gridCols > 1 && menu?.subMenuHeading?.[i] && (
+                  <p className="text-sm mb-4 text-white">
+                    {menu?.subMenuHeading?.[i]}
+                  </p>
+                )}
+                <Link
+                  to={submenu.path}
+                  className="flex-center gap-x-4 group/menubox"
+                >
+                  <div className="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-emerald-600 group-hover/menubox:text-gray-900 duration-300">
+                    {submenu.icon && <submenu.icon />}
                   </div>
-                </div>
-              ))}
+                  <div>
+                    <h6 className="font-semibold text-white">{submenu.name}</h6>
+                    <p className="text-sm text-white">{submenu.desc}</p>
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
         </motion.div>
       )}

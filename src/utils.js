@@ -35,7 +35,7 @@ export const Menus = [
         name: "Laporan Keuangan",
         desc: "Laporan arus kas & neraca",
         icon: PanelsTopLeft,
-        
+        path: "/Laporan-Keuangan",
       },
       {
         name: "Management Product",
