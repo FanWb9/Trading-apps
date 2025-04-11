@@ -71,7 +71,7 @@ export default function DesktopMenu({ menu }) {
                     </p>
                   )}
                   <div className="flex-center gap-x-4 group/menubox">
-                    <div className="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-white group-hover/menubox:text-gray-900 duration-300">
+                    <div className="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-emerald-600 group-hover/menubox:text-gray-900 duration-300">
                       {submenu.icon && <submenu.icon />}
                     </div>
                     <div>

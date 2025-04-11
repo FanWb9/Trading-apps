@@ -1,0 +1,86 @@
+{
+    "menu": {
+      "features": "Fitur",
+      "support": "Dukungan",
+      "enterprise": "Perusahaan",
+      "pricing": "Harga",
+      "contact": "Kontak"
+    },
+    "subMenuHeading": {
+      "akuntansi": "Akuntansi",
+      "scm": "Manajemen Rantai Pasok",
+      "integration": "Integrasi & Platform",
+      "overview": "Ikhtisar"
+    },
+    "features": {
+      "laporan_keuangan": {
+        "name": "Laporan Keuangan",
+        "desc": "Laporan arus kas & neraca"
+      },
+      "management_product": {
+        "name": "Manajemen Produk",
+        "desc": "Atur produk secara detail"
+      },
+      "user_management": {
+        "name": "Manajemen Pengguna",
+        "desc": "Hak akses dan peran pengguna"
+      },
+      "pembukuan": {
+        "name": "Pembukuan",
+        "desc": "Catat transaksi harian"
+      },
+      "inventory": {
+        "name": "Manajemen Inventori",
+        "desc": "Pantau stok real-time"
+      },
+      "pay": {
+        "name": "Pembayaran",
+        "desc": "Integrasi pembayaran"
+      },
+      "pajak": {
+        "name": "Perpajakan",
+        "desc": "Kelola pajak bisnis"
+      },
+      "gudang": {
+        "name": "Manajemen Gudang",
+        "desc": "Multi lokasi gudang"
+      },
+      "marketplace": {
+        "name": "POS & Marketplace",
+        "desc": "Sinkronisasi toko online"
+      },
+      "bank": {
+        "name": "Bank",
+        "desc": "Rekonsiliasi bank otomatis"
+      },
+      "supplier": {
+        "name": "Manajemen Supplier",
+        "desc": "Kelola pemasok & pembelian"
+      },
+      "biaya": {
+        "name": "Biaya & Pengeluaran",
+        "desc": "Pantau semua pengeluaran"
+      }
+    },
+    "support": {
+      "help": {
+        "name": "Bantuan",
+        "desc": "Pusat Bantuan"
+      },
+      "community": {
+        "name": "Komunitas",
+        "desc": "Bantuan dari komunitas"
+      }
+    },
+    "enterprise": {
+      "enterprise": {
+        "name": "Perusahaan",
+        "desc": "Ikhtisar"
+      },
+      "collab": {
+        "name": "Kolaborasi",
+        "desc": "Desain bersama"
+      }
+    }
+  }
+  
