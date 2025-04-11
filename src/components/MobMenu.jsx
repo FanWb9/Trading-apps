@@ -1,24 +1,20 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function MobMenu({ Menus }) {
   const [isOpen, setIsOpen] = useState(false);
   const [clicked, setClicked] = useState(null);
+
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
     setClicked(null);
   };
 
   const subMenuDrawer = {
-    enter: {
-      height: "auto",
-      overflow: "hidden",
-    },
-    exit: {
-      height: 0,
-      overflow: "hidden",
-    },
+    enter: { height: "auto", overflow: "hidden" },
+    exit: { height: 0, overflow: "hidden" },
   };
 
   return (
@@ -37,16 +33,14 @@ export default function MobMenu({ Menus }) {
             const isClicked = clicked === i;
             const hasSubMenu = subMenu?.length;
             return (
-              <li key={name} className="">
+              <li key={name}>
                 <span
                   className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
                   onClick={() => setClicked(isClicked ? null : i)}
                 >
                   {name}
                   {hasSubMenu && (
-                    <ChevronDown
-                      className={`ml-auto ${isClicked && "rotate-180"} `}
-                    />
+                    <ChevronDown className={`ml-auto ${isClicked && "rotate-180"}`} />
                   )}
                 </span>
                 {hasSubMenu && (
@@ -56,14 +50,16 @@ export default function MobMenu({ Menus }) {
                     variants={subMenuDrawer}
                     className="ml-5"
                   >
-                    {subMenu.map(({ name, icon: Icon }) => (
-                      <li
+                    {subMenu.map(({ name, icon: Icon, path }) => (
+                      <Link
+                        to={path}
                         key={name}
+                        onClick={toggleDrawer}
                         className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
                       >
                         <Icon size={17} />
                         {name}
-                      </li>
+                      </Link>
                     ))}
                   </motion.ul>
                 )}
