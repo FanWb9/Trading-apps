@@ -1,0 +1,78 @@
+{
+  "Features": "Features",
+  "Support": "Support",
+  "Enterprise": "Enterprise",
+  "Pricing": "Pricing",
+  "Contact": "Contact",
+  "Akuntansi": "Accounting",
+  "Supply Chain Management": "Supply Chain Management",
+  "Integration & Platform": "Integration & Platform",
+  "Laporan Keuangan": "Financial Report",
+  "Laporan arus kas & neraca": "Cash Flow & Balance Sheet",
+  "Management Product": "Product Management",
+  "Atur produk secara detail": "Manage products in detail",
+  "User Management": "User Management",
+  "Hak akses dan peran pengguna": "User access and roles",
+  "Pembukuan": "Bookkeeping",
+  "Catat transaksi harian": "Record daily transactions",
+  "Management Inventori": "Inventory Management",
+  "Pantau stok real-time": "Monitor real-time stock",
+  "Pay": "Payment Integration",
+  "Integrasi pembayaran": "Payment Integration",
+  "Perpajakan": "Taxation",
+  "Kelola pajak bisnis": "Manage business taxes",
+  "Management Gudang": "Warehouse Management",
+  "Multi lokasi gudang": "Multi-location warehouse",
+  "Pos & Marketplace": "POS & Marketplace",
+  "Sinkronisasi toko online": "Synchronize online store",
+  "Bank": "Bank",
+  "Rekonsiliasi bank otomatis": "Automatic bank reconciliation",
+  "Management Supplier": "Supplier Management",
+  "Kelola pemasok & pembelian": "Manage suppliers & purchases",
+  "Biaya & Pengeluaran": "Expenses & Outgoings",
+  "Pantau semua pengeluaran": "Monitor all expenses",
+  "Help": "Help",
+  "Center": "Center",
+  "Community": "Community",
+  "Project help": "Project help",
+  "Overview": "Overview",
+  "Design together": "Design together",
+  "Collaboration": "Collaboration",
+  "brandName": "Thecount",
+  "signIn": "Sign In",
+  "language": "Language",
+
+  "home": {
+    "slide1": {
+      "title": "Thecount: One Platform for All Business Needs",
+      "desc": "From sales, purchasing, inventory, to payroll — all can be managed in a single web-based system with no user limit. Save time, work efficiently."
+    },
+    "slide2": {
+      "title": "Automated finance tracking, focus on growing your business",
+      "desc": "A smart system that helps manage financial reports and transactions instantly, anytime."
+    },
+    "features": {
+      "feature1": {
+        "title": "Easy to Use",
+        "desc": "With a simple and user-friendly interface, you can manage finances and operations without technical expertise."
+      },
+      "feature2": {
+        "title": "Integrated & Flexible",
+        "desc": "Connected to systems like POS, eCommerce, and banks to ensure accurate data and easy synchronization."
+      },
+      "feature3": {
+        "title": "Unlimited Users",
+        "desc": "One system for your entire team — perfect for SMEs to large enterprises."
+      },
+      "feature4": {
+        "title": "Secured Data",
+        "desc": "Your financial data is protected with high-level security and automatic backup."
+      }
+    },
+    "buttons": {
+      "whatsapp": "Contact via WhatsApp",
+      "freeTrial": "Try for Free"
+    },
+    "why": "Why Choose"
+  }
+}

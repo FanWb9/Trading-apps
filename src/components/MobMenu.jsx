@@ -2,10 +2,13 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 export default function MobMenu({ Menus }) {
   const [isOpen, setIsOpen] = useState(false);
   const [clicked, setClicked] = useState(null);
+
+  const { t } = useTranslation(); // Menyediakan fungsi t untuk terjemahan
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
@@ -38,7 +41,7 @@ export default function MobMenu({ Menus }) {
                   className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
                   onClick={() => setClicked(isClicked ? null : i)}
                 >
-                  {name}
+                  {t(name)} {/* Menggunakan t() untuk menerjemahkan menu name */}
                   {hasSubMenu && (
                     <ChevronDown className={`ml-auto ${isClicked && "rotate-180"}`} />
                   )}
@@ -58,7 +61,7 @@ export default function MobMenu({ Menus }) {
                         className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
                       >
                         <Icon size={17} />
-                        {name}
+                        {t(name)} {/* Menggunakan t() untuk menerjemahkan submenu name */}
                       </Link>
                     ))}
                   </motion.ul>

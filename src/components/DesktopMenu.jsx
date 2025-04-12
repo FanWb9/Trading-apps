@@ -2,12 +2,15 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 export default function DesktopMenu({ menu }) {
   const [isHover, toggleHover] = useState(false);
   const toggleHoverMenu = () => {
     toggleHover(!isHover);
   };
+
+  const { t } = useTranslation(); // Menyediakan fungsionalitas terjemahan
 
   const subMenuAnimate = {
     enter: {
@@ -40,7 +43,7 @@ export default function DesktopMenu({ menu }) {
       key={menu.name}
     >
       <span className="flex-center gap-1 hover:bg-white/90 cursor-pointer px-3 py-1 rounded-xl">
-        {menu.name}
+        {t(menu.name)} {/* Menggunakan t() untuk menerjemahkan menu name */}
         {hasSubMenu && (
           <ChevronDown className="mt-[0.6px] group-hover/link:rotate-180 duration-200" />
         )}
@@ -65,7 +68,7 @@ export default function DesktopMenu({ menu }) {
               <div className="relative cursor-pointer" key={i}>
                 {menu.gridCols > 1 && menu?.subMenuHeading?.[i] && (
                   <p className="text-sm mb-4 text-white">
-                    {menu?.subMenuHeading?.[i]}
+                    {t(menu?.subMenuHeading?.[i])} {/* Terjemahkan heading submenu */}
                   </p>
                 )}
                 <Link
@@ -76,8 +79,8 @@ export default function DesktopMenu({ menu }) {
                     {submenu.icon && <submenu.icon />}
                   </div>
                   <div>
-                    <h6 className="font-semibold text-black">{submenu.name}</h6>
-                    <p className="text-sm text-black">{submenu.desc}</p>
+                    <h6 className="font-semibold text-black">{t(submenu.name)}</h6> {/* Terjemahkan submenu name */}
+                    <p className="text-sm text-black">{t(submenu.desc)}</p> {/* Terjemahkan submenu desc */}
                   </div>
                 </Link>
               </div>

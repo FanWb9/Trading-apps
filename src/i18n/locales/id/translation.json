@@ -1,0 +1,77 @@
+{
+  "Features": "Fitur",
+  "Support": "Bantuan",
+  "Enterprise": "Perusahaan",
+  "Pricing": "Harga",
+  "Contact": "Kontak",
+  "Akuntansi": "Akuntansi",
+  "Supply Chain Management": "Manajemen Rantai Pasokan",
+  "Integration & Platform": "Integrasi & Platform",
+  "Laporan Keuangan": "Laporan Keuangan",
+  "Laporan arus kas & neraca": "Arus Kas & Neraca",
+  "Management Product": "Manajemen Produk",
+  "Atur produk secara detail": "Atur produk secara detail",
+  "User Management": "Manajemen Pengguna",
+  "Hak akses dan peran pengguna": "Hak akses dan peran pengguna",
+  "Pembukuan": "Pembukuan",
+  "Catat transaksi harian": "Catat transaksi harian",
+  "Management Inventori": "Manajemen Inventaris",
+  "Pantau stok real-time": "Pantau stok real-time",
+  "Pay": "Pembayaran",
+  "Integrasi pembayaran": "Integrasi pembayaran",
+  "Perpajakan": "Perpajakan",
+  "Kelola pajak bisnis": "Kelola pajak bisnis",
+  "Management Gudang": "Manajemen Gudang",
+  "Multi lokasi gudang": "Multi lokasi gudang",
+  "Pos & Marketplace": "POS & Marketplace",
+  "Sinkronisasi toko online": "Sinkronisasi toko online",
+  "Bank": "Bank",
+  "Rekonsiliasi bank otomatis": "Rekonsiliasi bank otomatis",
+  "Management Supplier": "Manajemen Pemasok",
+  "Kelola pemasok & pembelian": "Kelola pemasok & pembelian",
+  "Biaya & Pengeluaran": "Biaya & Pengeluaran",
+  "Pantau semua pengeluaran": "Pantau semua pengeluaran",
+  "Help": "Bantuan",
+  "Center": "Pusat",
+  "Community": "Komunitas",
+  "Project help": "Bantuan proyek",
+  "Overview": "Ikhtisar",
+  "Design together": "Desain bersama",
+  "Collaboration": "Kolaborasi",
+ 
+  "signIn": "Masuk",
+  "language": "Bahasa",
+  "home": {
+    "slide1": {
+      "title": "Thecount: Satu Platform, Semua Kebutuhan Bisnis",
+      "desc": "Mulai dari penjualan, pembelian, stok barang, hingga penggajian—semua bisa dikelola dalam satu sistem berbasis web tanpa batasan jumlah pengguna. Lebih hemat waktu, lebih efisien."
+    },
+    "slide2": {
+      "title": "Catat keuangan otomatis, fokus kembangkan bisnis",
+      "desc": "Sistem pintar yang bantu kamu kelola laporan dan transaksi keuangan secara instan, kapan saja."
+    },
+    "features": {
+      "feature1": {
+        "title": "Mudah Digunakan",
+        "desc": "Dengan tampilan yang simpel dan user-friendly, kamu bisa kelola keuangan dan operasional tanpa perlu keahlian teknis."
+      },
+      "feature2": {
+        "title": "Terintegrasi & Fleksibel",
+        "desc": "Terhubung dengan berbagai sistem seperti POS, eCommerce, dan bank untuk memastikan akurasi data dan kemudahan sinkronisasi."
+      },
+      "feature3": {
+        "title": "Tanpa Batasan Pengguna",
+        "desc": "Satu sistem bisa digunakan oleh semua tim tanpa batas user — cocok untuk UMKM hingga perusahaan besar."
+      },
+      "feature4": {
+        "title": "Keamanan Data Terjamin",
+        "desc": "Data keuangan kamu dijaga dengan standar keamanan tingkat tinggi dan sistem backup otomatis."
+      }
+    },
+    "buttons": {
+      "whatsapp": "WhatsApp Sales",
+      "freeTrial": "Coba Gratis"
+    },
+    "why": "Mengapa Memilih"
+  }
+}

@@ -8,11 +8,13 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "i18n:extract": "i18next 'src/**/*.{js,jsx}' -o public/locales/$LOCALE/translation.json"
+    "i18n:extract": "i18next-scanner"
   },
   "dependencies": {
     "framer-motion": "^11.5.6",
     "i18next": "^24.2.3",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "i18next-scanner": "^4.6.0",
     "ionicons": "^7.4.0",
     "lucide-react": "^0.445.0",
     "react": "^18.3.1",
