@@ -3,6 +3,7 @@ import { Menus } from "../utils";
 import Logo from "../assets/logo.webp";
 import DesktopMenu from "../components/DesktopMenu";
 import MobMenu from "../components/MobMenu";
+import Footer from "../Pages/Footer/Footer";
 
 export default function NavbarLayout() {
   const navigate = useNavigate();
@@ -43,6 +44,7 @@ export default function NavbarLayout() {
       <main className="">
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 }
