@@ -39,7 +39,7 @@ export default function DesktopMenu({ menu }) {
       onHoverEnd={toggleHoverMenu}
       key={menu.name}
     >
-      <span className="flex-center gap-1 hover:bg-white/5 cursor-pointer px-3 py-1 rounded-xl">
+      <span className="flex-center gap-1 hover:bg-white/90 cursor-pointer px-3 py-1 rounded-xl">
         {menu.name}
         {hasSubMenu && (
           <ChevronDown className="mt-[0.6px] group-hover/link:rotate-180 duration-200" />
@@ -72,12 +72,12 @@ export default function DesktopMenu({ menu }) {
                   to={submenu.path}
                   className="flex-center gap-x-4 group/menubox"
                 >
-                  <div className="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-emerald-600 group-hover/menubox:text-gray-900 duration-300">
+                  <div className="bg-white/50 w-fit p-2 rounded-md group-hover/menubox:bg-emerald-600 group-hover/menubox:text-gray-900 duration-300">
                     {submenu.icon && <submenu.icon />}
                   </div>
                   <div>
-                    <h6 className="font-semibold text-white">{submenu.name}</h6>
-                    <p className="text-sm text-white">{submenu.desc}</p>
+                    <h6 className="font-semibold text-black">{submenu.name}</h6>
+                    <p className="text-sm text-black">{submenu.desc}</p>
                   </div>
                 </Link>
               </div>
