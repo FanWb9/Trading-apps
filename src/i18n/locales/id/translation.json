@@ -68,12 +68,36 @@
         "desc": "Data keuangan kamu dijaga dengan standar keamanan tingkat tinggi dan sistem backup otomatis."
       }
     },
+    "navbar":{
+      "section1":{
+        "title":"Laporan Keuangan",
+        "desc":"Menyediakan laporan keuangan yang akurat dan real-time untuk mendukung pengambilan keputusan bisnis yang lebih baik."
+      },
+      "section2":{
+        "title":"Managemen Product",
+        "desc":"Mempermudah seluruh proses produksi, mulai dari perencanaan hingga distribusi, untuk memastikan efisiensi maksimal."
+      },
+      "section3":{
+        "title":"Analisis Keuangan",
+        "desc":"Memberikan wawasan keuangan mendalam untuk memantau kinerja bisnis dan menyusun strategi yang tepat."
+      },
+      "section4":{
+        "title":"Managemen Pembayaran",
+        "desc":"Mengelola transaksi dan pembayaran secara otomatis dan aman dalam satu sistem yang terintegrasi."
+      }
+
+    },
     "items":{
         "title":"10.000+ Perusahaan Telah Mempercayakan Thecount"
     },
+    "items1":{
+      "title":"Software yang mudah mengelola data keuangan"
+    },
+
     "buttons": {
       "whatsapp": "WhatsApp Sales",
-      "freeTrial": "Coba Gratis"
+      "freeTrial": "Coba Gratis",
+      "learnMore":"Pelajari Selengkapnya ->"
     },
     "why": "Mengapa Memilih"
   }

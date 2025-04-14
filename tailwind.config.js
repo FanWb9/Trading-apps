@@ -7,7 +7,7 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
       animation: {
-        scroll: 'scroll 50s linear infinite',
+        scroll: 'scroll 20s linear infinite',
         'scroll-reverse': 'scrollReverse 30s linear infinite',
       },
       keyframes: {
@@ -22,7 +22,9 @@ export default {
       },
     },
     screens: {
-      lg: { min: "925px" },
+      sm: { min: "640px" },
+      md: { min: "768px" },
+      lg: { min: "1024px" },
     },
   },
   plugins: [],

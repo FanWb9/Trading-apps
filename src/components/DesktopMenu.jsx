@@ -67,7 +67,7 @@ export default function DesktopMenu({ menu }) {
             {menu.subMenu.map((submenu, i) => (
               <div className="relative cursor-pointer" key={i}>
                 {menu.gridCols > 1 && menu?.subMenuHeading?.[i] && (
-                  <p className="text-sm mb-4 text-white">
+                  <p className="text-sm mb-4 text-black">
                     {t(menu?.subMenuHeading?.[i])} {/* Terjemahkan heading submenu */}
                   </p>
                 )}

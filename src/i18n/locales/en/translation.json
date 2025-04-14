@@ -69,12 +69,36 @@
         "desc": "Your financial data is protected with high-level security and automatic backup."
       }
     },
+    "navbar":{
+      "section1":{
+        "title":"Financial Report",
+        "desc":"Provides accurate and real-time financial reports to support better business decision-making."
+      },
+      "section2":{
+        "title":"Production management",
+        "desc": "Streamlines the entire production process, from planning to distribution, ensuring maximum efficiency."
+      },
+      "section3":{
+        "title":"Financial Analysis",
+        "desc":"Delivers in-depth financial insights to monitor business performance and develop precise strategies."
+      },
+      "section4":{
+        "title":"Payment Management",
+        "desc": "Manages transactions and payments automatically and securely within an integrated system."
+      }
+
+    },
     "items":{
       "title":"10,000+ Companies Have Trusted Thecount"
     },
+    "items1":{
+      "title":"Software that makes it easy to manage financial data"
+    },
+   
     "buttons": {
       "whatsapp": "Contact via WhatsApp",
-      "freeTrial": "Try for Free"
+      "freeTrial": "Try for Free",
+      "learnMore": "Learn More -> "
     },
     "why": "Why Choose"
   }
