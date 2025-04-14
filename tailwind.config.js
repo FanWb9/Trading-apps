@@ -6,9 +6,22 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      animation: {
+        scroll: 'scroll 50s linear infinite',
+        'scroll-reverse': 'scrollReverse 30s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        scrollReverse: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(50%)' },
+        },
+      },
     },
     screens: {
-      // => @media (max-width: 1279px) { ... }
       lg: { min: "925px" },
     },
   },

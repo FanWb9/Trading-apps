@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import pic1 from "../assets/pic 1.jpg"; 
-import pic2 from "../assets/pic 2.jpg"; 
+import pic1 from "../assets/pic 1.jpg";
+import pic2 from "../assets/pic 2.jpg";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -41,6 +41,11 @@ export default function Home() {
       desc: t("home.features.feature4.desc"),
       icon: "🔐",
     },
+  ];
+
+  const logos = [
+    pic1, pic2, pic1, pic2, pic1,
+    pic2, pic1, pic2, pic1, pic2,
   ];
 
   useEffect(() => {
@@ -85,6 +90,25 @@ export default function Home() {
           </div>
         ))}
       </div>
+
+      {/* ITEMS SECTION (Single Row - 20 Items Looping) */}
+      <section className="bg-gray-100 py-20 px-6 md:px-20">
+        <h2 className="text-center font-semibold text-xl mb-8">
+          {t("home.items.title")}
+        </h2>
+        <div className="overflow-hidden">
+          <div className="flex gap-8 animate-scroll w-max">
+            {[...logos, ...logos].map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                alt={`Logo ${idx}`}
+                className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* WHY THECOUNT SECTION */}
       <section className="bg-gray-200 py-20 px-6 md:px-20">

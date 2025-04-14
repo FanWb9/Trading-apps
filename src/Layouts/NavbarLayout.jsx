@@ -65,7 +65,7 @@ export default function NavbarLayout() {
               onMouseLeave={() => setDropdownOpen(false)}
             >
               <motion.button
-                className="bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center gap-2"
+                className="bg-white/5 z-[999] relative px-3 py-1.5  rounded-xl flex-center gap-2"
                 initial="initial"
                 animate="animate"
                 exit="exit"
