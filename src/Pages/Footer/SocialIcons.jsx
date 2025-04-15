@@ -1,16 +1,16 @@
 import {
   FaFacebook,
-  FaTwitter,
-  FaGithub,
+  FaWhatsapp,
   FaLinkedin,
   FaInstagram,
+  FaYoutube,
 } from "react-icons/fa";
 
 const SocialIcons = () => {
   const icons = [
     { icon: <FaFacebook />, link: "#" },
-    { icon: <FaTwitter />, link: "#" },
-    { icon: <FaGithub />, link: "#" },
+    { icon: <FaYoutube />, link: "#" },
+    { icon: <FaWhatsapp />, link: "#" },
     { icon: <FaLinkedin />, link: "#" },
     { icon: <FaInstagram />, link: "#" },
   ];
