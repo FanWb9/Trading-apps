@@ -7,6 +7,7 @@ import MobMenu from "../components/MobMenu";
 import Footer from "../Pages/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
+import { getUserInfo, handleLogout } from '../AuthState/Auth'; 
 import { Globe } from "lucide-react"; // <- icon bundar 🌐
 
 export default function NavbarLayout() {
@@ -18,6 +19,9 @@ export default function NavbarLayout() {
     i18n.changeLanguage(lang);
     setDropdownOpen(false); // Tutup dropdown setelah klik
   };
+
+  const user = getUserInfo();
+
 
   const menus = Menus();
   if (!Array.isArray(menus)) {
@@ -50,14 +54,24 @@ export default function NavbarLayout() {
           </ul>
 
           <div className="flex-center gap-x-5">
+          {user ? (
+            <button
+              onClick={handleLogout}
+              aria-label="Logout"
+              className="bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
+              title="Profile"
+            >
+              Profile 
+            </button>
+          ) : (
             <button
               onClick={handleSignIn}
               aria-label={t('signIn')}
               className="bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
             >
-              {t('signIn')}
+              {t('signIn')} 
             </button>
-
+          )}
             {/* Dropdown Bahasa */}
             <div
               className="relative"

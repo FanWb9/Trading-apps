@@ -1,8 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import {setToken} from '../AuthState/Auth';
+import { useNavigate } from 'react-router-dom';
 import Logo from "../assets/logo.webp";  
 import GoogleLogo from "../assets/Pic 4.png"; 
 function App() {
+
+  const [Email, setEmail] = useState('');
+  const [Password, setPassword] = useState('');
+  const [error, seteError] = useState('');
+  const navigate = useNavigate();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    try{
+      const response = await fetch('http://localhost:8080/api/auth/login',{
+        method: 'POST',
+        headers: {
+          'Content-Type':'application/json',
+        },
+        body: JSON.stringify({Email,Password}),
+      });
+      if(!response.ok){
+        const erroData = await response.json();
+        throw new Error(erroData.message || 'Login Failed, Please try again');
+      }
+      const data = await response.json();
+      setToken(data.token);
+      navigate('/');
+    }catch(err){
+      seteError(err.message || 'Terjadi Kesalahan');
+    }
+  }
+
   return (
     <section className="h-screen flex flex-col md:flex-row justify-center items-center bg-gray-100 px-4 md:px-0">
       <div className="md:w-1/3 max-w-sm rounded-lg overflow-hidden shadow-lg bg-white p-8 space-y-6">
@@ -14,18 +45,28 @@ function App() {
             className="w-32 h-32 object-cover rounded-full"
           />
         </div>
-
+        {error && <p className='text-red-500 text-center relative z-10 font-semibold  '>{error} </p>}
         {/* Form Login */}
         <div className="space-y-4">
           <input
             className="w-full p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            type="text"
+            type="email"
             placeholder="Email Address"
+            id="email"
+            value={Email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+           
           />
           <input
             className="w-full p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             type="password"
             placeholder="Password"
+            id="password"
+            value={Password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+           
           />
           
           {/* Remember me and forgot password */}
@@ -39,7 +80,7 @@ function App() {
 
           {/* Login Button */}
           <div className="text-center">
-            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg text-sm font-semibold">
+            <button onClick={handleLogin} className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg text-sm font-semibold">
               Login
             </button>
           </div>

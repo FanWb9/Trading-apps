@@ -135,7 +135,7 @@ export default function Home() {
                 key={idx}
                 src={img}
                 alt={`Logo ${idx}`}
-                className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
+                className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-300"
               />
             ))}
           </div>

@@ -8,7 +8,7 @@ export default {
       },
       animation: {
         scroll: 'scroll 20s linear infinite',
-        'scroll-reverse': 'scrollReverse 30s linear infinite',
+        'scroll-reverse': 'scrollReverse 20s linear infinite',
       },
       keyframes: {
         scroll: {
