@@ -8,7 +8,7 @@ import Footer from "../Pages/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { getUserInfo, handleLogout } from '../AuthState/Auth'; 
-import { Globe } from "lucide-react"; // <- icon bundar 🌐
+import { Globe } from "lucide-react"; // <- icon bundar 
 
 export default function NavbarLayout() {
   const navigate = useNavigate();
