@@ -1,40 +1,44 @@
-import{jwtDecode} from 'jwt-decode'; // this import jwt-decode
-import axios from 'axios';
+    import  jwtDecode  from 'jwt-decode';
+    import axios from 'axios';
 
-//save token in localstorage
-export const setToken = (token) => {
-    localStorage.setItem('authToken',token);
-};
+    // Simpan JWT token ke localStorage
+    export const setToken = (token) => {
+        localStorage.setItem('authToken', token);
+    };
 
-//get token in localstorage
-export const getToken = () => {
-    return localStorage.getItem('authToken');
-};
+    // Ambil token dari localStorage
+    export const getToken = () => {
+        return localStorage.getItem('authToken');
+    };
 
-export const removeToken = () => {
-    localStorage.removeItem('authToken');
-};
+    // Hapus token
+    export const removeToken = () => {
+        localStorage.removeItem('authToken');
+    };
 
-export const getUserInfo = () => {
-    const token = getToken();
-    if(!token) return null;
-
-    try{
-        const decodeToken = jwtDecode(token);
-        return decodeToken;
-    }catch(eror){
-        console.error('invalid token or error decoding token',error);
+   
+    export const getUserInfo = () => {
+    const user = localStorage.getItem("user");
+    if (!user) return null;
+    try {
+      return JSON.parse(user); // Pastikan di-parse ke object
+    } catch (e) {
+      console.error("Failed to parse user:", e);
+      return null;
     }
-};
+  };
+  
 
-export const handleLogout = () => {
-    removeToken();
-    window.location.href = '/';
-};
+    // Logout user
+    export const handleLogout = () => {
+        removeToken();
+        window.location.href = '/';
+    };
 
-export const setAxiosDefaults = () => {
-    const token = getToken();
-    if (token){
-        axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-    }
-};
+    // Set Authorization header default buat axios
+    export const setAxiosDefaults = () => {
+        const token = getToken();
+        if (token) {
+            axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+        }
+    };

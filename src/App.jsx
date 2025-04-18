@@ -14,11 +14,12 @@ export default function App() {
 
       {/* Layout dengan navbar */}
       <Route element={<NavbarLayout />}>
+        <Route path="/dashboard" element={<Home />} />
         <Route path="/" element={<Home />} />
-       
         <Route path="/Laporan-Keuangan" element={<LaporanKeuangan />} />
         {/* Tambah route lain di sini */}
       </Route>
+      
     </Routes>
   );
 }

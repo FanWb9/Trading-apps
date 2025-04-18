@@ -1,28 +1,38 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { Menus } from "../utils";
-import Logo from "../assets/logo.webp";
+import Logo from "../assets/Logo.png";
 import DesktopMenu from "../components/DesktopMenu";
 import MobMenu from "../components/MobMenu";
 import Footer from "../Pages/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
-import { getUserInfo, handleLogout } from '../AuthState/Auth'; 
-import { Globe } from "lucide-react"; // <- icon bundar 
+import { Globe } from "lucide-react";
+import { getUserInfo } from '../AuthState/Auth'; 
 
 export default function NavbarLayout() {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
+  const [currentUser, setCurrentUser] = useState(null);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   const handleSignIn = () => navigate("/login");
+  const handleName = () => navigate("/dashboard")
 
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang);
-    setDropdownOpen(false); // Tutup dropdown setelah klik
+    setDropdownOpen(false);
   };
 
-  const user = getUserInfo();
-
-
+  useEffect(() => {
+    const userInfo = getUserInfo();
+    console.log('User Info:', userInfo); // Cek apakah data pengguna ada
+  
+    if (userInfo) {
+      setCurrentUser(userInfo); // Set currentUser dengan data user jika ada
+    }
+  }, []);
+  
   const menus = Menus();
   if (!Array.isArray(menus)) {
     console.error("Menus bukan array!", menus);
@@ -36,15 +46,14 @@ export default function NavbarLayout() {
     transition: { duration: 0.2 },
   };
 
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
   return (
     <>
       <header className="h-16 text-[15px] fixed inset-0 flex-center bg-sky-400 z-50">
         <nav className="px-3.5 flex-center-between w-full max-w-7xl mx-auto">
           <div className="flex-center gap-x-3 z-[999] relative">
             <img src={Logo} alt="" className="size-8" />
-            <h3 className="text-lg font-semibold">{t('brandName')}</h3>
+            <h3 className="text-lg font-semibold cursor-pointer" onClick={handleName}>{t('brandName')}</h3>
+           
           </div>
 
           <ul className="gap-x-1 lg:flex-center hidden">
@@ -54,24 +63,25 @@ export default function NavbarLayout() {
           </ul>
 
           <div className="flex-center gap-x-5">
-          {user ? (
-            <button
-              onClick={handleLogout}
-              aria-label="Logout"
-              className="bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
-              title="Profile"
-            >
-              Profile 
-            </button>
-          ) : (
-            <button
-              onClick={handleSignIn}
-              aria-label={t('signIn')}
-              className="bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
-            >
-              {t('signIn')} 
-            </button>
-          )}
+            {currentUser ? (
+              <button
+              onClick={() => navigate("/profile")}
+                aria-label="Logout"
+                className="bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
+                title="Profile"
+              >
+                Profile 
+              </button>
+            ) : (
+              <button
+                onClick={handleSignIn}
+                aria-label={t('signIn')}
+                className="bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
+              >
+                {t('signIn')} 
+              </button>
+            )}
+
             {/* Dropdown Bahasa */}
             <div
               className="relative"
@@ -79,7 +89,7 @@ export default function NavbarLayout() {
               onMouseLeave={() => setDropdownOpen(false)}
             >
               <motion.button
-                className="bg-white/5 z-[999] relative px-3 py-1.5  rounded-xl flex-center gap-2"
+                className="bg-white/5 z-[999] relative px-3 py-1.5 rounded-xl flex-center gap-2"
                 initial="initial"
                 animate="animate"
                 exit="exit"
