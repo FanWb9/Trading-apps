@@ -52,7 +52,7 @@ export default function NavbarLayout() {
         <nav className="px-3.5 flex-center-between w-full max-w-7xl mx-auto">
           <div className="flex-center gap-x-3 z-[999] relative">
             <img src={Logo} alt="" className="size-8" />
-            <h3 className="text-lg font-semibold cursor-pointer" onClick={handleName}>{t('brandName')}</h3>
+            <h3 className="text-lg font-semibold cursor-pointer text-white" onClick={handleName}>{t('brandName')}</h3>
            
           </div>
 

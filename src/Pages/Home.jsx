@@ -11,6 +11,10 @@ export default function Home() {
 
   const [selectedTab, setSelectedTab] = useState(0);
 
+  // Import otomatis semua file gambar dari assets yang sesuai pola nama
+  const logos = Object.values(
+    import.meta.glob('../assets/scroll/logo*.jpg', { eager: true })
+  ).map((mod) => mod.default);
 
   const slides = [
     {
@@ -75,10 +79,7 @@ export default function Home() {
     }
   ]
 
-  const logos = [
-    pic1, pic2, pic1, pic2, pic1,
-    pic2, pic1, pic2, pic1, pic2,
-  ];
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -103,7 +104,7 @@ export default function Home() {
               alt=""
               className="absolute inset-0 w-full h-full object-cover opacity-40"
             />
-            <div className="relative z-30 max-w-4xl mx-auto pt-[45%] md:pt-[40%] lg:pt-[30%] px-6 text-left">
+            <div className="relative z-30 max-w-4xl mx-auto pt-[45%] md:pt-[40%] lg:pt-[25%] px-6 text-left">
               <div className="flex flex-col items-start max-w-md md:max-w-lg lg:max-w-xl ml-0 md:ml-6 lg:ml-10">
                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
                   {slide.title}
@@ -134,12 +135,13 @@ export default function Home() {
               <img
                 key={idx}
                 src={img}
-                alt={`Logo ${idx}`}
+                alt={`Logo ${idx + 1}`}
                 className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-300"
               />
             ))}
           </div>
-        </div>  
+        </div>
+
         <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("home.items1.title")}</h2>
        {/* NAVBAR SECTION IN LEFT */}
         <div className="mt-16 flex flex-col lg:flex-row gap-8">
@@ -150,7 +152,7 @@ export default function Home() {
                 <button
                   key={idx}
                   onClick={() => setSelectedTab(idx)}
-                  className={`whitespace-nowrap px-4 py-2 rounded-md shadow font-semibold transition-colors duration-300 ${
+                  className={`whitespace-nowrap px-4 py-2 rounded-md shadow font-semibold transition-colors duration-700 ${
                     selectedTab === idx
                       ? "bg-blue-100 text-blue-700"
                       : "bg-white text-gray-700 hover:bg-blue-50"

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import { setToken } from '../AuthState/Auth';  // Pastikan fungsi setToken sudah ada
+import { setToken } from '../AuthState/Auth';  
 import Logo from "../assets/logo.webp";  
-import GoogleLogo from "../assets/Pic 4.png"; 
 import GoogleLoginButton from '../components/GoogleButton';
 
 
@@ -35,7 +34,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8080/api/auth/login', {
+      const response = await fetch('https://backendthecore-production.up.railway.app/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -50,6 +49,7 @@ function App() {
 
       const data = await response.json();
       setToken(data.token);  // Menyimpan token di localStorage
+      localStorage.setItem('authToken', data.token);
       navigate('/dashboard');  // Redirect ke dashboard setelah login berhasil
     } catch (err) {
       setError(err.message || 'An error occurred');

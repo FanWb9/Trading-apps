@@ -3,7 +3,9 @@ import Login from "./Pages/Login";
 import Home from "./Pages/Home";
 import Register from "./Pages/Regis";
 import NavbarLayout from "./Layouts/NavbarLayout";
-import LaporanKeuangan from "./pages/LaporanKeuangan";
+import Profile from "./Pages/Profile";
+import LaporanKeuangan from "./Pages/LaporanKeuangan";
+import { Import } from "lucide-react";
 
 export default function App() {
   return (
@@ -11,6 +13,7 @@ export default function App() {
       {/* Layout tanpa navbar */}
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/profile" element={<Profile/>}/>
 
       {/* Layout dengan navbar */}
       <Route element={<NavbarLayout />}>

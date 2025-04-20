@@ -9,7 +9,7 @@ const GoogleButton = () => {
     console.log("Token from Google:", googleToken);
 
     try {
-      const res = await fetch("http://localhost:8080/api/auth/google/callback", {
+      const res = await fetch("https://backendthecore-production.up.railway.app/api/auth/google/callback", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
