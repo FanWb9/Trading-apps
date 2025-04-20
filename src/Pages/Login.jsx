@@ -50,7 +50,7 @@ function App() {
       const data = await response.json();
       setToken(data.token);  // Menyimpan token di localStorage
       localStorage.setItem('authToken', data.token);
-      localStorage.setItem('userId', data.user.ID);
+      localStorage.setItem('user', JSON.stringify(data.user));
       navigate('/dashboard');  // Redirect ke dashboard setelah login berhasil
     } catch (err) {
       setError(err.message || 'An error occurred');
