@@ -40,7 +40,6 @@ function App() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ Email, Password }),
-         credentials: "include"
       });
 
       if (!response.ok) {
@@ -51,6 +50,7 @@ function App() {
       const data = await response.json();
       setToken(data.token);  // Menyimpan token di localStorage
       localStorage.setItem('authToken', data.token);
+      localStorage.setItem('userId', data.user.ID);
       navigate('/dashboard');  // Redirect ke dashboard setelah login berhasil
     } catch (err) {
       setError(err.message || 'An error occurred');
