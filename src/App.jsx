@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login";
 import Home from "./Pages/Home";
 import Register from "./Pages/Regis";
@@ -9,7 +9,7 @@ import { Import } from "lucide-react";
 
 export default function App() {
   return (
-    <Router basename="/trading-apps">
+    
     <Routes>
       {/* Layout tanpa navbar */}
       <Route path="/login" element={<Login />} />
@@ -25,6 +25,6 @@ export default function App() {
       </Route>
       
     </Routes>
-    /</Router>
+   
   );
 }
