@@ -195,7 +195,7 @@ export default function Home() {
       {/* WHY THECOUNT SECTION */}
       <section className="bg-gray-200 py-20 px-6 md:px-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-          {t("home.why")} <span className="text-blue-600">THECORE</span>
+          {t("home.why")} <span className="text-blue-600">thecore</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {features.map((item, index) => (

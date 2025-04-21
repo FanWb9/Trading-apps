@@ -8,15 +8,16 @@ import Footer from "../Pages/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { Globe } from "lucide-react";
-import { getUserInfo } from '../AuthState/Auth'; 
+
 
 export default function NavbarLayout() {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
-  const [currentUser, setCurrentUser] = useState(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const handleSignIn = () => navigate("/login");
+  const handleSignIn = () => {
+    window.location.href = "#"; // Ganti dengan URL website tujuan kamu
+  };
+  
   const handleName = () => navigate("/dashboard")
 
   const handleLanguageChange = (lang) => {
@@ -24,14 +25,7 @@ export default function NavbarLayout() {
     setDropdownOpen(false);
   };
 
-  useEffect(() => {
-    const userInfo = getUserInfo();
-    console.log('User Info:', userInfo); // Cek apakah data pengguna ada
   
-    if (userInfo) {
-      setCurrentUser(userInfo); // Set currentUser dengan data user jika ada
-    }
-  }, []);
   
   const menus = Menus();
   if (!Array.isArray(menus)) {
@@ -63,24 +57,13 @@ export default function NavbarLayout() {
           </ul>
 
           <div className="flex-center gap-x-5">
-            {currentUser ? (
-              <button
-              onClick={() => navigate("/profile")}
-                aria-label="Logout"
-                className="bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
-                title="Profile"
-              >
-                Profile 
-              </button>
-            ) : (
-              <button
-                onClick={handleSignIn}
-                aria-label={t('signIn')}
-                className="bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
-              >
-                {t('signIn')} 
-              </button>
-            )}
+            <button
+              onClick={handleSignIn}
+              aria-label={t('signIn')}
+              className="bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
+            >
+              {t('signIn')} 
+            </button>
 
             {/* Dropdown Bahasa */}
             <div
