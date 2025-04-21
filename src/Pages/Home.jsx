@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import pic1 from "../assets/pic 1.jpg";
 import pic2 from "../assets/pic 2.jpg";
+import pic3 from "../assets/Pic1.jpg";
 import { path } from "framer-motion/client";
 
 export default function Home() {
@@ -56,7 +57,7 @@ export default function Home() {
     {
       title: t("home.navbar.section1.title"),
       desc: t("home.navbar.section1.desc"),
-      image: pic1,
+      image: pic3,
       path: "/Laporan-Keuangan",
     },
     {
@@ -174,7 +175,7 @@ export default function Home() {
               <img
                 src={navLeft[selectedTab].image}
                 alt={navLeft[selectedTab].title}
-                className="w-full max-w-xs h-auto object-cover rounded-lg shadow-md lg:max-w-[500px]"
+                className="w-full max-w-xs h-auto object-cover rounded-lg shadow-md lg:max-w-[800px]"
               />
             )}
             <div>
