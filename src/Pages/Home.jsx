@@ -13,7 +13,7 @@ export default function Home() {
 
   // Import otomatis semua file gambar dari assets yang sesuai pola nama
   const logos = Object.values(
-    import.meta.glob('../assets/scroll/logo*.jpg', { eager: true })
+    import.meta.glob('../assets/scroll/logos*.jpg', { eager: true })
   ).map((mod) => mod.default);
 
   const slides = [
@@ -111,9 +111,13 @@ export default function Home() {
                 </h1>
                 <p className="text-base md:text-lg mb-6 md:mb-8">{slide.desc}</p>
                 <div className="flex gap-3 md:gap-4">
-                  <button className="bg-white text-sky-700 px-4 py-2 md:px-5 md:py-2 rounded-md font-semibold hover:bg-sky-100">
-                    {t("home.buttons.whatsapp")}
-                  </button>
+                <button
+                      onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
+                      className="bg-white text-sky-700 px-4 py-2 md:px-5 md:py-2 rounded-md font-semibold hover:bg-sky-100"
+                    >
+                      {t("home.buttons.whatsapp")}
+                    </button>
+
                   <button className="bg-blue-600 px-4 py-2 md:px-5 md:py-2 rounded-md font-semibold hover:bg-blue-700">
                     {t("home.buttons.freeTrial")}
                   </button>
@@ -130,17 +134,17 @@ export default function Home() {
             {t("home.items.title")}
         </h2>
         <div className="overflow-hidden">
-          <div className="flex gap-8 animate-scroll w-max">
-            {[...logos, ...logos].map((img, idx) => (
-              <img
-                key={idx}
-                src={img}
-                alt={`Logo ${idx + 1}`}
-                className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-300"
-              />
-            ))}
-          </div>
+        <div className="flex gap-8 animate-scroll will-change-transform">
+          {[...logos, ...logos].map((img, idx) => (
+            <img
+              key={idx}
+              src={img}
+              alt={`Logo ${idx + 1}`}
+              className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-100"
+            />
+          ))}
         </div>
+      </div>
 
         <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("home.items1.title")}</h2>
        {/* NAVBAR SECTION IN LEFT */}
@@ -192,7 +196,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY THECOUNT SECTION */}
+      {/* WHY CHOOSE THECOUNT SECTION */}
       <section className="bg-gray-200 py-20 px-6 md:px-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
           {t("home.why")} <span className="text-blue-600">thecore</span>
