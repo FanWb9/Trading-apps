@@ -66,8 +66,26 @@
       "feature4": {
         "title": "Keamanan Data Terjamin",
         "desc": "Data keuangan kamu dijaga dengan standar keamanan tingkat tinggi dan sistem backup otomatis."
-      }
+      },
+      "title": "Fitur Unggulan",
+      "realtime": "Data Real-Time",
+      "realtimeDesc": "Laporan selalu update secara langsung.",
+      "security": "Keamanan Tinggi",
+      "securityDesc": "Data terenkripsi dan aman.",
+      "integration": "Integrasi Mudah",
+      "integrationDesc": "Terhubung dengan berbagai sistem.",
+      "export": "Export Laporan",
+      "exportDesc": "Satu klik untuk export ke PDF atau Excel."
     },
+    "testimonial": {
+      "title": "Apa Kata Mereka?",
+      "msg1": "Sejak pakai The Core, laporan keuangan jadi lebih rapi dan mudah dipahami.",
+      "msg2": "Kami bisa ambil keputusan bisnis lebih cepat karena laporan real-time.",
+      "msg3": "Gak nyangka UMKM kecil seperti kami bisa punya laporan sekelas perusahaan besar!"
+      },
+      "pricing": {
+        "title": "Paket Harga"
+      },
     "navbar":{
       "section1":{
         "title":"Laporan Keuangan",
@@ -97,7 +115,8 @@
     "buttons": {
       "whatsapp": "WhatsApp Sales",
       "freeTrial": "Coba Gratis",
-      "learnMore":"Pelajari Selengkapnya ->"
+      "learnMore":"Pelajari Selengkapnya ->",
+      "choosePlan": "Pilih Paket"
     },
     "why": "Mengapa Memilih"
   },

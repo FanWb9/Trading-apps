@@ -54,7 +54,7 @@ export default function LaporanKeuangan() {
           />
         </div>
       </div>
-      <section className="bg-white px-6  sm:h-[450px] md:h-[450px] lg:h-[450px] py-7">
+      <section className="bg-white px-6  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
         <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
         <div className="overflow-hidden">
           <div className="flex animate-scroll will-change-transform gap-6">
@@ -66,11 +66,47 @@ export default function LaporanKeuangan() {
            alt={`Logo ${idx + 1}`}
            className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-300"
          />
-           
           ))}
           </div>
         </div>
       </section>
+      {/* SECTION: Fitur Unggulan */}
+      <section className="bg-gray-50 py-20 px-6 md:px-20">
+        <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            { icon: "📊", title: t("home.features.realtime"), desc: t("home.features.realtimeDesc") },
+            { icon: "🔒", title: t("home.features.security"), desc: t("home.features.securityDesc") },
+            { icon: "⚙️", title: t("home.features.integration"), desc: t("home.features.integrationDesc") },
+            { icon: "📥", title: t("home.features.export"), desc: t("home.features.exportDesc") },
+          ].map((item, idx) => (
+            <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
+              <div className="text-4xl mb-4">{item.icon}</div>
+              <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+              <p className="text-gray-600 text-sm">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* SECTION: Testimoni */}
+      <section className="bg-white py-20 px-6 md:px-20">
+        <h2 className="text-3xl font-bold text-center mb-12">{t("home.testimonial.title")}</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {[
+            { name: "CV Karya Abadi", message: t("home.testimonial.msg1") },
+            { name: "PT Sukses Bersama", message: t("home.testimonial.msg2") },
+            { name: "UMKM Kopi Barokah", message: t("home.testimonial.msg3") },
+          ].map((item, idx) => (
+            <div key={idx} className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+              <p className="text-gray-700 mb-4">“{item.message}”</p>
+              <p className="font-semibold text-blue-600">— {item.name}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+  
     </div>
   );
 }
