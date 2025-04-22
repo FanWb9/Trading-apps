@@ -100,5 +100,12 @@
       "learnMore":"Pelajari Selengkapnya ->"
     },
     "why": "Mengapa Memilih"
+  },
+  "Laporan-Keuangan":{
+    "Items":{
+      "title":"Arus Kas & Neraca",
+      "desc":"Pantau keuangan bisnismu secara real-time & akurat",
+      "desc1":"Dapatkan insight tentang arus kas dan neraca perusahaan untuk mengambil keputusan yang lebih baik."
+    }
   }
 }

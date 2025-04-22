@@ -101,5 +101,12 @@
       "learnMore": "Learn More -> "
     },
     "why": "Why Choose"
+  },
+  "Laporan-Keuangan": {
+    "Items":{
+      "title": "Cash Flow & Balance Sheet",
+      "desc":"Monitor your business finances in real-time & accurately",
+      "desc1":"Get insights into your company's cash flow and balance sheet to make better decisions."
+    }
   }
 }
