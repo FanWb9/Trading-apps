@@ -1,7 +1,7 @@
 export const PRODUCTS = [
     { name: "Product Management", link: "#" },
     { name: "TEST 1", link: "#" },
-    { name: "TEST 1", link: "#" },
+    { name: "TEST 2", link: "#" },
   ];
   export const RESOURCES = [
     { name: "Industries and tools", link: "#" },

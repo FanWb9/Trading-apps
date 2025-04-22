@@ -130,7 +130,7 @@ export default function Home() {
       </div>
 
       {/* ITEMS SECTION */}
-      <section className="bg-gray-100 py-20 px-6 md:px-20 sm:h-[120vh] md:h-[100vh] lg:h-[100vh]">
+      <section className="bg-white py-20 px-6 md:px-20 sm:h-[120vh] md:h-[100vh] lg:h-[100vh]">
         <h2 className=" text-2xl lg:text-3xl font-semibold text-center mb-8">
             {t("home.items.title")}
         </h2>
@@ -141,7 +141,7 @@ export default function Home() {
               key={idx}
               src={img}
               alt={`Logo ${idx + 1}`}
-              className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-100"
+              className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-300"
             />
           ))}
         </div>
@@ -198,7 +198,7 @@ export default function Home() {
       </section>
 
       {/* WHY CHOOSE THECOUNT SECTION */}
-      <section className="bg-gray-200 py-20 px-6 md:px-20">
+      <section className="bg-gray-100 py-20 px-6 md:px-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
           {t("home.why")} <span className="text-blue-600">thecore</span>
         </h2>
