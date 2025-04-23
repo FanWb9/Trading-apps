@@ -5,7 +5,7 @@ import pic1 from "../assets/pic 1.jpg";
 import pic2 from "../assets/pic 2.jpg";
 import pic3 from "../assets/Keuangan.png";
 import Pic4 from "../assets/Product.png";
-import Pic5 from "../assets/Finan.png";
+import Pic5 from "../assets/FInan.png";
 export default function Home() {
   const { t } = useTranslation();
   const [current, setCurrent] = useState(0);
