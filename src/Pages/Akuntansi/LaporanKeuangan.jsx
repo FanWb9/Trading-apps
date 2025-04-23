@@ -115,7 +115,7 @@ export default function LaporanKeuangan() {
       {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
       <section className="px-5">
       <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Laporan-Keuangan.items1.title")}</h2>
-      <div className="mt-16 flex flex-col lg:flex-row gap-8">
+      <div className="mt-16 flex flex-col lg:flex-row gap-6">
           {/* Tabs on Mobile, Vertical Navbar on Desktop */}
           <div className="overflow-x-auto lg:overflow-visible">
             <div className="flex lg:flex-col gap-2 lg:gap-4 min-w-max">
@@ -141,7 +141,7 @@ export default function LaporanKeuangan() {
               <img
                 src={navLeft[selectedTab].image}
                 alt={navLeft[selectedTab].title}
-                className="w-full max-w-xs h-auto object-cover rounded-lg shadow-md lg:max-w-[800px]"
+                className="w-full max-w-xs h-auto object-cover rounded-lg shadow-md lg:max-w-[500px]"
               />
             )}
             <div>
@@ -149,7 +149,7 @@ export default function LaporanKeuangan() {
                 {navLeft[selectedTab].title}
               </h3>
               <p className="text-gray-600 leading-relaxed">{navLeft[selectedTab].desc}</p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-16">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-[30px]">
                     <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
                     className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
                       {t("home.buttons.whatsapp")}

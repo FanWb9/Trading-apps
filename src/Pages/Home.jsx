@@ -130,7 +130,7 @@ export default function Home() {
       </div>
 
       {/* ITEMS SECTION */}
-      <section className="bg-white py-20 px-6 md:px-20 sm:h-[120vh] md:h-[100vh] lg:h-[100vh]">
+      <section className="bg-white py-20 px-6 md:px-20 sm:h-[120vh] md:h-[100vh] lg:h-[110vh]">
         <h2 className=" text-2xl lg:text-3xl font-semibold text-center mb-8">
             {t("home.items.title")}
         </h2>
@@ -176,7 +176,7 @@ export default function Home() {
               <img
                 src={navLeft[selectedTab].image}
                 alt={navLeft[selectedTab].title}
-                className="w-full max-w-xs h-auto object-cover rounded-lg shadow-md lg:max-w-[800px]"
+                className="w-full max-w-xs h-auto object-cover rounded-lg shadow-md lg:max-w-[600px]"
               />
             )}
             <div>
