@@ -112,7 +112,7 @@ export default function LaporanKeuangan() {
           ))}
         </div>
       </section>
-      {/* SECTION: FITUR SLIDE CONTOH/EXAMPLE */}
+      {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
       <section className="px-5">
       <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Laporan-Keuangan.items1.title")}</h2>
       <div className="mt-16 flex flex-col lg:flex-row gap-8">
