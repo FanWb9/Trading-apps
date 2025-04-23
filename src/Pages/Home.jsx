@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import pic1 from "../assets/pic 1.jpg";
 import pic2 from "../assets/pic 2.jpg";
-import pic3 from "../assets/Pic1.jpg";
-import { path } from "framer-motion/client";
-
+import pic3 from "../assets/Keuangan.png";
+import Pic4 from "../assets/Product.png";
+import Pic5 from "../assets/Finan.png";
 export default function Home() {
   const { t } = useTranslation();
   const [current, setCurrent] = useState(0);
@@ -63,13 +63,13 @@ export default function Home() {
     {
       title: t("home.navbar.section2.title"),
       desc: t("home.navbar.section2.desc"),
-      image: pic2,
+      image: Pic4,
       path: "/",
     },
     {
       title: t("home.navbar.section3.title"),
       desc: t("home.navbar.section2.desc"),
-      image: pic1,
+      image: Pic5,
       path: "/",
     },
     {

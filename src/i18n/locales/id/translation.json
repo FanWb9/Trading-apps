@@ -120,14 +120,14 @@
   },
   "Laporan-Keuangan":{
     "Items":{
-      "title":"Arus Kas & Neraca",
+      "title":"Arus Kas & Bisnis",
       "desc":"Pantau keuangan bisnismu secara real-time & akurat",
       "desc1":"Dapatkan insight tentang arus kas dan neraca perusahaan untuk mengambil keputusan yang lebih baik."
     },
     "navbar":{
       "section1":{
-        "title":" Neraca Standar",
-        "desc":"Laporan Neraca Standar memberikan gambaran menyeluruh mengenai kesehatan finansial bisnis Anda. Dengan mudah, Anda bisa melihat apa saja yang dimiliki oleh perusahaan (aset), berapa banyak kewajiban yang harus dibayar (liabilitas), dan berapa besar modal atau investasi yang sudah Anda tanamkan (ekuitas). Ini sangat penting untuk membantu Anda mengambil keputusan yang lebih tepat, serta menjadi alat penting dalam menarik investor maupun mitra bisnis."
+        "title":"Dashboard",
+        "desc":"Dashboard pada sistem akuntansi TheCore menyajikan ringkasan keuangan secara real-time, menampilkan data pendapatan, pengeluaran, arus kas, serta notifikasi penting untuk mendukung pengambilan keputusan yang cepat dan tepat."
       },
       "section2":{
         "title":"Laba/Rugi (Standar)",

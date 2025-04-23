@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import Pic1 from '../../assets/Pic1.jpg';
 import { useTranslation } from "react-i18next";
 import Pic2 from '../../assets/Pic2.jpg';
-import SLide1 from '../../assets/scroll/Slide1.png';
-import SLide2 from '../../assets/scroll/Slide2.png';
-import SLide3 from '../../assets/scroll/Slide3.png';
+import Rugi from '../../assets/Rugi.png';
+import Dashboard from '../../assets/Dashboard.png';
+import Tahunan from '../../assets/Rugi_Tahunan.png';
 
 export default function LaporanKeuangan() {
   const { t } = useTranslation();
-  const images = [Pic1, Pic2];
+  const images = [Rugi, Dashboard,Tahunan];
   const [currentImage, setCurrentImage] = useState(0);
   const [selectedTab, setSelectedTab] = useState(0);
 
@@ -22,17 +22,17 @@ export default function LaporanKeuangan() {
       {
         title: t("Laporan-Keuangan.navbar.section1.title"),
         desc: t("Laporan-Keuangan.navbar.section1.desc"),
-        image: SLide1,
+        image: Dashboard,
       },
       {
         title: t("Laporan-Keuangan.navbar.section2.title"),
         desc: t("Laporan-Keuangan.navbar.section2.desc"),
-        image: SLide2,
+        image: Rugi,
       },
       {
         title: t("Laporan-Keuangan.navbar.section3.title"),
         desc: t("Laporan-Keuangan.navbar.section2.desc"),
-        image: SLide3,
+        image: Tahunan,
       },
      
     ]

@@ -120,13 +120,13 @@
   },
   "Laporan-Keuangan": {
     "Items":{
-      "title": "Cash Flow & Balance Sheet",
+      "title": "Cash Flow & Business",
       "desc":"Monitor your business finances in real-time & accurately",
       "desc1":"Get insights into your company's cash flow and balance sheet to make better decisions."
     },
     "navbar":{
       "section1":{
-        "title":"Standard Balance Sheet",
+        "title":"Dashboard",
         "desc":"The Standard Balance Sheet gives you a complete snapshot of your business's financial health. It clearly shows what your business owns (assets), what it owes (liabilities), and how much you’ve invested (equity). This report is essential for making informed decisions and is also a powerful tool when attracting investors or business partners."
       },
       "section2":{

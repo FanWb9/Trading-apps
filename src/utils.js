@@ -20,11 +20,7 @@ export const Menus = () => {
   return [
     {
       name: t("Features"),  // Menggunakan t() untuk menerjemahkan
-      subMenuHeading: [
-        t("Akuntansi"),
-        t("Supply Chain Management"),
-        t("Integration & Platform"),
-      ],
+    
       subMenu: [
         {
           name: t("Laporan Keuangan"),  // Menerjemahkan nama menu
