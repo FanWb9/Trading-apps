@@ -69,13 +69,13 @@
       },
       "title": "Fitur Unggulan",
       "realtime": "Data Real-Time",
-      "realtimeDesc": "Laporan selalu update secara langsung.",
+      "realtimeDesc":"Tinggalkan proses manual yang lambat! beralih ke TheCore Sistem Akuntansi dan rasakan kemudahan akses data real-time yang efisien!",
       "security": "Keamanan Tinggi",
-      "securityDesc": "Data terenkripsi dan aman.",
+      "securityDesc":  "Lindungi data keuangan bisnis Anda dengan sistem keamanan tingkat tinggi dari TheCore. Privasi dan integritas data adalah prioritas kami!",
       "integration": "Integrasi Mudah",
-      "integrationDesc": "Terhubung dengan berbagai sistem.",
+      "integrationDesc": "Gunakan TheCore dengan mudah tanpa perlu instalasi rumit atau sistem tambahan. Semua fitur siap pakai dan langsung mendukung alur kerja Anda!",
       "export": "Export Laporan",
-      "exportDesc": "Satu klik untuk export ke PDF atau Excel."
+      "exportDesc": "Butuh laporan cepat? Dengan TheCore, Anda bisa ekspor laporan keuangan kapan saja, dalam format yang siap dibagikan!"
     },
     "testimonial": {
       "title": "Apa Kata Mereka?",
@@ -83,9 +83,7 @@
       "msg2": "Kami bisa ambil keputusan bisnis lebih cepat karena laporan real-time.",
       "msg3": "Gak nyangka UMKM kecil seperti kami bisa punya laporan sekelas perusahaan besar!"
       },
-      "pricing": {
-        "title": "Paket Harga"
-      },
+     
     "navbar":{
       "section1":{
         "title":"Laporan Keuangan",
@@ -125,6 +123,23 @@
       "title":"Arus Kas & Neraca",
       "desc":"Pantau keuangan bisnismu secara real-time & akurat",
       "desc1":"Dapatkan insight tentang arus kas dan neraca perusahaan untuk mengambil keputusan yang lebih baik."
+    },
+    "navbar":{
+      "section1":{
+        "title":" Neraca Standar",
+        "desc":"Laporan Neraca Standar memberikan gambaran menyeluruh mengenai kesehatan finansial bisnis Anda. Dengan mudah, Anda bisa melihat apa saja yang dimiliki oleh perusahaan (aset), berapa banyak kewajiban yang harus dibayar (liabilitas), dan berapa besar modal atau investasi yang sudah Anda tanamkan (ekuitas). Ini sangat penting untuk membantu Anda mengambil keputusan yang lebih tepat, serta menjadi alat penting dalam menarik investor maupun mitra bisnis."
+      },
+      "section2":{
+        "title":"Laba/Rugi (Standar)",
+        "desc":"Laporan Laba/Rugi Standar menampilkan semua jenis transaksi yang mempengaruhi pendapatan dan pengeluaran Anda dalam satu tampilan yang mudah dipahami. Dengan fitur ini, Anda bisa mengetahui apakah bisnis Anda menghasilkan keuntungan atau kerugian, dan dari sektor mana pemasukan atau pengeluaran terbesar berasal. Cocok untuk pemilik usaha yang ingin mengevaluasi performa bisnis secara rutin."
+      },
+      "section3":{
+        "title":"Laba/Rugi Setahun",
+        "desc":"Laporan Laba/Rugi Setahun dirancang khusus untuk menampilkan performa keuangan bisnis Anda dalam jangka waktu satu tahun. Dengan laporan ini, Anda bisa melihat tren keuangan sepanjang tahun, mengidentifikasi bulan-bulan dengan performa terbaik maupun terburuk, serta merencanakan strategi keuangan yang lebih matang untuk tahun berikutnya. Sangat cocok digunakan saat menyusun laporan akhir tahun atau evaluasi tahunan."
+      }
+    },
+    "items1":{
+      "title":"Hasil Laporan Keuangan Disajikan Secara Otomatis"
     }
   }
 }

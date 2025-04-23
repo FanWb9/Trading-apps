@@ -67,8 +67,24 @@
       "feature4": {
         "title": "Secured Data",
         "desc": "Your financial data is protected with high-level security and automatic backup."
-      }
+      },
+      "title": "Base Feature",
+      "realtime": "Data Real-Time",
+      "realtimeDesc":"Leave behind slow manual processes! Switch to TheCore Accounting System and experience the convenience of efficient real-time data access!",
+      "security": "High Security",
+      "securityDesc":  "Protect your business financial data with TheCore's high-level security system. Data privacy and integrity are our priorities!",
+      "integration": "Easy Integration",
+      "integrationDesc":"Use TheCore easily without the need for complicated installations or additional systems. All features are ready to use and immediately support your workflow!",
+      "export": "Export Report",
+      "exportDesc":"Need a quick report? With TheCore, you can export financial reports anytime, in a ready-to-share format!"
+    
     },
+    "testimonial": {
+      "title":"What Do They Say?",
+      "msg1": "Since using The Core, financial reports have become neater and easier to understand.",
+      "msg2": "We can make business decisions faster because of real-time reporting.",
+      "msg3": "I never thought a small SME like us could have reports on par with those of a large company!"
+      },
     "navbar":{
       "section1":{
         "title":"Financial Report",
@@ -107,6 +123,23 @@
       "title": "Cash Flow & Balance Sheet",
       "desc":"Monitor your business finances in real-time & accurately",
       "desc1":"Get insights into your company's cash flow and balance sheet to make better decisions."
+    },
+    "navbar":{
+      "section1":{
+        "title":"Standard Balance Sheet",
+        "desc":"The Standard Balance Sheet gives you a complete snapshot of your business's financial health. It clearly shows what your business owns (assets), what it owes (liabilities), and how much you’ve invested (equity). This report is essential for making informed decisions and is also a powerful tool when attracting investors or business partners."
+      },
+      "section2":{
+        "title":"Profit/Loss (Standard)",
+        "desc":"The Standard Profit & Loss Report shows all transaction types that impact your income and expenses in one easy-to-read view. This report helps you quickly understand whether your business is making a profit or loss, and where your major revenue or expense streams are coming from. Perfect for business owners who want regular performance evaluations."
+      },
+      "section3":{
+        "title":"Profit/Loss per year",
+        "desc":"The Yearly Profit & Loss Report is designed to showcase your business’s financial performance over the span of an entire year. This report helps you identify trends, pinpoint your best and worst months, and plan better financial strategies for the upcoming year. Ideal for annual reporting or year-end reviews."
+      }
+    },
+    "items1":{
+      "title":"Automatically Presented Financial Report Results"
     }
   }
 }

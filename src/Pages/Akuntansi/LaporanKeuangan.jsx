@@ -1,17 +1,41 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Pic1 from '../../assets/Pic1.jpg';
 import { useTranslation } from "react-i18next";
 import Pic2 from '../../assets/Pic2.jpg';
-import { object } from 'framer-motion/client';
+import SLide1 from '../../assets/scroll/Slide1.png';
+import SLide2 from '../../assets/scroll/Slide2.png';
+import SLide3 from '../../assets/scroll/Slide3.png';
 
 export default function LaporanKeuangan() {
   const { t } = useTranslation();
   const images = [Pic1, Pic2];
   const [currentImage, setCurrentImage] = useState(0);
+  const [selectedTab, setSelectedTab] = useState(0);
 
   const Logos = Object.values(
     import.meta.glob('../../assets/scroll/logos*.jpg', {eager: true})
   ).map((mod) => mod.default);
+
+ 
+   const navLeft = [
+      {
+        title: t("Laporan-Keuangan.navbar.section1.title"),
+        desc: t("Laporan-Keuangan.navbar.section1.desc"),
+        image: SLide1,
+      },
+      {
+        title: t("Laporan-Keuangan.navbar.section2.title"),
+        desc: t("Laporan-Keuangan.navbar.section2.desc"),
+        image: SLide2,
+      },
+      {
+        title: t("Laporan-Keuangan.navbar.section3.title"),
+        desc: t("Laporan-Keuangan.navbar.section2.desc"),
+        image: SLide3,
+      },
+     
+    ]
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -57,14 +81,14 @@ export default function LaporanKeuangan() {
       <section className="bg-white px-6  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
         <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
         <div className="overflow-hidden">
-          <div className="flex animate-scroll will-change-transform gap-6">
-          {[...Logos,...Logos].map((img,idx) => (
+          <div className="flex animate-scroll will-change-transform gap-6 min-w-max">
+          {[...Logos, ...Logos, ...Logos].map((img,idx) => (
   
            <img
            key={idx}
            src={img}
            alt={`Logo ${idx + 1}`}
-           className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-300"
+           className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
          />
           ))}
           </div>
@@ -77,18 +101,69 @@ export default function LaporanKeuangan() {
           {[
             { icon: "📊", title: t("home.features.realtime"), desc: t("home.features.realtimeDesc") },
             { icon: "🔒", title: t("home.features.security"), desc: t("home.features.securityDesc") },
-            { icon: "⚙️", title: t("home.features.integration"), desc: t("home.features.integrationDesc") },
+            { icon: "🔗", title: t("home.features.integration"), desc: t("home.features.integrationDesc") },
             { icon: "📥", title: t("home.features.export"), desc: t("home.features.exportDesc") },
           ].map((item, idx) => (
             <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
               <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-              <p className="text-gray-600 text-sm">{item.desc}</p>
+              <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
+              <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
+      {/* SECTION: FITUR SLIDE CONTOH/EXAMPLE */}
+      <section className="px-5">
+      <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Laporan-Keuangan.items1.title")}</h2>
+      <div className="mt-16 flex flex-col lg:flex-row gap-8">
+          {/* Tabs on Mobile, Vertical Navbar on Desktop */}
+          <div className="overflow-x-auto lg:overflow-visible">
+            <div className="flex lg:flex-col gap-2 lg:gap-4 min-w-max">
+              {navLeft.map((item, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setSelectedTab(idx)}
+                  className={`whitespace-nowrap px-4 py-2 rounded-md shadow font-semibold transition-colors duration-700 ${
+                    selectedTab === idx
+                      ? "bg-blue-100 text-blue-700"
+                      : "bg-white text-gray-700 hover:bg-blue-50"
+                  }`}
+                >
+                  {item.title}
+                </button>
+              ))}
+            </div>
+          </div>
 
+         {/* Content Area */}
+          <div className="flex-1 bg-white p-6 rounded-xl shadow-md flex flex-col lg:flex-row gap-6 items-start">
+            {navLeft[selectedTab].image && (
+              <img
+                src={navLeft[selectedTab].image}
+                alt={navLeft[selectedTab].title}
+                className="w-full max-w-xs h-auto object-cover rounded-lg shadow-md lg:max-w-[800px]"
+              />
+            )}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                {navLeft[selectedTab].title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">{navLeft[selectedTab].desc}</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-16">
+                    <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
+                      {t("home.buttons.whatsapp")}
+                    </button>
+                    <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
+                    {t("home.buttons.freeTrial")}
+                    </button>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+     
       {/* SECTION: Testimoni */}
       <section className="bg-white py-20 px-6 md:px-20">
         <h2 className="text-3xl font-bold text-center mb-12">{t("home.testimonial.title")}</h2>

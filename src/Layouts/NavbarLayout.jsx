@@ -95,7 +95,7 @@ export default function NavbarLayout() {
                       onClick={() => handleLanguageChange('en')}
                       className="block px-4 py-2 text-sm hover:bg-gray-100 w-full text-left"
                     >
-                      English
+                     English
                     </button>
                     <button
                       onClick={() => handleLanguageChange('id')}

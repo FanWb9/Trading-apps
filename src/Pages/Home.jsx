@@ -135,17 +135,18 @@ export default function Home() {
             {t("home.items.title")}
         </h2>
         <div className="overflow-hidden">
-        <div className="flex gap-8 animate-scroll will-change-transform">
-          {[...logos, ...logos].map((img, idx) => (
-            <img
-              key={idx}
-              src={img}
-              alt={`Logo ${idx + 1}`}
-              className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-300"
-            />
+          <div className="flex animate-scroll will-change-transform gap-6 min-w-max">
+          {[...logos, ...logos, ...logos].map((img,idx) => (
+  
+           <img
+           key={idx}
+           src={img}
+           alt={`Logo ${idx + 1}`}
+           className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
+         />
           ))}
+          </div>
         </div>
-      </div>
 
         <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("home.items1.title")}</h2>
        {/* NAVBAR SECTION IN LEFT */}

@@ -7,8 +7,8 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
       animation: {
-        scroll: 'scroll 4s linear infinite',
-        'scroll-reverse': 'scrollReverse 4s linear infinite',
+        scroll: 'scroll 12s linear infinite',
+        'scroll-reverse': 'scrollReverse 5s linear infinite',
       },
       keyframes: {
         scroll: {
