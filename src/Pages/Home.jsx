@@ -6,6 +6,7 @@ import pic2 from "../assets/pic 2.jpg";
 import pic3 from "../assets/Keuangan.png";
 import Pic4 from "../assets/Product.png";
 import Pic5 from "../assets/FInan.png";
+import Pic6 from "../assets/Payment.png";
 export default function Home() {
   const { t } = useTranslation();
   const [current, setCurrent] = useState(0);
@@ -75,7 +76,7 @@ export default function Home() {
     {
       title:t("home.navbar.section4.title"),
       desc: t("home.navbar.section4.desc"),
-      image: pic2,
+      image: Pic6,
       path: "/",
     }
   ]
@@ -199,7 +200,7 @@ export default function Home() {
       </section>
 
       {/* WHY CHOOSE THECOUNT SECTION */}
-      <section className="bg-gray-100 py-20 px-6 md:px-20">
+      <section className="bg-white py-20 px-6 md:px-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
           {t("home.why")} <span className="text-blue-600">thecore</span>
         </h2>
