@@ -200,7 +200,7 @@ export default function Home() {
       </section>
 
       {/* WHY CHOOSE THECOUNT SECTION */}
-      <section className="bg-white py-20 px-6 md:px-20">
+      <section className="bg-white py-[50px] px-6 md:px-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
           {t("home.why")} <span className="text-blue-600">thecore</span>
         </h2>
