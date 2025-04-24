@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import NavbarLayout from "./Layouts/NavbarLayout";
 import LaporanKeuangan from "./Pages/Akuntansi/LaporanKeuangan";
 import Pembukuan from "./Pages/Akuntansi/Pembukuan";
+import Harga from "./Pages/Payments/Harga";
 import ScrollTop from "./Layouts/ScrollTop";
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Laporan-Keuangan" element={<LaporanKeuangan />} />
           <Route path="/Pembukuan" element={<Pembukuan />} />
+          <Route path="/Harga" element={<Harga/>}/>
         </Route>
       </Routes>
     </>

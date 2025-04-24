@@ -11,8 +11,11 @@ import { Wallet } from "lucide-react";
 import { useTranslation } from 'react-i18next';
 import { CreditCard } from "lucide-react";
 import { Building2 } from "lucide-react";
+import {BadgeDollarSign} from "lucide-react";
 import { Package } from "lucide-react";
 import { UserCog } from "lucide-react";
+
+import { path } from "framer-motion/client";
 
 export const Menus = () => {
   const { t } = useTranslation();  // Inisialisasi useTranslation untuk menerjemahkan teks
@@ -133,10 +136,23 @@ export const Menus = () => {
       gridCols: 1,
     },
     {
-      name: t("Pricing"),
-    },
-    {
-      name: t("Contact"),
-    },
+      name: t("Info"), 
+      subMenu: [
+        {
+          name: t("Pricing"),
+          desc: t("See our pricing plans"),
+          path: "/Harga",
+          icon: BadgeDollarSign,
+        },
+        {
+          name: t("Contact"),
+          desc: t("Get in touch with us"),
+          path: "/#",
+          icon: Users,
+        },
+      ],
+      gridCols: 1,
+    }
+    
   ];
 };
