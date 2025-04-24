@@ -47,7 +47,7 @@ export default function LaporanKeuangan() {
 
   return (
     <div className="lg:px-[70px]">
-      <div className="min-h-screen md:min-h-[60vh] lg:min-h-[80vh] bg-white text-gray-900 px-6 md:px-10 py-[100px] md:py-[40px] flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+      <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-10 py-[80px] md:py-[40px] flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         
         {/* Kiri: Konten */}
         <div className="w-full md:w-1/2 text-center md:text-left">
@@ -74,7 +74,7 @@ export default function LaporanKeuangan() {
           <img
             src={images[currentImage]}
             alt="Ilustrasi Keuangan"
-            className="rounded-lg shadow-xl max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out"
+            className="rounded-lg shadow-xl max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
           />
         </div>
       </div>
