@@ -46,8 +46,8 @@ export default function LaporanKeuangan() {
   }, []);
 
   return (
-    <div className="lg:px-[70px]">
-      <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-10 py-[80px] md:py-[40px] flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+    <div className="lg:px-[50px]">
+      <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-10 py-[90px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-10 ">
         
         {/* Kiri: Konten */}
         <div className="w-full md:w-1/2 text-center md:text-left">
