@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import pic1 from "../assets/pic 1.jpg";
 import pic2 from "../assets/pic 2.jpg";
-import pic3 from "../assets/Keuangan.png";
+import pic3 from "../assets/Akuntasi.jpeg";
 import Pic4 from "../assets/Product.png";
-import Pic5 from "../assets/FInan.png";
+import Pic5 from "../assets/Ner.png";
 import Pic6 from "../assets/Payment.png";
+import { ShieldCheck, Cloud, Users, LayoutDashboard, LifeBuoy, Layers3 } from "lucide-react";
 export default function Home() {
   const { t } = useTranslation();
   const [current, setCurrent] = useState(0);
@@ -17,6 +18,40 @@ export default function Home() {
   const logos = Object.values(
     import.meta.glob('../assets/scroll/logos*.jpg', { eager: true })
   ).map((mod) => mod.default);
+
+  const features1 = [
+    {
+      title: "Desain Sederhana & Intuitif",
+      desc: "Antarmuka bersih, mudah digunakan, cocok untuk semua kalangan.",
+      icon: <LayoutDashboard className="w-12 h-12 text-blue-600 mx-auto" />,
+    },
+    {
+      title: "Akses dari Mana Saja",
+      desc: "Kelola pembukuan kapan saja lewat cloud yang aman dan cepat.",
+      icon: <Cloud className="w-12 h-12 text-blue-600 mx-auto" />,
+    },
+    {
+      title: "Kolaborasi Tim Lebih Mudah",
+      desc: "Tim bisa bekerja bersama dalam satu platform tanpa ribet.",
+      icon: <Users className="w-12 h-12 text-blue-600 mx-auto" />,
+    },
+    {
+      title: "Support Langsung & Cepat",
+      desc: "Tim kami siap bantu kamu lewat chat atau call tanpa ribet.",
+      icon: <LifeBuoy className="w-12 h-12 text-blue-600 mx-auto" />,
+    },
+    {
+      title: "Data Terlindungi",
+      desc: "Keamanan data terjamin dengan enkripsi dan standar global.",
+      icon: <ShieldCheck className="w-12 h-12 text-blue-600 mx-auto" />,
+    },
+    {
+      title: "Integrasi Fleksibel",
+      desc: "Bisa dihubungkan ke aplikasi lain untuk alur kerja yang efisien.",
+      icon: <Layers3 className="w-12 h-12 text-blue-600 mx-auto" />,
+    },
+  ];
+  
 
   const slides = [
     {
@@ -129,7 +164,26 @@ export default function Home() {
           </div>
         ))}
       </div>
-
+       {/* WHY CHOOSE THECOUNT SECTION */}
+       <section className="bg-white py-[50px] px-6 md:px-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+          {t("home.why")} <span className="text-blue-600">thecore</span>
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {features.map((item, index) => (
+            <div
+              key={index}
+              className="bg-blue-50 p-6 rounded-2xl shadow-md flex items-start gap-4 hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="text-4xl">{item.icon}</div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-gray-700 leading-relaxed">{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
       {/* ITEMS SECTION */}
       <section className="bg-white py-20 px-6 md:px-20 sm:h-[100vh] md:h-[100vh] lg:h-[110vh]">
         <h2 className=" text-2xl lg:text-3xl font-semibold text-center mb-8">
@@ -199,26 +253,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY CHOOSE THECOUNT SECTION */}
-      <section className="bg-white py-[50px] px-6 md:px-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-          {t("home.why")} <span className="text-blue-600">thecore</span>
+     
+      {/* Keunggulan */}
+      <section className="py-16 px-6 md:px-12 bg-gray-50">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Kenapa Harus Pakai Sistem Akutansi Kami?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {features.map((item, index) => (
+        <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+          Dapatkan pengalaman pembukuan modern yang efisien, aman, dan bisa kamu akses kapan pun.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features1.map((item, idx) => (
             <div
-              key={index}
-              className="bg-blue-50 p-6 rounded-2xl shadow-md flex items-start gap-4 hover:shadow-lg transition-shadow duration-300"
+              key={idx}
+              className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition"
             >
-              <div className="text-4xl">{item.icon}</div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-700 leading-relaxed">{item.desc}</p>
-              </div>
+              <div className="mb-4">{item.icon}</div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+              <p className="text-sm text-gray-600">{item.desc}</p>
             </div>
           ))}
         </div>
-      </section>
+      </div>
+    </section>
     </div>
   );
 }

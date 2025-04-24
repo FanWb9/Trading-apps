@@ -45,6 +45,7 @@ export const Menus = () => {
           desc: t("Catat transaksi harian"),
           icon: Database,
           category: t("Akuntansi"),
+          path: "/Pembukuan",
         },
         {
           name: t("Management Inventori"),

@@ -141,5 +141,20 @@
     "items1":{
       "title":"Hasil Laporan Keuangan Disajikan Secara Otomatis"
     }
+  },
+  "Pembukuan1":{
+    "items1":{
+      "title":"Dari transaksi hingga laporan, semua tercatat otomatis."
+    },
+    "Items":{
+      "title":"Pembukuan",
+      "desc":"Pantau Pembukuan Bisnis secara real-time & akurat",
+      "desc1":"Gak perlu ribet lagi! Cek pembukuan bisnismu kapan aja, real-time dan super akurat. Biar keuangan Bisnismu makin teratur."
+    },
+    "features":{
+      "realtime":"Tinggalkan proses manual yang lambat! beralih ke TheCore Sistem Pembukuan dan rasakan kemudahan akses data real-time yang efisien!",
+      "securityDesc":"Lindungi data bisnis Anda dengan sistem keamanan tingkat tinggi dari TheCore. Privasi dan integritas data adalah prioritas kami!",
+      "integrationDesc":"Gunakan TheCore dengan mudah tanpa perlu instalasi rumit atau sistem tambahan. Semua fitur siap pakai dan langsung mendukung alur kerja Anda!"
+    }
   }
 }

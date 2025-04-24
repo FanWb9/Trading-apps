@@ -1,8 +1,8 @@
 
 export const PRODUCTS = [
-    { name: "Product Management", link: "#" },
-    { name: "TEST 1", link: "#" },
-    { name: "TEST 2", link: "#" },
+    { name: "thecore Accounting", link: "https://thecoreaccounting.com/" },
+    { name: "thecore POS", link: "#" },
+    { name: "thecore Payroll", link: "#" },
   ];
   export const RESOURCES = [
     { name: "Industries and tools", link: "#" },

@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
-import Rugi from '../../assets/Rugi.png';
+import Buku from '../../assets/Buku_besar.png';
+import Jurnal from '../../assets/Jurnal.png';
 import Dashboard from '../../assets/Dashboard.png';
-import Tahunan from '../../assets/Rugi_Tahunan.png';
+import Akun from '../../assets/Akun.png';
+import Neraca from '../../assets/Neraca.png';
 
-export default function LaporanKeuangan() {
-  const { t } = useTranslation();
-  const images = [Rugi, Dashboard,Tahunan];
+export default function Pembukuan() {
+ const { t } = useTranslation();
+  const images = [Jurnal, Dashboard,Akun,Buku, Neraca];
   const [currentImage, setCurrentImage] = useState(0);
   const [selectedTab, setSelectedTab] = useState(0);
 
@@ -24,12 +26,12 @@ export default function LaporanKeuangan() {
       {
         title: t("Laporan-Keuangan.navbar.section2.title"),
         desc: t("Laporan-Keuangan.navbar.section2.desc"),
-        image: Rugi,
+        image: Buku,
       },
       {
         title: t("Laporan-Keuangan.navbar.section3.title"),
         desc: t("Laporan-Keuangan.navbar.section2.desc"),
-        image: Tahunan,
+        image: Akun,
       },
      
     ]
@@ -48,12 +50,12 @@ export default function LaporanKeuangan() {
         
         {/* Kiri: Konten */}
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <h2 className="text-lg text-indigo-600 font-semibold mb-2">{t("Laporan-Keuangan.Items.title")}</h2>
+          <h2 className="text-lg text-indigo-600 font-semibold mb-2">{t("Pembukuan1.Items.title")}</h2>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
-          {t("Laporan-Keuangan.Items.desc")}
+          {t("Pembukuan1.Items.desc")}
           </h1>
           <p className="text-base md:text-lg mb-8">
-          {t("Laporan-Keuangan.Items.desc1")}
+          {t("Pembukuan1.Items.desc1")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
@@ -96,9 +98,9 @@ export default function LaporanKeuangan() {
         <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: "📊", title: t("home.features.realtime"), desc: t("home.features.realtimeDesc") },
-            { icon: "🔒", title: t("home.features.security"), desc: t("home.features.securityDesc") },
-            { icon: "🔗", title: t("home.features.integration"), desc: t("home.features.integrationDesc") },
+            { icon: "📊", title: t("home.features.realtime"), desc: t("Pembukuan1.features.realtime") },
+            { icon: "🔒", title: t("home.features.security"), desc: t("Pembukuan1.features.securityDesc") },
+            { icon: "🔗", title: t("home.features.integration"), desc: t("Pembukuan1.features.integrationDesc") },
             { icon: "📥", title: t("home.features.export"), desc: t("home.features.exportDesc") },
           ].map((item, idx) => (
             <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
@@ -111,7 +113,7 @@ export default function LaporanKeuangan() {
       </section>
       {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
       <section className="px-5">
-      <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Laporan-Keuangan.items1.title")}</h2>
+      <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Pembukuan1.items1.title")}</h2>
       <div className="mt-16 flex flex-col lg:flex-row gap-6">
           {/* Tabs on Mobile, Vertical Navbar on Desktop */}
           <div className="overflow-x-auto lg:overflow-visible">
