@@ -155,7 +155,7 @@ export default function Home() {
                       {t("home.buttons.whatsapp")}
                     </button>
 
-                  <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="bg-teal-600 px-4 py-2 md:px-5 md:py-2 rounded-md font-semibold hover:bg-teal-700">
+                  <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="bg-teal-600 px-4 py-2 md:px-5 md:py-2 rounded-md font-semibold hover:bg-teal-400">
                     {t("home.buttons.freeTrial")}
                   </button>
                 </div>
