@@ -14,9 +14,9 @@ export default function App() {
         <Route element={<NavbarLayout />}>
           <Route path="/dashboard" element={<Home />} />
           <Route path="/" element={<Home />} />
-          <Route path="/Laporan-Keuangan" element={<LaporanKeuangan />} />
-          <Route path="/Pembukuan" element={<Pembukuan />} />
-          <Route path="/Harga" element={<Harga/>}/>
+          <Route path="/Financial-Report" element={<LaporanKeuangan />} />
+          <Route path="/Bookkeeping" element={<Pembukuan />} />
+          <Route path="/Price" element={<Harga/>}/>
         </Route>
       </Routes>
     </>

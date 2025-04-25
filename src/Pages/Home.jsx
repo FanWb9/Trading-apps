@@ -94,7 +94,7 @@ export default function Home() {
       title: t("home.navbar.section1.title"),
       desc: t("home.navbar.section1.desc"),
       image: pic3,
-      path: "/Laporan-Keuangan",
+      path: "/Financial-Report",
     },
     {
       title: t("home.navbar.section2.title"),

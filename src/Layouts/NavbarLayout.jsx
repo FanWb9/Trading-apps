@@ -42,7 +42,7 @@ export default function NavbarLayout() {
 
   return (
     <>
-      <header className="h-16 text-[15px] fixed inset-0 flex-center bg-sky-400 z-50">
+      <header className="h-16 text-[15px] fixed inset-0 flex-center bg-emerald-400 z-50">
         <nav className="px-3.5 flex-center-between w-full max-w-7xl mx-auto">
           <div className="flex-center gap-x-3 z-[999] relative">
             <img src={Logo} alt="" className="size-8" />

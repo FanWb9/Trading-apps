@@ -29,7 +29,7 @@ export const Menus = () => {
           name: t("Laporan Keuangan"),  // Menerjemahkan nama menu
           desc: t("Laporan arus kas & neraca"),  // Menerjemahkan deskripsi
           icon: PanelsTopLeft,
-          path: "/Laporan-Keuangan",
+          path: "/Financial-Report",
         },
         {
           name: t("Management Product"),
@@ -48,7 +48,7 @@ export const Menus = () => {
           desc: t("Catat transaksi harian"),
           icon: Database,
           category: t("Akuntansi"),
-          path: "/Pembukuan",
+          path: "/Bookkeeping",
         },
         {
           name: t("Management Inventori"),
@@ -141,7 +141,7 @@ export const Menus = () => {
         {
           name: t("Pricing"),
           desc: t("See our pricing plans"),
-          path: "/Harga",
+          path: "/Price",
           icon: BadgeDollarSign,
         },
         {

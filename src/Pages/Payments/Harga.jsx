@@ -18,8 +18,8 @@ const Harga = () => {
                 <li>Manajemen stok dasar</li>
               </ul>
             </div>
-            <p className="text-gray-400 line-through text-sm">Rp 399.000</p>
-            <p className="text-2xl font-bold text-blue-600 mb-1">Rp 359.100<span className="text-sm font-normal">/bulan</span></p>
+            <p className="text-gray-400 line-through text-sm">Rp 300.000</p>
+            <p className="text-2xl font-bold text-blue-600 mb-1">Rp 275.000<span className="text-sm font-normal">/bulan</span></p>
             <p className="text-green-600 text-xs mb-4">Diskon 10% bila dibayar tahunan</p>
             <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"} className="bg-blue-600 hover:bg-blue-700 transition text-white py-2 rounded-lg mb-2 w-full">💬 WhatsApp Sales</button>
           
