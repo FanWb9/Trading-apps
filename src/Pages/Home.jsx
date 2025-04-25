@@ -150,7 +150,7 @@ export default function Home() {
                 <div className="flex gap-3 md:gap-4">
                 <button
                       onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
-                      className="bg-white text-sky-700 px-4 py-2 md:px-5 md:py-2 rounded-md font-semibold hover:bg-sky-100"
+                      className="bg-white text-teal-600 px-4 py-2 md:px-5 md:py-2 rounded-md font-semibold hover:bg-sky-100"
                     >
                       {t("home.buttons.whatsapp")}
                     </button>
