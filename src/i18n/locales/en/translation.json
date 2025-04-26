@@ -141,5 +141,34 @@
     "items1":{
       "title":"Automatically Presented Financial Report Results"
     }
+  },
+  "Pembukuan1":{
+    "items1":{
+      "title":"From transactions to reports, everything is recorded automatically."
+    },
+    "Items":{
+      "title":"bookkeeping",
+      "desc":"Monitor Business Bookkeeping in real-time & accurately",
+      "desc1":"No need to be complicated anymore! Check your business bookkeeping anytime, real-time and super accurate. So that your business finances are more organized."
+    },
+    "features":{
+      "realtime":"Leave the slow manual process! Switch to TheCore Bookkeeping System and experience the ease of efficient real-time data access!",
+      "securityDesc":"Protect your business data with TheCore's high-level security system. Data privacy and integrity are our priority!",
+      "integrationDesc":"Use TheCore easily without the need for complicated installations or additional systems. All features are ready to use and immediately support your workflow!"
+    },
+    "Navbar":{
+      "section1":{
+        "title":"General Ledger",
+        "desc":"This report records all transactions that occurred within a specific period in chronological order. The General Ledger serves as a reference for tracking all of your company's financial activities in a complete and organized manner."
+      },
+      "section2":{
+        "title":"Chart of Accounts",
+        "desc":"Provides a comprehensive list of owned assets, outstanding liabilities, and the equity invested into the company."
+      },
+      "section3":{
+        "title":"journal",
+        "desc":"This report presents all transactions carried out within a specific period. It serves as a chronological reference for all journal entries recorded by your company."
+      }
+    }
   }
 }

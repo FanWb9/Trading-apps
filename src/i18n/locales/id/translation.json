@@ -159,11 +159,15 @@
     "Navbar":{
       "section1":{
         "title":"Buku Besar",
-        "desc":"Laporan ini menampilkan semua transaksi yang telah dilakukan untuk suatu periode. Laporan ini bermanfaat jika Anda memerlukan daftar kronologis untuk semua transaksi yang telah dilakukan oleh perusahaan Anda."
+        "desc":"Laporan ini mencatat seluruh transaksi yang terjadi dalam periode tertentu secara kronologis. Buku Besar berguna sebagai referensi untuk menelusuri semua aktivitas keuangan perusahaan Anda secara lengkap dan terstruktur."
       },
       "section2":{
         "title":"Daftar Akun",
-        "desc":"Menampilan apa yang anda miliki (aset), apa yang anda hutang (liabilitas), dan apa yang anda sudah investasikan pada perusahaan anda (ekuitas)."
+        "desc":"Menyajikan daftar aset yang dimiliki, kewajiban yang harus dipenuhi (liabilitas), serta ekuitas yang telah diinvestasikan ke dalam perusahaan."
+      },
+      "section3":{
+        "title":"Jurnal",
+        "desc": "Laporan ini menampilkan seluruh transaksi yang dilakukan dalam periode tertentu. Laporan ini berguna sebagai referensi kronologis atas semua transaksi jurnal yang dicatat oleh perusahaan Anda."
       }
     }
   }

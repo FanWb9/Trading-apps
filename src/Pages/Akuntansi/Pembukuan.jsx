@@ -5,6 +5,7 @@ import Jurnal from '../../assets/Jurnal.png';
 import Dashboard from '../../assets/Dashboard.png';
 import Akun from '../../assets/Akun.png';
 import Neraca from '../../assets/Neraca.png';
+import { title } from 'framer-motion/client';
 
 export default function Pembukuan() {
  const { t } = useTranslation();
@@ -33,6 +34,11 @@ export default function Pembukuan() {
         desc: t("Pembukuan1.Navbar.section2.desc"),
         image: Akun,
       },
+      {
+        title: t("Pembukuan1.Navbar.section3.title"),
+        desc: t("Pembukuan1.Navbar.section3.desc"),
+        image: Jurnal,
+      }
      
     ]
 

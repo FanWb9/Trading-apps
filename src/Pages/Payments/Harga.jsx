@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from "react-i18next";
 
-const Harga = () => {
+
+export default function Harga()  {
+  const { t } = useTranslation();
   return (
     <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mt-[80px]">
       <div className="max-w-6xl mx-auto">
@@ -21,8 +24,6 @@ const Harga = () => {
             <p className="text-gray-400 line-through text-sm">Rp 300.000</p>
             <p className="text-2xl font-bold text-blue-600 mb-1">Rp 275.000<span className="text-sm font-normal">/bulan</span></p>
             <p className="text-green-600 text-xs mb-4">Diskon 10% bila dibayar tahunan</p>
-            <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"} className="bg-blue-600 hover:bg-blue-700 transition text-white py-2 rounded-lg mb-2 w-full">💬 WhatsApp Sales</button>
-          
             <div className="mt-6 text-sm text-gray-700 flex-1">
               <strong className="block mb-2">✅ Fitur Utama</strong>
               <ul className="space-y-1">
@@ -31,6 +32,10 @@ const Harga = () => {
                 <li>✔ 1 pengguna, 1 lokasi</li>
               </ul>
             </div>
+            <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"} className="bg-blue-600 hover:bg-blue-700 transition text-white py-2 rounded-lg mb-2 w-full">💬 WhatsApp Sales</button>
+            <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
+                    {t("home.buttons.freeTrial")}
+                    </button>
           </div>
 
           {/* BUSINESS */}
@@ -47,8 +52,6 @@ const Harga = () => {
             <p className="text-gray-400 line-through text-sm">Rp 899.000</p>
             <p className="text-2xl font-bold text-blue-600 mb-1">Rp 809.100<span className="text-sm font-normal">/bulan</span></p>
             <p className="text-green-600 text-xs mb-4">Diskon 10% bila dibayar tahunan</p>
-            <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"} className="bg-blue-600 hover:bg-blue-700 transition text-white py-2 rounded-lg mb-2 w-full">💬 WhatsApp Sales</button>
-           
             <div className="mt-6 text-sm text-gray-700 flex-1">
               <strong className="block mb-2">✅ Fitur Utama</strong>
               <ul className="space-y-1">
@@ -57,6 +60,10 @@ const Harga = () => {
                 <li>✔ Konsolidasi laporan</li>
               </ul>
             </div>
+            <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"} className="bg-blue-600 hover:bg-blue-700 transition text-white py-2 rounded-lg mb-2 w-full mt-8">💬 WhatsApp Sales</button>
+            <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
+                    {t("home.buttons.freeTrial")}
+                    </button>
           </div>
 
           {/* ENTERPRISE */}
@@ -72,8 +79,6 @@ const Harga = () => {
               </ul>
             </div>
             <p className="text-gray-600 text-base mb-4">Diskusikan harga dengan tim kami</p>
-            <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"} className="bg-blue-600 hover:bg-blue-700 transition text-white py-2 rounded-lg mb-2 w-full">💬 WhatsApp Sales</button>
-           
             <div className="mt-6 text-sm text-gray-800 flex-1">
               <strong className="block mb-2">✅ Fitur Utama</strong>
               <ul className="space-y-1">
@@ -82,6 +87,10 @@ const Harga = () => {
                 <li>✔ 5 pengguna, multi gudang</li>
               </ul>
             </div>
+            <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"} className="bg-blue-600 hover:bg-blue-700 transition text-white py-2 rounded-lg mb-2 w-full">💬 WhatsApp Sales</button>
+            <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
+                    {t("home.buttons.freeTrial")}
+                    </button>  
           </div>
 
         </div>
@@ -90,4 +99,3 @@ const Harga = () => {
   );
 };
 
-export default Harga;
