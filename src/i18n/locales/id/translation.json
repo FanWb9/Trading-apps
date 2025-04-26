@@ -170,6 +170,32 @@
         "desc": "Laporan ini menampilkan seluruh transaksi yang dilakukan dalam periode tertentu. Laporan ini berguna sebagai referensi kronologis atas semua transaksi jurnal yang dicatat oleh perusahaan Anda."
       }
     }
+  },
+  "Product":{
+    "Items":{
+      "title":"Product",
+      "desc":"Kelola produk bisnismu dengan pemantauan real-time dan data yang akurat.",
+      "desc1":"Dapatkan insight tentang stok dan pergerakan produk untuk mengambil keputusan bisnis yang lebih tepat."
+    },
+    "items1":{
+      "title":"Kelola Bisnismu Secara Akurat"
+    },
+    "features": {
+    "realtime": "Tinggalkan pencatatan stok manual yang membingungkan! Beralih ke TheCore Sistem Manajemen Produk dan nikmati akses data produk secara real-time, cepat, dan akurat.",
+    "securityDesc": "Pastikan keamanan data produk Anda dengan sistem perlindungan tingkat tinggi dari TheCore. Keamanan inventaris dan integritas data menjadi prioritas utama kami!",
+    "integrationDesc": "Kelola produk Anda tanpa kerumitan instalasi tambahan. TheCore hadir dengan fitur lengkap yang siap langsung mendukung operasional dan manajemen stok Anda."
+    },  
+
+    "Navbar":{
+      "section1":{
+        "title":"Product",
+        "desc":"Tampilan ini memungkinkan Anda untuk melengkapi detail produk secara menyeluruh, mulai dari informasi umum, kategori, harga, hingga menambahkan foto sebagai identitas visual produk. Dengan data yang lengkap, proses pencatatan, pengelolaan inventaris, dan penjualan dapat dilakukan dengan lebih cepat, akurat, dan profesional."
+      },
+      "section2":{
+        "title":"Transaksi Product",
+        "desc":"Pantau ketersediaan produk di berbagai lokasi atau cabang, dan optimalkan keputusan transfer antar gudang berdasarkan data stok terkini."
+      }
+    }
   }
  
 }

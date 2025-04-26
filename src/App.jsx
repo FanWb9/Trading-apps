@@ -5,6 +5,7 @@ import LaporanKeuangan from "./Pages/Akuntansi/LaporanKeuangan";
 import Pembukuan from "./Pages/Akuntansi/Pembukuan";
 import Harga from "./Pages/Payments/Harga";
 import ScrollTop from "./Layouts/ScrollTop";
+import Product from "./Pages/Product/Product";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/Financial-Report" element={<LaporanKeuangan />} />
           <Route path="/Bookkeeping" element={<Pembukuan />} />
           <Route path="/Price" element={<Harga/>}/>
+          <Route path="/Product" element={<Product/>}/>
         </Route>
       </Routes>
     </>

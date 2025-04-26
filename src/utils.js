@@ -26,8 +26,8 @@ export const Menus = () => {
     
       subMenu: [
         {
-          name: t("Laporan Keuangan"),  // Menerjemahkan nama menu
-          desc: t("Laporan arus kas & neraca"),  // Menerjemahkan deskripsi
+          name: t("Laporan Keuangan"),  
+          desc: t("Laporan arus kas & neraca"),  
           icon: PanelsTopLeft,
           path: "/Financial-Report",
         },
@@ -35,7 +35,7 @@ export const Menus = () => {
           name: t("Management Product"),
           desc: t("Atur produk secara detail"),
           icon: Package,
-          category: t("Supply Chain Management"),
+          path:"/Product",
         },
         {
           name: t("User Management"),
