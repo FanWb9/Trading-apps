@@ -24,13 +24,13 @@ export default function Pembukuan() {
         image: Dashboard,
       },
       {
-        title: t("Laporan-Keuangan.navbar.section2.title"),
-        desc: t("Laporan-Keuangan.navbar.section2.desc"),
+        title: t("Pembukuan1.Navbar.section1.title"),
+        desc: t("Pembukuan1.Navbar.section1.desc"),
         image: Buku,
       },
       {
-        title: t("Laporan-Keuangan.navbar.section3.title"),
-        desc: t("Laporan-Keuangan.navbar.section2.desc"),
+        title: t("Pembukuan1.Navbar.section2.title"),
+        desc: t("Pembukuan1.Navbar.section2.desc"),
         image: Akun,
       },
      

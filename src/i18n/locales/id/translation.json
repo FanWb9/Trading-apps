@@ -155,6 +155,17 @@
       "realtime":"Tinggalkan proses manual yang lambat! beralih ke TheCore Sistem Pembukuan dan rasakan kemudahan akses data real-time yang efisien!",
       "securityDesc":"Lindungi data bisnis Anda dengan sistem keamanan tingkat tinggi dari TheCore. Privasi dan integritas data adalah prioritas kami!",
       "integrationDesc":"Gunakan TheCore dengan mudah tanpa perlu instalasi rumit atau sistem tambahan. Semua fitur siap pakai dan langsung mendukung alur kerja Anda!"
+    },
+    "Navbar":{
+      "section1":{
+        "title":"Buku Besar",
+        "desc":"Laporan ini menampilkan semua transaksi yang telah dilakukan untuk suatu periode. Laporan ini bermanfaat jika Anda memerlukan daftar kronologis untuk semua transaksi yang telah dilakukan oleh perusahaan Anda."
+      },
+      "section2":{
+        "title":"Daftar Akun",
+        "desc":"Menampilan apa yang anda miliki (aset), apa yang anda hutang (liabilitas), dan apa yang anda sudah investasikan pada perusahaan anda (ekuitas)."
+      }
     }
   }
+ 
 }
