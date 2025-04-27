@@ -106,13 +106,13 @@ export default function Home() {
       title: t("home.navbar.section3.title"),
       desc: t("home.navbar.section2.desc"),
       image: Pic5,
-      path: "/",
+      path: "/Costs-expenses",
     },
     {
       title:t("home.navbar.section4.title"),
       desc: t("home.navbar.section4.desc"),
       image: Pic6,
-      path: "/",
+      path: "/Costs-expenses",
     }
   ]
 

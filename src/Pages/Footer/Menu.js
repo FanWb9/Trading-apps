@@ -4,25 +4,20 @@ export const PRODUCTS = [
     { name: "thecore POS", link: "#" },
     { name: "thecore Payroll", link: "#" },
   ];
-  export const RESOURCES = [
-    { name: "Industries and tools", link: "#" },
-    { name: "Use cases", link: "#" },
-    { name: "Blog", link: "#" },
-    { name: "Online evenet", link: "#" },
-    { name: "Nostrud exercitation", link: "#" },
+  export const FEATURES = [
+    { name: "Financial Report", link: "/Financial-Report" },
+    { name: "Bookkeeping", link: "/Bookkeeping" },
+    { name: "Product Management", link: "/Product" },
+    { name: "Inventory Management", link: "/Inventaris" },
+    { name: "Warehouse Management", link: "/Warehouse" },
   ];
   export const COMPANY = [
-    { name: "Diversity & inclusion", link: "#" },
     { name: "About us", link: "#" },
-    { name: "Press", link: "#" },
-    { name: "Customer Stories", link: "#" },
-    { name: "Online communities", link: "#" },
   ];
   export const SUPPORT = [
-    { name: "Documentation", link: "#" },
-    { name: "Tutorials & guides", link: "#" },
-    { name: "Webinars", link: "#" },
-    { name: "Open-source", link: "#" },
+    { name: "Price", link: "/Price" },
+    { name: "Tutorials", link: "#" },
+    { name: "Contact", link: "#" },
   ];
   
   export const Icons = [

@@ -7,33 +7,32 @@ import Create from '../../assets/Create-Product.png';
 
 export default function Product(){
     const { t } = useTranslation();
-     const images = [Dashboard,Product1,Create];
-     const [currentImage, setCurrentImage] = useState(0);
-     const [selectedTab, setSelectedTab] = useState(0);
-   
-     const Logos = Object.values(
-       import.meta.glob('../../assets/scroll/logos*.jpg', {eager: true})
+    const images = [Dashboard,Product1,Create];
+    const [currentImage, setCurrentImage] = useState(0);
+    const [selectedTab, setSelectedTab] = useState(0);
+    const Logos = Object.values(
+      import.meta.glob('../../assets/scroll/logos*.jpg', {eager: true})
      ).map((mod) => mod.default);
    
     
-      const navLeft = [
-         {
-           title: t("Laporan-Keuangan.navbar.section1.title"),
-           desc: t("Laporan-Keuangan.navbar.section1.desc"),
-           image: Dashboard,
-         },
-         {
-           title: t("Product.Navbar.section1.title"),
-           desc: t("Product.Navbar.section1.desc"),
-           image: Product1,
-         },
-         {
-           title: t("Product.Navbar.section2.title"),
-           desc: t("Product.Navbar.section2.desc"),
-           image: Create,
-         },
-        
-       ]
+    const navLeft = [
+        {
+          title: t("Laporan-Keuangan.navbar.section1.title"),
+          desc: t("Laporan-Keuangan.navbar.section1.desc"),
+          image: Dashboard,
+        },
+        {
+          title: t("Product.Navbar.section1.title"),
+          desc: t("Product.Navbar.section1.desc"),
+          image: Product1,
+        },
+        {
+          title: t("Product.Navbar.section2.title"),
+          desc: t("Product.Navbar.section2.desc"),
+          image: Create,
+        },
+      
+      ]
    
      useEffect(() => {
        const interval = setInterval(() => {

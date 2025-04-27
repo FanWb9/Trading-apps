@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 import { CreditCard } from "lucide-react";
 import { Building2 } from "lucide-react";
 import {BadgeDollarSign} from "lucide-react";
+import {HandCoins} from "lucide-react";
 import { Package } from "lucide-react";
 import { UserCog } from "lucide-react";
 
@@ -41,7 +42,8 @@ export const Menus = () => {
           name: t("User Management"),
           desc: t("Hak akses dan peran pengguna"),
           icon: UserCog,
-          category: t("Integration & Platform"),
+          path: "/User-management",
+          // category: t("Integration & Platform"),
         },
         {
           name: t("Pembukuan"),
@@ -56,12 +58,12 @@ export const Menus = () => {
           icon: Warehouse,
           path: "/Inventaris"
         },
-        {
-          name: t("Pay"),
-          desc: t("Integrasi pembayaran"),
-          icon: CreditCard,
-          category: t("Integration & Platform"),
-        },
+        // {
+        //   name: t("Pay"),
+        //   desc: t("Integrasi pembayaran"),
+        //   icon: CreditCard,
+        //   category: t("Integration & Platform"),
+        // },
         // {
         //   name: t("Perpajakan"),
         //   desc: t("Kelola pajak bisnis"),
@@ -72,7 +74,7 @@ export const Menus = () => {
           name: t("Management Gudang"),
           desc: t("Multi lokasi gudang"),
           icon: Building2,
-          category: t("Supply Chain Management"),
+          path: "/Warehouse"
         },
         {
           name: t("Pos & Marketplace"),
@@ -83,8 +85,8 @@ export const Menus = () => {
         // {
         //   name: t("Bank"),
         //   desc: t("Rekonsiliasi bank otomatis"),
-        //   icon: CreditCard,
-        //   category: t("Akuntansi"),
+        //   icon: HandCoins,
+        //   // category: t("Akuntansi"),
         // },
         {
           name: t("Management Supplier"),
@@ -96,7 +98,15 @@ export const Menus = () => {
           name: t("Biaya & Pengeluaran"),
           desc: t("Pantau semua pengeluaran"),
           icon: Wallet,
-          category: t("Akuntansi"),
+          path: "/Costs-expenses",
+          // category: t("Akuntansi"),
+        },
+        {
+          name: t("Management Pembayaran"),
+          desc: t("Pantau Keuangan"),
+          icon: HandCoins,
+          path: "/Costs-expenses",
+          // category: t("Akuntansi"),
         },
       ],
       gridCols: 3,

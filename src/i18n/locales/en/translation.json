@@ -2,6 +2,8 @@
   "Features": "Features",
   "Support": "Support",
   "Enterprise": "Enterprise",
+  "Pantau Keuangan":"Monitor Finances",
+  "Management Pembayaran":"Financial Management",
   "Pricing": "Pricing",
   "Contact": "Contact",
   "Akuntansi": "Accounting",
@@ -211,5 +213,80 @@
     "items1":{
       "title":"Optimize Your Inventory Management"
     }
+  },
+  "Gudang":{
+    "Items": {
+      "title": "Warehouse Management",
+      "desc": "Manage your inventory storage and stock movements in your warehouse in real-time and efficiently.",
+      "desc1": "Gain full visibility over inbound and outbound goods to enhance the operational efficiency of your warehouse."
+    },
+    "Navbar": {
+      "section1": {
+        "title": "Add Warehouse Data",
+        "desc": "This page is used to add new warehouse information into the system, including filling in the warehouse name, identification code, active or inactive status, and the option to upload related warehouse photos."
+      },
+      "section2": {
+        "title": "Warehouse Data Overview",
+        "desc": "Displays a list of all warehouses registered in the system, complete with search features, stock status indicators, and action buttons to edit or view detailed information for each warehouse."
+      }
+    },
+    "items1": {
+      "title": "Manage Your Warehouse Accurately"
+    },
+    "features": {
+      "realtime": "Leave behind confusing manual warehouse records! Switch to TheCore Warehouse Management System and enjoy real-time, fast, and accurate tracking of stock and inventory movements.",
+      "securityDesc": "Protect your warehouse data with TheCore's advanced security system. Stock security, transaction history, and data integrity are our top priorities!",
+      "integrationDesc": "Manage your warehouse operations effortlessly without the need for additional installations. TheCore delivers a complete, integrated solution ready to support your warehouse management seamlessly."
+    }
+  },
+  "Pengeluaran":{
+   "Items": {
+      "title": "Financial Management",
+      "desc": "Monitor, record, and control your business expenses in real-time to maintain financial stability and support strategic growth.",
+      "desc1": "Gain in-depth insights into spending patterns and cash outflows to optimize budgets, improve cost efficiency, and strengthen your financial decision-making."
+    },
+    "navbar":{
+      "section1":{
+        "title":"Cost",
+        "desc":"Manage all your incoming and outgoing funds effortlessly through the Bank Account feature. With a simple display and a 30-day transaction report, you can monitor your cash flow accurately, transparently, and in real-time."
+      },
+      "section2":{
+        "title":"Expense",
+        "desc":"Record and monitor all your business expenses with the Expense List feature. TheCore helps you manage monthly spending through detailed reports, making cost control easier and more organized."
+      }
+    },
+    "items1": {
+      "title": "Manage Your Cash Flow and Expenses Accurately"
+    },
+    "features": {
+      "realtime": "Say goodbye to confusing manual records! With TheCore Financial Management System, you can monitor bank transactions and business expenses in real-time with speed and precision.",
+      "securityDesc": "Safeguard your financial data with TheCore's advanced security system. The safety of your transactions, cash flow, and expense records is our top priority!",
+      "integrationDesc": "Handle your financial operations smoothly without the need for complex installations. TheCore provides a complete, integrated solution to manage both your bank accounts and business expenditures seamlessly."
+    }
+  },
+  "User":{
+    "Items":{
+      "title": "User Management",
+      "desc": "Manage, monitor, and control user access and activities in real-time to maintain system security and operational efficiency.",
+      "desc1": "Gain comprehensive insights into user behavior and access patterns to optimize permissions, enhance collaboration, and support strategic decision-making."
+    },
+    "Navbar":{
+      "section1": {
+        "title": "Account Creation",
+        "desc": "Easily create and manage user accounts through an intuitive interface. With TheCore, you can streamline the onboarding process and ensure that every user has the right access from the start, improving security and operational efficiency."
+      },
+      "section2": {
+        "title": "Account Permissions",
+        "desc": "Set and manage user permissions easily with TheCore. Define what each user can access and control within the system to ensure operational security and streamline task management."
+      }
+    },
+    "items1": {
+      "title": "Manage User Accounts and Permissions Efficiently"
+    },
+    "features": {
+      "realtime": "Say goodbye to complicated manual user setups! With TheCore User Management System, you can create, monitor, and adjust user accounts and permissions in real-time with speed and precision.",
+      "securityDesc": "Safeguard your system access with TheCore's advanced security system. Ensuring the integrity of user roles, access rights, and operational security is our top priority!",
+      "integrationDesc": "Manage user accounts and permissions effortlessly without the need for complex installations. TheCore offers a complete, integrated solution for streamlined user access and role management."
+      }
   }
 }

@@ -7,7 +7,9 @@ import Harga from "./Pages/Payments/Harga";
 import ScrollTop from "./Layouts/ScrollTop";
 import Product from "./Pages/Product/Product";
 import Inventaris from "./Pages/Product/Inventaris"
-
+import Gudang from "./Pages/Product/Gudang";
+import Pengeluaran from "./Pages/Keuangan/Pengeluaran";
+import Akun from "./Pages/Akun/Akun";
 export default function App() {
   return (
     <>
@@ -21,6 +23,9 @@ export default function App() {
           <Route path="/Price" element={<Harga/>}/>
           <Route path="/Product" element={<Product/>}/>
           <Route path="/Inventaris" element={<Inventaris/>}/>
+          <Route path="/User-management" element = {<Akun/>}/>
+          <Route path="/Costs-expenses" element={<Pengeluaran/>}/>
+          <Route path="/Warehouse" element={<Gudang/>}/>
         </Route>
       </Routes>
     </>
