@@ -100,7 +100,7 @@ export default function Home() {
       title: t("home.navbar.section2.title"),
       desc: t("home.navbar.section2.desc"),
       image: Pic4,
-      path: "/",
+      path: "/Product",
     },
     {
       title: t("home.navbar.section3.title"),

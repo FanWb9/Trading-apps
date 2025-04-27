@@ -21,7 +21,7 @@ export default function Harga()  {
                 <li>Manajemen stok dasar</li>
               </ul>
             </div>
-            <p className="text-gray-400 line-through text-sm">Rp 300.000</p>
+            <p className="text-gray-400 line-through text-sm">Rp 306.000</p>
             <p className="text-2xl font-bold text-blue-600 mb-1">Rp 275.000<span className="text-sm font-normal">/bulan</span></p>
             <p className="text-green-600 text-xs mb-4">Diskon 10% bila dibayar tahunan</p>
             <div className="mt-6 text-sm text-gray-700 flex-1">
@@ -49,8 +49,8 @@ export default function Harga()  {
                 <li>Transaksi global</li>
               </ul>
             </div>
-            <p className="text-gray-400 line-through text-sm">Rp 899.000</p>
-            <p className="text-2xl font-bold text-blue-600 mb-1">Rp 809.100<span className="text-sm font-normal">/bulan</span></p>
+            <p className="text-gray-400 line-through text-sm">Rp 723.000</p>
+            <p className="text-2xl font-bold text-blue-600 mb-1">Rp 650.700<span className="text-sm font-normal">/bulan</span></p>
             <p className="text-green-600 text-xs mb-4">Diskon 10% bila dibayar tahunan</p>
             <div className="mt-6 text-sm text-gray-700 flex-1">
               <strong className="block mb-2">✅ Fitur Utama</strong>

@@ -170,5 +170,46 @@
         "desc":"This report presents all transactions carried out within a specific period. It serves as a chronological reference for all journal entries recorded by your company."
       }
     }
+  },
+  "Product":{
+    "Items":{
+      "title":"Product",
+      "desc":"Manage your business products with real-time tracking and accurate data.",
+      "desc1":"Get insights into stock and product movement to make more informed business decisions."
+    },
+    "items1":{
+      "title":"Manage Your Business Accurately"
+    },
+   "features": {
+    "realtime": "Say goodbye to confusing manual stock tracking! Switch to TheCore Product Management System and enjoy fast, accurate, real-time access to your product data.",
+    "securityDesc": "Ensure the security of your product data with TheCore’s advanced protection system. Inventory safety and data integrity are our top priorities!",
+    "integrationDesc": "Manage your products seamlessly without the hassle of additional installations. TheCore comes fully equipped to support your operations and inventory management from day one."
+    },
+    "Navbar":{
+      "section1":{
+        "title":"Product",
+        "desc":"This view allows you to complete product details thoroughly, starting from general information, categories, prices, to adding photos as a visual identity of the product. With complete data, the process of recording, managing inventory, and selling can be done faster, more accurately, and professionally."
+      },
+      "section2":{
+        "title":"Product Transaction",
+        "desc":"Monitor product availability across multiple locations or branches, and optimize inter-warehouse transfer decisions based on up-to-date stock data."
+      }
+    }
+  },
+  "Inventori":{
+    "Items":{
+      "title":"Inventory Management",
+      "desc":"Monitor your product inventory and stock levels in real-time & accurately.",
+      "desc1":"Understand stock and product flow clearly to optimize your business strategies."
+    },
+    "Navbar":{
+      "section1":{
+        "title":"stock data",
+        "desc":"With automatic synchronization on every transaction, your product stock data is updated in real-time without manual adjustments, ensuring more accurate and up-to-date stock reconciliation. The system also automatically records available product quantities, while sending notifications when stock levels run low, helping you plan production and sales more efficiently."
+      }
+    },
+    "items1":{
+      "title":"Optimize Your Inventory Management"
+    }
   }
 }

@@ -54,7 +54,7 @@ export const Menus = () => {
           name: t("Management Inventori"),
           desc: t("Pantau stok real-time"),
           icon: Warehouse,
-          category: t("Supply Chain Management"),
+          path: "/Inventaris"
         },
         {
           name: t("Pay"),

@@ -196,6 +196,22 @@
         "desc":"Pantau ketersediaan produk di berbagai lokasi atau cabang, dan optimalkan keputusan transfer antar gudang berdasarkan data stok terkini."
       }
     }
+  },
+  "Inventori":{
+    "Items":{
+      "title":"Management Inventaris",
+      "desc":"Pantau inventaris produk dan tingkat stok Anda secara real-time dan akurat.",
+      "desc1":"Pahami arus stok dan produk dengan jelas untuk mengoptimalkan strategi bisnis Anda."
+    },
+    "Navbar":{
+      "section1":{
+        "title":"Perdataan Stok",
+        "desc":"Dengan sinkronisasi otomatis pada setiap transaksi, data stok produk akan selalu terbarui secara real-time tanpa perlu pembaruan manual, sehingga rekapitulasi stok menjadi lebih akurat dan sesuai kondisi terkini. Sistem juga secara otomatis mencatat jumlah produk yang tersedia, sementara notifikasi akan dikirimkan saat stok mulai menipis, membantu Anda merencanakan produksi dan penjualan dengan lebih efektif."
+      }
+    },
+    "items1":{
+      "title":"Optimalkan Manajemen Inventaris Anda"
+    }
   }
  
 }
