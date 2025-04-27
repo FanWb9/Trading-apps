@@ -62,12 +62,12 @@ export const Menus = () => {
           icon: CreditCard,
           category: t("Integration & Platform"),
         },
-        {
-          name: t("Perpajakan"),
-          desc: t("Kelola pajak bisnis"),
-          icon: Bolt,
-          category: t("Akuntansi"),
-        },
+        // {
+        //   name: t("Perpajakan"),
+        //   desc: t("Kelola pajak bisnis"),
+        //   icon: Bolt,
+        //   category: t("Akuntansi"),
+        // },
         {
           name: t("Management Gudang"),
           desc: t("Multi lokasi gudang"),
@@ -80,12 +80,12 @@ export const Menus = () => {
           icon: ShoppingCart,
           category: t("Integration & Platform"),
         },
-        {
-          name: t("Bank"),
-          desc: t("Rekonsiliasi bank otomatis"),
-          icon: CreditCard,
-          category: t("Akuntansi"),
-        },
+        // {
+        //   name: t("Bank"),
+        //   desc: t("Rekonsiliasi bank otomatis"),
+        //   icon: CreditCard,
+        //   category: t("Akuntansi"),
+        // },
         {
           name: t("Management Supplier"),
           desc: t("Kelola pemasok & pembelian"),
@@ -110,11 +110,11 @@ export const Menus = () => {
           desc: t("Center"),
           icon: CircleHelp,
         },
-        {
-          name: t("Community"),
-          desc: t("Project help"),
-          icon: MessageCircle,
-        },
+        // {
+        //   name: t("Community"),
+        //   desc: t("Project help"),
+        //   icon: MessageCircle,
+        // },
       ],
       gridCols: 1,
     },
@@ -127,11 +127,11 @@ export const Menus = () => {
           desc: t("Overview"),
           icon: ShieldPlus,
         },
-        {
-          name: t("Collaboration"),
-          desc: t("Design together"),
-          icon: Users,
-        },
+        // {
+        //   name: t("Collaboration"),
+        //   desc: t("Design together"),
+        //   icon: Users,
+        // },
       ],
       gridCols: 1,
     },
