@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Pembeli1 from '../../assets/Pembeli.png';
 import Dashboard from '../../assets/Dashboard.png';
 import Penjual from '../../assets/Penjual.png';
+import { Users,ShoppingBag,Calendar,FileText,Link,AlarmClock,CreditCard,Truck} from "lucide-react";
 export default function Pembeli(){
     const {t} = useTranslation();
     const images = [Dashboard,Pembeli1,Penjual];
@@ -12,6 +13,40 @@ export default function Pembeli(){
     import.meta.glob('../../assets/scroll/logos*.jpg', {eager: true})
     ).map((mod) => mod.default);
 
+
+    const featuresSupplierManagement = [
+        {
+          title: "Manajemen Pemasok",
+          desc: "Kelola pemasok dengan mudah dan efisien untuk menjaga hubungan yang baik.",
+          icon: <Users className="w-12 h-12 text-blue-600 mx-auto" />,
+        },
+        {
+          title: "Pencatatan Pembelian",
+          desc: "Catat setiap transaksi pembelian dengan detail untuk memantau pengeluaran bisnis.",
+          icon: <ShoppingBag className="w-12 h-12 text-blue-600 mx-auto" />,
+        },
+        {
+          title: "Pengaturan Pembayaran",
+          desc: "Kelola jadwal pembayaran kepada pemasok agar tidak ada keterlambatan.",
+          icon: <Calendar className="w-12 h-12 text-blue-600 mx-auto" />,
+        },
+        {
+          title: "Laporan Pemasok",
+          desc: "Tinjau laporan pembayaran dan transaksi dengan pemasok secara menyeluruh.",
+          icon: <FileText className="w-12 h-12 text-blue-600 mx-auto" />,
+        },
+        {
+          title: "Integrasi Pemasok",
+          desc: "Integrasikan sistem untuk melacak status pembayaran dan inventaris dari pemasok.",
+          icon: <Link className="w-12 h-12 text-blue-600 mx-auto" />,
+        },
+        {
+          title: "Pengingat Pembayaran",
+          desc: "Dapatkan pengingat untuk pembayaran yang harus dilakukan kepada pemasok.",
+          icon: <AlarmClock className="w-12 h-12 text-blue-600 mx-auto" />,
+        },
+      ];
+      
 
     const navLeft = [
         {
@@ -73,6 +108,31 @@ export default function Pembeli(){
             />
             </div>
         </div>
+        {/* Section why choose */}
+       {/* Keunggulan */}
+       <section className="py-16 px-6 md:px-12 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Kenapa Harus Pakai Sistem Akutansi Kami?
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+            Dapatkan pengalaman pembukuan modern yang efisien, aman, dan bisa kamu akses kapan pun.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuresSupplierManagement.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+              >
+                <div className="mb-4">{item.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
         <section className="bg-white px-6  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
             <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
             <div className="overflow-hidden">
@@ -89,24 +149,7 @@ export default function Pembeli(){
             </div>
             </div>
         </section>
-        {/* SECTION: Fitur Unggulan */}
-        <section className="bg-gray-50 py-20 px-6 md:px-20">
-            <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-                { icon: "📊", title: t("home.features.realtime"), desc: t("Pembeli.features.realtime") },
-                { icon: "🔒", title: t("home.features.security"), desc: t("Pembeli.features.securityDesc") },
-                { icon: "🔗", title: t("home.features.integration"), desc: t("Pembeli.features.integrationDesc") },
-                { icon: "📥", title: t("home.features.export"), desc: t("home.features.exportDesc") },
-            ].map((item, idx) => (
-                <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
-                </div>
-            ))}
-            </div>
-        </section>
+       
         {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
         <section className="px-5">
         <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Pembeli.items1.title")}</h2>
@@ -158,7 +201,23 @@ export default function Pembeli(){
             </div>
             </div>
         </section>
-        
+        <section className="bg-white py-20 px-6 md:px-20">
+        <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            { icon: <Users className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Pembeli.features.feature1.title"), desc: t("Pembeli.features.feature1.desc") },
+            { icon: <CreditCard className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Pembeli.features.feature2.title"), desc: t("Pembeli.features.feature2.desc") },
+            { icon: <FileText className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Pembeli.features.feature3.title"), desc: t("Pembeli.features.feature3.desc") },
+            { icon: <Truck className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Pembeli.features.feature4.title"), desc: t("Pembeli.features.feature4.desc") },
+          ].map((item, idx) => (
+            <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
+              <div className="mb-4">{item.icon}</div>
+              <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
+              <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
         {/* SECTION: Testimoni */}
         <section className="bg-white py-20 px-6 md:px-20">
             <h2 className="text-3xl font-bold text-center mb-12">{t("home.testimonial.title")}</h2>

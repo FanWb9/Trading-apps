@@ -5,6 +5,7 @@ import Jurnal from '../../assets/Jurnal.png';
 import Dashboard from '../../assets/Dashboard.png';
 import Akun from '../../assets/Akun.png';
 import Neraca from '../../assets/Neraca.png';
+import { NotebookPen, ListOrdered, ReceiptText, CalendarDays, Banknote, ClipboardCheck,FilePlus,Tag,Clipboard,Clock  } from "lucide-react";
 import { title } from 'framer-motion/client';
 
 export default function Pembukuan() {
@@ -17,6 +18,38 @@ export default function Pembukuan() {
     import.meta.glob('../../assets/scroll/logos*.jpg', {eager: true})
   ).map((mod) => mod.default);
 
+  const featuresBookkeeping = [
+    {
+      title: "Pencatatan Transaksi",
+      desc: "Catat semua transaksi bisnis secara cepat dan akurat setiap hari.",
+      icon: <NotebookPen className="w-12 h-12 text-purple-600 mx-auto" />,
+    },
+    {
+      title: "Pengelompokan Kategori",
+      desc: "Kelompokkan transaksi berdasarkan kategori seperti penjualan, pembelian, dan biaya operasional.",
+      icon: <ListOrdered className="w-12 h-12 text-purple-600 mx-auto" />,
+    },
+    {
+      title: "Pembuatan Invoice",
+      desc: "Buat dan kelola invoice profesional untuk klien dan customer dengan mudah.",
+      icon: <ReceiptText className="w-12 h-12 text-purple-600 mx-auto" />,
+    },
+    {
+      title: "Jadwal Pembayaran",
+      desc: "Atur dan pantau jadwal pembayaran untuk menghindari keterlambatan.",
+      icon: <CalendarDays className="w-12 h-12 text-purple-600 mx-auto" />,
+    },
+    {
+      title: "Manajemen Kas",
+      desc: "Kelola saldo kas masuk dan keluar untuk memastikan arus kas tetap sehat.",
+      icon: <Banknote className="w-12 h-12 text-purple-600 mx-auto" />,
+    },
+    {
+      title: "Pengecekan Laporan",
+      desc: "Tinjau dan validasi laporan pembukuan untuk memastikan akurasi data.",
+      icon: <ClipboardCheck className="w-12 h-12 text-purple-600 mx-auto" />,
+    },
+  ];
  
    const navLeft = [
       {
@@ -83,6 +116,33 @@ export default function Pembukuan() {
           />
         </div>
       </div>
+       {/* Section why choose */}
+       {/* Keunggulan */}
+       <section className="py-16 px-6 md:px-12 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Kenapa Harus Pakai Sistem Pembukuan Kami?
+        </h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+          Dapatkan kemudahan dalam mencatat dan mengelola keuangan bisnismu dengan sistem pembukuan yang cepat, aman, dan mudah diakses kapan saja.
+        </p>
+
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuresBookkeeping.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+              >
+                <div className="mb-4">{item.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white px-6  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
         <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
         <div className="overflow-hidden">
@@ -99,24 +159,7 @@ export default function Pembukuan() {
           </div>
         </div>
       </section>
-      {/* SECTION: Fitur Unggulan */}
-      <section className="bg-gray-50 py-20 px-6 md:px-20">
-        <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {[
-            { icon: "📊", title: t("home.features.realtime"), desc: t("Pembukuan1.features.realtime") },
-            { icon: "🔒", title: t("home.features.security"), desc: t("Pembukuan1.features.securityDesc") },
-            { icon: "🔗", title: t("home.features.integration"), desc: t("Pembukuan1.features.integrationDesc") },
-            { icon: "📥", title: t("home.features.export"), desc: t("home.features.exportDesc") },
-          ].map((item, idx) => (
-            <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
-              <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
-              <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      
       {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
       <section className="px-5">
       <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Pembukuan1.items1.title")}</h2>
@@ -168,7 +211,59 @@ export default function Pembukuan() {
           </div>
         </div>
       </section>
-     
+            
+      <section className="bg-white py-20 px-6 md:px-20">
+        <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            { icon: <FilePlus className="w-12 h-12 text-purple-600 mx-auto" />, title: t("Pembukuan1.features.feature1.title"), desc: t("Pembukuan1.features.feature1.desc") },
+            { icon: <Tag className="w-12 h-12 text-purple-600 mx-auto" />, title: t("Pembukuan1.features.feature2.title"), desc: t("Pembukuan1.features.feature2.desc") },
+            { icon: <Clipboard className="w-12 h-12 text-purple-600 mx-auto" />, title: t("Pembukuan1.features.feature3.title"), desc: t("Pembukuan1.features.feature3.desc") },
+            { icon: <Clock className="w-12 h-12 text-purple-600 mx-auto" />, title: t("Pembukuan1.features.feature4.title"), desc: t("Pembukuan1.features.feature4.desc") },
+          ].map((item, idx) => (
+            <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
+              <div className="mb-4">{item.icon}</div>
+              <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
+              <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+     {/* SECTION: Fitur Unggulan Pembukuan */}
+    {/* <section className="bg-gray-50 py-20 px-6 md:px-20">
+          <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: <FilePlus className="w-12 h-12 text-purple-600 mx-auto" />,
+                title: t("Pembukuan1.features.feature1.title"),
+                desc: t("Pembukuan1.features.feature1.desc"),
+              },
+              {
+                icon: <Tag className="w-12 h-12 text-purple-600 mx-auto" />,
+                title: t("Pembukuan1.features.feature2.title"),
+                desc: t("Pembukuan1.features.feature2.desc"),
+              },
+              {
+                icon: <Clipboard className="w-12 h-12 text-purple-600 mx-auto" />,
+                title: t("Pembukuan1.features.invoiceCreation"),
+                desc: t("Pembukuan1.features.invoiceCreationDesc"),
+              },
+              {
+                icon: <Clock className="w-12 h-12 text-purple-600 mx-auto" />,
+                title: t("Pembukuan1.features.paymentSchedule"),
+                desc: t("Pembukuan1.features.paymentScheduleDesc"),
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
+                <div className="mb-4">{item.icon}</div>
+                <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+      </section> */}
+
       {/* SECTION: Testimoni */}
       <section className="bg-white py-20 px-6 md:px-20">
         <h2 className="text-3xl font-bold text-center mb-12">{t("home.testimonial.title")}</h2>

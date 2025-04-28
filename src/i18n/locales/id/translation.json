@@ -144,6 +144,7 @@
       "title":"Hasil Laporan Keuangan Disajikan Secara Otomatis"
     }
   },
+  
   "Pembukuan1":{
     "items1":{
       "title":"Dari transaksi hingga laporan, semua tercatat otomatis."
@@ -154,9 +155,22 @@
       "desc1":"Gak perlu ribet lagi! Cek pembukuan bisnismu kapan aja, real-time dan super akurat. Biar keuangan Bisnismu makin teratur."
     },
     "features":{
-      "realtime":"Tinggalkan proses manual yang lambat! beralih ke TheCore Sistem Pembukuan dan rasakan kemudahan akses data real-time yang efisien!",
-      "securityDesc":"Lindungi data bisnis Anda dengan sistem keamanan tingkat tinggi dari TheCore. Privasi dan integritas data adalah prioritas kami!",
-      "integrationDesc":"Gunakan TheCore dengan mudah tanpa perlu instalasi rumit atau sistem tambahan. Semua fitur siap pakai dan langsung mendukung alur kerja Anda!"
+      "feature1":{
+        "title":"Pencatatan Transaksi",
+        "desc":"Dari transaksi hingga laporan, semua tercatat dengan cepat dan akurat setiap hari."
+      },
+      "feature2":{
+        "title": "Pengelompokan Kategori",
+        "desc": "Kelompokkan transaksi secara efisien berdasarkan kategori seperti penjualan, pembelian, dan biaya operasional."
+      },
+      "feature3":{
+        "title":"Pembuatan Invoice",
+        "desc": "Buat dan kelola invoice profesional dengan mudah untuk klien dan customer."
+      },
+      "feature4":{
+        "title": "Jadwal Pembayaran",
+        "desc":"Atur dan pantau jadwal pembayaran untuk menghindari keterlambatan dan menjaga arus kas tetap lancar."
+      }
     },
     "Navbar":{
       "section1":{
@@ -310,11 +324,26 @@
     "items1": {
       "title": "Kelola Pembelian dan Penjualan dengan Terorganisir"
     },
-    "features": {
-      "realtime": "Tinggalkan pencatatan pembelian dan penjualan manual! Dengan TheCore Supplier Management System, Anda dapat memantau semua transaksi secara real-time dengan kecepatan dan akurasi tinggi.",
-      "securityDesc": "Lindungi data pemasok dan transaksi Anda dengan sistem keamanan canggih dari TheCore. Menjaga integritas hubungan bisnis dan transaksi adalah prioritas kami!",
-      "integrationDesc": "Kelola seluruh proses pembelian dan penjualan dengan mudah tanpa perlu instalasi tambahan. TheCore menyediakan solusi lengkap dan terintegrasi untuk efisiensi operasional Anda."
-    }
+    
+      "features":{
+        "feature1":{
+          "title":"Kelola Pemasok Anda Dengan Mudah",
+          "desc":"Mencatat dan mengelola informasi pemasok dengan cepat dan mudah untuk memastikan kelancaran operasional bisnis Anda."
+        },
+        "feature2":{
+          "title": "Pantau Semua Pembelian Anda",
+          "desc":  "Lacak status dan riwayat pembelian Anda dari berbagai pemasok untuk memastikan pengelolaan keuangan yang lebih baik."
+        },
+        "feature3":{
+          "title": "Buat Dan Kelola Faktur",
+          "desc":  "Buat dan kirim faktur otomatis kepada pemasok dengan mudah, serta lacak pembayaran yang masuk."
+        },
+        "feature4":{
+          "title":  "Kelola Pengiriman Barang Dengan Tepat",
+          "desc": "Lacak pengiriman barang dari pemasok dan pastikan barang sampai tepat waktu tanpa masalah."
+        }
+      }
+  
   }
 }
 

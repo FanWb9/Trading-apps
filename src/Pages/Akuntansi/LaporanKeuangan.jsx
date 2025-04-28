@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Rugi from '../../assets/Rugi.png';
 import Dashboard from '../../assets/Dashboard.png';
 import Tahunan from '../../assets/Rugi_Tahunan.png';
+import { BarChart3, TrendingDown, FileText, PieChart, Download,AlarmClock ,Activity, Shield, Link, UploadCloud } from "lucide-react";
 
 export default function LaporanKeuangan() {
   const { t } = useTranslation();
@@ -14,6 +15,39 @@ export default function LaporanKeuangan() {
     import.meta.glob('../../assets/scroll/logos*.jpg', {eager: true})
   ).map((mod) => mod.default);
 
+  const featuresFinancialReport = [
+    {
+      title: "Laporan Pendapatan",
+      desc: "Lacak semua pemasukan bisnismu dengan detail dan mudah dipahami.",
+      icon: <BarChart3 className="w-12 h-12 text-green-600 mx-auto" />,
+    },
+    {
+      title: "Laporan Pengeluaran",
+      desc: "Pantau pengeluaran harian, mingguan, hingga bulanan dengan rapi.",
+      icon: <TrendingDown className="w-12 h-12 text-green-600 mx-auto" />,
+    },
+    {
+      title: "Rekapitulasi Keuangan",
+      desc: "Sajikan semua transaksi ke dalam laporan keuangan lengkap.",
+      icon: <FileText className="w-12 h-12 text-green-600 mx-auto" />,
+    },
+    {
+      title: "Analisa Keuangan",
+      desc: "Visualisasikan data keuangan dengan grafik untuk analisa yang lebih mudah.",
+      icon: <PieChart className="w-12 h-12 text-green-600 mx-auto" />,
+    },
+    {
+      title: "Export Laporan",
+      desc: "Unduh laporan keuangan dalam format PDF atau Excel dengan sekali klik.",
+      icon: <Download className="w-12 h-12 text-green-600 mx-auto" />,
+    },
+    {
+      title: "Reminder Keuangan",
+      desc: "Dapatkan pengingat otomatis untuk tagihan, jatuh tempo, dan laporan bulanan.",
+      icon: <AlarmClock className="w-12 h-12 text-green-600 mx-auto" />,
+    },    
+  ];
+  
  
    const navLeft = [
       {
@@ -44,6 +78,7 @@ export default function LaporanKeuangan() {
 
   return (
     <div className="lg:px-[50px]">
+      {/* Section Top Menu */}
       <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-10 py-[90px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-10 ">
         
         {/* Kiri: Konten */}
@@ -75,6 +110,32 @@ export default function LaporanKeuangan() {
           />
         </div>
       </div>
+      {/* Section why choose */}
+       {/* Keunggulan */}
+       <section className="py-16 px-6 md:px-12 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Kenapa Harus Pakai Sistem Akutansi Kami?
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+            Dapatkan pengalaman pembukuan modern yang efisien, aman, dan bisa kamu akses kapan pun.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuresFinancialReport.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+              >
+                <div className="mb-4">{item.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Slide Show */}
       <section className="bg-white px-6  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
         <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
         <div className="overflow-hidden">
@@ -91,24 +152,7 @@ export default function LaporanKeuangan() {
           </div>
         </div>
       </section>
-      {/* SECTION: Fitur Unggulan */}
-      <section className="bg-gray-50 py-20 px-6 md:px-20">
-        <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {[
-            { icon: "📊", title: t("home.features.realtime"), desc: t("home.features.realtimeDesc") },
-            { icon: "🔒", title: t("home.features.security"), desc: t("home.features.securityDesc") },
-            { icon: "🔗", title: t("home.features.integration"), desc: t("home.features.integrationDesc") },
-            { icon: "📥", title: t("home.features.export"), desc: t("home.features.exportDesc") },
-          ].map((item, idx) => (
-            <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
-              <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
-              <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+     
       {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
       <section className="px-5">
       <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Laporan-Keuangan.items1.title")}</h2>
@@ -158,6 +202,25 @@ export default function LaporanKeuangan() {
 
             </div>
           </div>
+        </div>
+      </section>
+
+       {/* SECTION: Fitur Unggulan */}
+      <section className="bg-white py-20 px-6 md:px-20">
+        <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            { icon: <Activity className="w-12 h-12 text-blue-600 mx-auto" />, title: t("home.features.realtime"), desc: t("home.features.realtimeDesc") },
+            { icon: <Shield className="w-12 h-12 text-blue-600 mx-auto" />, title: t("home.features.security"), desc: t("home.features.securityDesc") },
+            { icon: <Link className="w-12 h-12 text-blue-600 mx-auto" />, title: t("home.features.integration"), desc: t("home.features.integrationDesc") },
+            { icon: <UploadCloud className="w-12 h-12 text-blue-600 mx-auto" />, title: t("home.features.export"), desc: t("home.features.exportDesc") },
+          ].map((item, idx) => (
+            <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
+              <div className="mb-4">{item.icon}</div>
+              <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
+              <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
      

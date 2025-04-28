@@ -256,28 +256,28 @@ export default function Home() {
      
       {/* Keunggulan */}
       <section className="py-16 px-6 md:px-12 bg-gray-50">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-          Kenapa Harus Pakai Sistem Akutansi Kami?
-        </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-          Dapatkan pengalaman pembukuan modern yang efisien, aman, dan bisa kamu akses kapan pun.
-        </p>
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Kenapa Harus Pakai Sistem Akutansi Kami?
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+            Dapatkan pengalaman pembukuan modern yang efisien, aman, dan bisa kamu akses kapan pun.
+          </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features1.map((item, idx) => (
-            <div
-              key={idx}
-              className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition"
-            >
-              <div className="mb-4">{item.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-600">{item.desc}</p>
-            </div>
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features1.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+              >
+                <div className="mb-4">{item.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
   );
 }

@@ -90,7 +90,7 @@ export default function Pengeluaran(){
           </div>
         </section>
         {/* SECTION: Fitur Unggulan */}
-        <section className="bg-gray-50 py-20 px-6 md:px-20">
+        <section className="bg-white py-20 px-6 md:px-20">
           <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
