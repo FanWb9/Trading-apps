@@ -11,6 +11,7 @@ import Gudang from "./Pages/Product/Gudang";
 import Pengeluaran from "./Pages/Keuangan/Pengeluaran";
 import Akun from "./Pages/Akun/Akun";
 import Pembeli from "./Pages/Pembeli/Pembeli";
+import Contac from "./Pages/Payments/Contac";
 export default function App() {
   return (
     <>
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/Inventaris" element={<Inventaris/>}/>
           <Route path="/User-management" element = {<Akun/>}/>
           <Route path="/Costs-expenses" element={<Pengeluaran/>}/>
+          <Route path="/Contac" element={<Contac/>}/>
           <Route path="/Supplier-management" element={<Pembeli/>}/>
           <Route path="/Warehouse" element={<Gudang/>}/>
         </Route>

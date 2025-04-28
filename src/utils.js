@@ -158,7 +158,7 @@ export const Menus = () => {
         {
           name: t("Contact"),
           desc: t("Get in touch with us"),
-          path: "/#",
+          path: "/Contac",
           icon: Users,
         },
       ],
