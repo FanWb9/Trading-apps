@@ -290,8 +290,34 @@
       "securityDesc": "Amankan akses sistem Anda dengan sistem keamanan canggih dari TheCore. Menjaga integritas peran pengguna, hak akses, dan keamanan operasional adalah prioritas utama kami!",
       "integrationDesc": "Kelola akun dan izin pengguna dengan mudah tanpa perlu instalasi tambahan. TheCore menyediakan solusi lengkap dan terintegrasi untuk manajemen akses dan peran pengguna secara seamless."
     }
+  },
+  "Pembeli":{
+    "Items": {
+      "title": "Manajemen Pemasok",
+      "desc": "Kelola, pantau, dan kontrol hubungan dengan pemasok secara real-time untuk memastikan kelancaran proses pembelian dan penjualan.",
+      "desc1": "Dapatkan wawasan lengkap tentang riwayat transaksi pemasok untuk mengoptimalkan pembelian, meningkatkan efisiensi rantai pasok, dan mendukung pertumbuhan bisnis secara strategis."
+    },
+    "Navbar": {
+      "section1": {
+        "title": "Pembelian",
+        "desc": "Catat dan kelola semua aktivitas pembelian dari pemasok dengan mudah. Dengan TheCore, Anda dapat memantau setiap transaksi pembelian secara transparan untuk memastikan ketersediaan stok yang optimal."
+      },
+      "section2": {
+        "title": "Penjualan",
+        "desc": "Kelola penjualan produk kepada pelanggan dengan akurat melalui sistem terintegrasi. TheCore membantu Anda memastikan setiap transaksi penjualan tercatat dengan baik, meningkatkan pelayanan, dan mempercepat proses bisnis."
+      }
+    },
+    "items1": {
+      "title": "Kelola Pembelian dan Penjualan dengan Terorganisir"
+    },
+    "features": {
+      "realtime": "Tinggalkan pencatatan pembelian dan penjualan manual! Dengan TheCore Supplier Management System, Anda dapat memantau semua transaksi secara real-time dengan kecepatan dan akurasi tinggi.",
+      "securityDesc": "Lindungi data pemasok dan transaksi Anda dengan sistem keamanan canggih dari TheCore. Menjaga integritas hubungan bisnis dan transaksi adalah prioritas kami!",
+      "integrationDesc": "Kelola seluruh proses pembelian dan penjualan dengan mudah tanpa perlu instalasi tambahan. TheCore menyediakan solusi lengkap dan terintegrasi untuk efisiensi operasional Anda."
+    }
   }
 }
+
 
  
 

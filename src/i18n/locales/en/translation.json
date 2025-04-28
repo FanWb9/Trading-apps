@@ -288,5 +288,31 @@
       "securityDesc": "Safeguard your system access with TheCore's advanced security system. Ensuring the integrity of user roles, access rights, and operational security is our top priority!",
       "integrationDesc": "Manage user accounts and permissions effortlessly without the need for complex installations. TheCore offers a complete, integrated solution for streamlined user access and role management."
       }
+  },
+  "Pembeli":{
+    "Items": {
+      "title": "Supplier Management",
+      "desc": "Manage, monitor, and control your supplier relationships in real-time to ensure smooth purchasing and sales processes.",
+      "desc1": "Gain complete insights into supplier transaction history to optimize purchasing, improve supply chain efficiency, and support strategic business growth."
+    },
+    "Navbar": {
+      "section1": {
+        "title": "Purchasing",
+        "desc": "Easily record and manage all purchasing activities from suppliers. With TheCore, you can transparently track each purchasing transaction to ensure optimal stock availability."
+      },
+      "section2": {
+        "title": "Sales",
+        "desc": "Manage product sales to customers accurately through an integrated system. TheCore helps you ensure that every sales transaction is properly recorded, enhancing service and accelerating business processes."
+      }
+    },
+    "items1": {
+      "title": "Organize Your Purchasing and Sales Efficiently"
+    },
+    "features": {
+      "realtime": "Leave behind manual purchasing and sales records! With TheCore Supplier Management System, you can monitor all transactions in real-time with speed and high accuracy.",
+      "securityDesc": "Protect your supplier and transaction data with TheCore’s advanced security system. Maintaining the integrity of your business relationships and transactions is our top priority!",
+      "integrationDesc": "Manage the entire purchasing and sales process easily without the need for additional installations. TheCore provides a complete and integrated solution for your operational efficiency."
+    }
   }
 }
+

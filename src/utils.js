@@ -92,7 +92,8 @@ export const Menus = () => {
           name: t("Management Supplier"),
           desc: t("Kelola pemasok & pembelian"),
           icon: Users,
-          category: t("Supply Chain Management"),
+          path:"/Supplier-management"
+          // category: t("Supply Chain Management"),
         },
         {
           name: t("Biaya & Pengeluaran"),
