@@ -76,12 +76,12 @@ export const Menus = () => {
           icon: Building2,
           path: "/Warehouse"
         },
-        {
-          name: t("Pos & Marketplace"),
-          desc: t("Sinkronisasi toko online"),
-          icon: ShoppingCart,
-          category: t("Integration & Platform"),
-        },
+        // {
+        //   name: t("Pos & Marketplace"),
+        //   desc: t("Sinkronisasi toko online"),
+        //   icon: ShoppingCart,
+        //   category: t("Integration & Platform"),
+        // },
         // {
         //   name: t("Bank"),
         //   desc: t("Rekonsiliasi bank otomatis"),
