@@ -17,7 +17,7 @@ export const PRODUCTS = [
   export const SUPPORT = [
     { name: "Price", link: "/Price" },
     { name: "Tutorials", link: "#" },
-    { name: "Contact", link: "#" },
+    { name: "Contact", link: "/Contac" },
   ];
   
   export const Icons = [
