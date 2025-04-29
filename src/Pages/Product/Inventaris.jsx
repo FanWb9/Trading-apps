@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import Stok from '../../assets/Stok.png';
 import Dashboard from '../../assets/Dashboard.png';
-
+import { Boxes,History,Bell,Edit,ClipboardCheck,Truck } from 'lucide-react';
 
 export default function Inventaris (){
      const { t } = useTranslation();
@@ -14,7 +14,38 @@ export default function Inventaris (){
            import.meta.glob('../../assets/scroll/logos*.jpg', {eager: true})
          ).map((mod) => mod.default);
        
-        
+         const featuresInventoryManagement = [
+          {
+            title: "Pemantauan Stok Real-Time",
+            desc: "Lihat jumlah stok terkini untuk memastikan ketersediaan produk selalu terjaga.",
+            icon: <Boxes className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+          {
+            title: "Riwayat Pergerakan Barang",
+            desc: "Catat semua aktivitas keluar dan masuk barang untuk kontrol penuh.",
+            icon: <History className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+          {
+            title: "Notifikasi Stok Minimum",
+            desc: "Dapatkan peringatan otomatis saat stok mencapai batas minimum.",
+            icon: <Bell className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+          {
+            title: "Penyesuaian Manual Stok",
+            desc: "Edit jumlah stok secara manual untuk koreksi atau penyesuaian.",
+            icon: <Edit className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+          {
+            title: "Audit dan Pengecekan Stok",
+            desc: "Lakukan pengecekan berkala untuk memastikan data stok sesuai dengan fisik.",
+            icon: <ClipboardCheck className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+          {
+            title: "Manajemen Pengiriman",
+            desc: "Atur pengiriman masuk dan keluar barang agar distribusi tetap efisien.",
+            icon: <Truck className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+        ];
           const navLeft = [
              {
                title: t("Laporan-Keuangan.navbar.section1.title"),
@@ -87,6 +118,30 @@ export default function Inventaris (){
                  </div>
                </div>
              </section>
+              {/* Keunggulan */}
+          <section className="py-16 px-6 md:px-12 bg-white">
+            <div className="max-w-6xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                Kenapa Harus Pakai Sistem Akutansi Kami?
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+                Dapatkan pengalaman pembukuan modern yang efisien, aman, dan bisa kamu akses kapan pun.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {featuresInventoryManagement.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+                  >
+                    <div className="mb-4">{item.icon}</div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                    <p className="text-sm text-gray-600">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
              {/* SECTION: Fitur Unggulan */}
              <section className="bg-gray-50 py-20 px-6 md:px-20">
                <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>

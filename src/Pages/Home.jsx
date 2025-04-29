@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import pic9 from "../assets/Pic 11.png";
-import pic10 from "../assets/Pic 3.png";
-// import pic1 from "../assets/pic 1.jpg";
+import pic10 from "../assets/Pic 2.png";
+import pic1 from "../assets/pic1.png";
 // import pic2 from "../assets/pic 2.jpg";
-import pic3 from "../assets/Akuntasi.jpeg";
+import pic3 from "../assets/Akuntansi.png";
 import Pic4 from "../assets/Product.png";
 import Pic5 from "../assets/Ner.png";
 import Pic6 from "../assets/Payment.png";
@@ -13,7 +13,7 @@ import { ShieldCheck, Cloud, Users, LayoutDashboard, LifeBuoy, Layers3,Globe2,  
 export default function Home() {
   const { t } = useTranslation();
   // const [current, setCurrent] = useState(0);
-  const images = [pic9,pic10];
+  const images = [pic9,pic10,pic1];
   const [selectedTab, setSelectedTab] = useState(0);
   const [currentImage, setCurrentImage] = useState(0);
   // Import otomatis semua file gambar dari assets yang sesuai pola nama
@@ -138,7 +138,7 @@ export default function Home() {
 
   return (
     <div >
-      <div className="min-h-screen md:min-h-[60vh] lg:min-h-[80vh] bg-white text-gray-900 px-6 md:px-[60px] py-[50px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-8 ">
+      <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-[60px] py-[50px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-8 ">
           
           {/* Kiri: Konten */}
           <div className="w-full md:w-1/2 text-left">
@@ -272,11 +272,11 @@ export default function Home() {
               <img
                 src={navLeft[selectedTab].image}
                 alt={navLeft[selectedTab].title}
-                className="w-full max-w-xs h-auto object-cover rounded-lg shadow-md lg:max-w-[600px]"
+                className="w-full max-w-xs h-auto object-cover rounded-lg  lg:max-w-[600px]"
               />
             )}
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              <h3 className="text-2xl font-bold text-gray-800 md:pt-20 mb-4">
                 {navLeft[selectedTab].title}
               </h3>
               <p className="text-gray-600 leading-relaxed">{navLeft[selectedTab].desc}</p>

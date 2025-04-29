@@ -231,7 +231,7 @@
   "Gudang":{
     "Items": {
       "title": "Warehouse Management",
-      "desc": "Manage your inventory storage and stock movements in your warehouse in real-time and efficiently.",
+      "desc": "Monitor the movement of goods in the warehouse in real-time",
       "desc1": "Gain full visibility over inbound and outbound goods to enhance the operational efficiency of your warehouse."
     },
     "Navbar": {
@@ -256,7 +256,7 @@
   "Pengeluaran":{
    "Items": {
       "title": "Financial Management",
-      "desc": "Monitor, record, and control your business expenses in real-time to maintain financial stability and support strategic growth.",
+      "desc": "Control cash flow to maintain financial stability",
       "desc1": "Gain in-depth insights into spending patterns and cash outflows to optimize budgets, improve cost efficiency, and strengthen your financial decision-making."
     },
     "navbar":{
@@ -306,7 +306,7 @@
   "Pembeli":{
     "Items": {
       "title": "Supplier Management",
-      "desc": "Manage, monitor, and control your supplier relationships in real-time to ensure smooth purchasing and sales processes.",
+      "desc": "Control the purchasing and selling process in an integrated manner",
       "desc1": "Gain complete insights into supplier transaction history to optimize purchasing, improve supply chain efficiency, and support strategic business growth."
     },
     "Navbar": {

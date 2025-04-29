@@ -245,7 +245,7 @@
   "Gudang":{
    "Items": {
       "title": "Manajemen Gudang",
-      "desc": "Kelola penyimpanan barang dan pergerakan stok di gudang Anda secara real-time dan efisien.",
+      "desc": "Pantau pergerakan barang di gudang secara real-time",
       "desc1": "Dapatkan visibilitas penuh atas alur barang masuk dan keluar untuk meningkatkan efektivitas operasional gudang Anda."
     },
     "Navbar":{
@@ -270,7 +270,7 @@
   "Pengeluaran":{
     "Items": {
       "title": "Manajemen Keuangan",
-      "desc": "Pantau, catat, dan kelola semua biaya bisnis Anda secara real-time untuk menjaga stabilitas keuangan dan mendukung pertumbuhan strategis.",
+      "desc": "Kendalikan arus kas untuk menjaga stabilitas keuangan",
       "desc1": "Dapatkan insight mendalam tentang pola pengeluaran dan arus kas keluar untuk mengoptimalkan anggaran, meningkatkan efisiensi biaya, dan memperkuat pengambilan keputusan keuangan Anda."
     },
     
@@ -321,7 +321,7 @@
   "Pembeli":{
     "Items": {
       "title": "Manajemen Pemasok",
-      "desc": "Kelola, pantau, dan kontrol hubungan dengan pemasok secara real-time untuk memastikan kelancaran proses pembelian dan penjualan.",
+      "desc": "Kendalikan proses pembelian dan penjualan secara terintegrasi",
       "desc1": "Dapatkan wawasan lengkap tentang riwayat transaksi pemasok untuk mengoptimalkan pembelian, meningkatkan efisiensi rantai pasok, dan mendukung pertumbuhan bisnis secara strategis."
     },
     "Navbar": {

@@ -80,7 +80,7 @@ export default function Pembeli(){
         <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-10 py-[90px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-10 ">
             
             {/* Kiri: Konten */}
-            <div className="w-full md:w-1/2 text-center md:text-left">
+            <div className="w-full md:w-1/2 text-left">
             <h2 className="text-lg text-indigo-600 font-semibold mb-2">{t("Pembeli.Items.title")}</h2>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
             {t("Pembeli.Items.desc")}
@@ -108,6 +108,22 @@ export default function Pembeli(){
             />
             </div>
         </div>
+        <section className="bg-white px-6  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
+            <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
+            <div className="overflow-hidden">
+            <div className="flex animate-scroll will-change-transform gap-6 min-w-max">
+            {[...Logos, ...Logos, ...Logos].map((img,idx) => (
+    
+                <img
+                key={idx}
+                src={img}
+                alt={`Logo ${idx + 1}`}
+                className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
+            />
+            ))}
+            </div>
+            </div>
+        </section>
         {/* Section why choose */}
        {/* Keunggulan */}
        <section className="py-16 px-6 md:px-12 bg-white">
@@ -133,23 +149,6 @@ export default function Pembeli(){
           </div>
         </div>
       </section>
-        <section className="bg-white px-6  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
-            <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
-            <div className="overflow-hidden">
-            <div className="flex animate-scroll will-change-transform gap-6 min-w-max">
-            {[...Logos, ...Logos, ...Logos].map((img,idx) => (
-    
-                <img
-                key={idx}
-                src={img}
-                alt={`Logo ${idx + 1}`}
-                className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
-            />
-            ))}
-            </div>
-            </div>
-        </section>
-       
         {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
         <section className="px-5">
         <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Pembeli.items1.title")}</h2>

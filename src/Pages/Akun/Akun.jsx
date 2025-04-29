@@ -45,7 +45,7 @@ export default function Akun(){
             <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-10 py-[90px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-10 ">
               
               {/* Kiri: Konten */}
-              <div className="w-full md:w-1/2 text-center md:text-left">
+              <div className="w-full md:w-1/2 text-left">
                 <h2 className="text-lg text-indigo-600 font-semibold mb-2">{t("User.Items.title")}</h2>
                 <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
                 {t("User.Items.desc")}
