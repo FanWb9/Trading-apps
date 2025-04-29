@@ -138,7 +138,7 @@ export default function Home() {
 
   return (
     <div >
-      <div className="min-h-screen md:min-h-[60vh] lg:min-h-[80vh] bg-white text-gray-900 px-6 md:px-[60px] py-[50px] md:py-[40px] lg:py-[40px] flex flex-col-reverse md:flex-row items-center justify-between gap-8 ">
+      <div className="min-h-screen md:min-h-[60vh] lg:min-h-[80vh] bg-white text-gray-900 px-6 md:px-[60px] py-[50px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-8 ">
           
           {/* Kiri: Konten */}
           <div className="w-full md:w-1/2 text-left">
