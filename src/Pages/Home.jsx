@@ -243,7 +243,7 @@ export default function Home() {
             </div>
        </section>
       {/* ITEMS SECTION */}
-      <section className="bg-white py-20 px-6 md:px-20 sm:h-[100vh] md:h-[100vh] lg:h-[80vh]">
+      <section className="bg-white py-20 px-6 md:px-20 sm:h-[100vh] md:h-[100vh] lg:h-[90vh]">
         <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("home.items1.title")}</h2>
        {/* NAVBAR SECTION IN LEFT */}
         <div className="mt-16 flex flex-col lg:flex-row gap-8">
