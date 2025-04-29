@@ -183,9 +183,23 @@
       "title":"Manage Your Business Accurately"
     },
    "features": {
-    "realtime": "Say goodbye to confusing manual stock tracking! Switch to TheCore Product Management System and enjoy fast, accurate, real-time access to your product data.",
-    "securityDesc": "Ensure the security of your product data with TheCore’s advanced protection system. Inventory safety and data integrity are our top priorities!",
-    "integrationDesc": "Manage your products seamlessly without the hassle of additional installations. TheCore comes fully equipped to support your operations and inventory management from day one."
+      "title": "Product Management Features",
+      "feature1": {
+        "title": "Inventory Management",
+        "desc": "Manage product stock in real-time to maintain availability."
+      },
+      "feature2": {
+        "title": "Product Catalog",
+        "desc": "Manage product lists with complete categories, prices, and descriptions."
+      },
+      "feature3": {
+        "title": "Price and Discount",
+        "desc": "Set product prices and set promotions or discounts flexibly."
+      },
+      "feature4": {
+        "title": "Variation Management",
+        "desc": "Manage product variants such as size, color, or type easily."
+      }
     },
     "Navbar":{
       "section1":{
@@ -308,10 +322,23 @@
     "items1": {
       "title": "Organize Your Purchasing and Sales Efficiently"
     },
-    "features": {
-      "realtime": "Leave behind manual purchasing and sales records! With TheCore Supplier Management System, you can monitor all transactions in real-time with speed and high accuracy.",
-      "securityDesc": "Protect your supplier and transaction data with TheCore’s advanced security system. Maintaining the integrity of your business relationships and transactions is our top priority!",
-      "integrationDesc": "Manage the entire purchasing and sales process easily without the need for additional installations. TheCore provides a complete and integrated solution for your operational efficiency."
+   "features":{
+      "feature1":{
+        "title":"Manage Your Suppliers Easily",
+        "desc":"Quickly and easily record and manage supplier information to ensure smooth business operations."
+      },
+      "feature2":{
+        "title": "Monitor All Your Purchases",
+        "desc": "Track the status and history of your purchases from multiple suppliers to ensure better financial management."
+      },
+      "feature3":{
+        "title": "Create And Manage Invoices",
+        "desc": "Create and send automatic invoices to suppliers easily, and track incoming payments."
+      },
+      "feature4":{
+        "title": "Manage Shipments Properly",
+        "desc": "Track shipments from suppliers and ensure they arrive on time without any issues."
+      }
     }
   }
 }

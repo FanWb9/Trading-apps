@@ -44,13 +44,10 @@
   "signIn": "Masuk",
   "language": "Bahasa",
   "home": {
-    "slide1": {
-      "title": "thecore: Satu Platform, Semua Kebutuhan Bisnis",
-      "desc": "Mulai dari penjualan, pembelian, stok barang, hingga penggajian—semua bisa dikelola dalam satu sistem berbasis web tanpa batasan jumlah pengguna. Lebih hemat waktu, lebih efisien."
-    },
-    "slide2": {
-      "title": "Catat keuangan otomatis, fokus kembangkan bisnis",
-      "desc": "Sistem pintar yang bantu kamu kelola laporan dan transaksi keuangan secara instan, kapan saja."
+    "Page":{
+      "Judul":"thecore",
+      "title":"Satu Platform untuk Kendalikan Operasional & Finansial Bisnis Anda",
+      "desc":"Kelola dua aspek terpenting bisnis Anda — operasional dan keuangan — dalam satu sistem yang terintegrasi. Thecore hadir sebagai solusi akuntansi online yang memberikan data real-time untuk keputusan yang lebih cepat dan tepat."
     },
     "features": {
       "feature1": {
@@ -196,11 +193,27 @@
     "items1":{
       "title":"Kelola Bisnismu Secara Akurat"
     },
+   
     "features": {
-    "realtime": "Tinggalkan pencatatan stok manual yang membingungkan! Beralih ke TheCore Sistem Manajemen Produk dan nikmati akses data produk secara real-time, cepat, dan akurat.",
-    "securityDesc": "Pastikan keamanan data produk Anda dengan sistem perlindungan tingkat tinggi dari TheCore. Keamanan inventaris dan integritas data menjadi prioritas utama kami!",
-    "integrationDesc": "Kelola produk Anda tanpa kerumitan instalasi tambahan. TheCore hadir dengan fitur lengkap yang siap langsung mendukung operasional dan manajemen stok Anda."
-    },  
+      "title": "Fitur Manajemen Produk",
+      "feature1": {
+        "title": "Manajemen Inventaris",
+        "desc": "Kelola stok produk secara real-time agar ketersediaan selalu terjaga."
+      },
+      "feature2": {
+        "title": "Katalog Produk",
+        "desc": "Atur daftar produk dengan kategori, harga, dan deskripsi yang lengkap."
+      },
+      "feature3": {
+        "title": "Harga dan Diskon",
+        "desc": "Tetapkan harga produk dan atur promo atau diskon dengan fleksibel."
+      },
+      "feature4": {
+        "title": "Manajemen Variasi",
+        "desc": "Kelola varian produk seperti ukuran, warna, atau tipe dengan mudah."
+      }
+    },
+  
 
     "Navbar":{
       "section1":{
@@ -346,7 +359,3 @@
   
   }
 }
-
-
- 
-

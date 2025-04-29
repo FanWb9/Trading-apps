@@ -73,6 +73,7 @@ export default function Pengeluaran(){
             />
           </div>
         </div>
+        
         <section className="bg-white px-6  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
           <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
           <div className="overflow-hidden">

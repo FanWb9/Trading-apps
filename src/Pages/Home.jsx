@@ -1,19 +1,21 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import pic1 from "../assets/pic 1.jpg";
-import pic2 from "../assets/pic 2.jpg";
+import pic9 from "../assets/Pic 11.png";
+import pic10 from "../assets/Pic 3.png";
+// import pic1 from "../assets/pic 1.jpg";
+// import pic2 from "../assets/pic 2.jpg";
 import pic3 from "../assets/Akuntasi.jpeg";
 import Pic4 from "../assets/Product.png";
 import Pic5 from "../assets/Ner.png";
 import Pic6 from "../assets/Payment.png";
-import { ShieldCheck, Cloud, Users, LayoutDashboard, LifeBuoy, Layers3 } from "lucide-react";
+import { ShieldCheck, Cloud, Users, LayoutDashboard, LifeBuoy, Layers3,Globe2,  Database } from "lucide-react";
 export default function Home() {
   const { t } = useTranslation();
-  const [current, setCurrent] = useState(0);
-
+  // const [current, setCurrent] = useState(0);
+  const images = [pic9,pic10];
   const [selectedTab, setSelectedTab] = useState(0);
-
+  const [currentImage, setCurrentImage] = useState(0);
   // Import otomatis semua file gambar dari assets yang sesuai pola nama
   const logos = Object.values(
     import.meta.glob('../assets/scroll/logos*.jpg', { eager: true })
@@ -53,39 +55,43 @@ export default function Home() {
   ];
   
 
-  const slides = [
-    {
-      image: pic1,
-      title: t("home.slide1.title"),
-      desc: t("home.slide1.desc"),
-    },
-    {
-      image: pic2,
-      title: t("home.slide2.title"),
-      desc: t("home.slide2.desc"),
-    },
-  ];
+  // const slides = [
+  //   {
+  //     image: pic1,
+  //     title: t("home.slide1.title"),
+  //     desc: t("home.slide1.desc"),
+  //   },
+  //   {
+  //     image: pic2,
+  //     title: t("home.slide2.title"),
+  //     desc: t("home.slide2.desc"),
+  //   },
+  // ];
 
   const features = [
     {
       title: t("home.features.feature1.title"),
       desc: t("home.features.feature1.desc"),
-      icon: "🧭",
+      icon: <Globe2 className="w-12 h-12 text-green-600 mx-auto" />, 
+      // Globe2: Global system, luas, modern
     },
     {
       title: t("home.features.feature2.title"),
       desc: t("home.features.feature2.desc"),
-      icon: "🔗",
+      icon: <ShieldCheck className="w-12 h-12 text-green-600 mx-auto" />, 
+      // ShieldCheck: Security/Trust
     },
     {
       title: t("home.features.feature3.title"),
       desc: t("home.features.feature3.desc"),
-      icon: "👥",
+      icon: <Layers3 className="w-12 h-12 text-green-600 mx-auto" />, 
+      // Layers3: Organisasi produk, kategori, manajemen varian
     },
     {
       title: t("home.features.feature4.title"),
       desc: t("home.features.feature4.desc"),
-      icon: "🔐",
+      icon: <Database className="w-12 h-12 text-green-600 mx-auto" />, 
+      // Database: Data produk, inventaris, backend kuat
     },
   ];
 
@@ -116,19 +122,71 @@ export default function Home() {
     }
   ]
 
-  
-
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 10000);
+        setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrent((prev) => (prev + 1) % slides.length);
+  //   }, 10000);
+  //   return () => clearInterval(interval);
+  // }, []);
+
   return (
-    <div>
+    <div >
+      <div className="min-h-screen md:min-h-[60vh] lg:min-h-[80vh] bg-white text-gray-900 px-6 md:px-[60px] py-[50px] md:py-[40px] lg:py-[10px] flex flex-col-reverse md:flex-row items-center justify-between gap-8 ">
+          
+          {/* Kiri: Konten */}
+          <div className="w-full md:w-1/2 text-left">
+            <h2 className="text-3xl text-indigo-600 font-semibold mb-2">{t("home.Page.Judul")}</h2>
+            <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-4">
+            {t("home.Page.title")}
+            </h1>
+            <p className="text-base md:text-lg mb-8">
+            {t("home.Page.desc")}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
+                {t("home.buttons.whatsapp")}
+              </button>
+              <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
+              {t("home.buttons.freeTrial")}
+              </button>
+            </div>
+          </div>
+  
+          {/* Kanan: Gambar */}
+          <div className="w-full md:w-1/2 flex justify-center">
+            <img
+              src={images[currentImage]}
+              alt="Ilustrasi Keuangan"
+              className="rounded-xl  max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
+            />
+          </div>
+        </div>
+        <h2 className=" text-2xl lg:text-3xl font-semibold text-center mb-[15px]">
+            {t("home.items.title")}
+        </h2>
+        <div className="overflow-hidden">
+          <div className="flex animate-scroll will-change-transform gap-6 min-w-max">
+          {[...logos, ...logos, ...logos].map((img,idx) => (
+  
+           <img
+           key={idx}
+           src={img}
+           alt={`Logo ${idx + 1}`}
+           className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
+         />
+          ))}
+          </div>
+        </div>
       {/* HERO SLIDESHOW */}
-      <div className="relative h-[75vh] sm:h-[40vh] md:h-[70vh] lg:h-screen overflow-hidden bg-black/90 text-white">
+      {/* <div className="relative h-[75vh] sm:h-[40vh] md:h-[70vh] lg:h-screen overflow-hidden bg-black/90 text-white">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -163,46 +221,29 @@ export default function Home() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
        {/* WHY CHOOSE THECOUNT SECTION */}
        <section className="bg-white py-[50px] px-6 md:px-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-          {t("home.why")} <span className="text-blue-600">thecore</span>
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {features.map((item, index) => (
-            <div
-              key={index}
-              className="bg-blue-50 p-6 rounded-2xl shadow-md flex items-start gap-4 hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="text-4xl">{item.icon}</div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-700 leading-relaxed">{item.desc}</p>
-              </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+            {t("home.why")} <span className="text-blue-600">thecore</span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {features.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-blue-50 p-6 rounded-2xl shadow-md flex items-start gap-4 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <div className="text-4xl">{item.icon}</div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                    <p className="text-gray-700 leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
+       </section>
       {/* ITEMS SECTION */}
-      <section className="bg-white py-20 px-6 md:px-20 sm:h-[100vh] md:h-[100vh] lg:h-[110vh]">
-        <h2 className=" text-2xl lg:text-3xl font-semibold text-center mb-8">
-            {t("home.items.title")}
-        </h2>
-        <div className="overflow-hidden">
-          <div className="flex animate-scroll will-change-transform gap-6 min-w-max">
-          {[...logos, ...logos, ...logos].map((img,idx) => (
-  
-           <img
-           key={idx}
-           src={img}
-           alt={`Logo ${idx + 1}`}
-           className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
-         />
-          ))}
-          </div>
-        </div>
-
+      <section className="bg-white py-20 px-6 md:px-20 sm:h-[100vh] md:h-[100vh] lg:h-[80vh]">
         <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("home.items1.title")}</h2>
        {/* NAVBAR SECTION IN LEFT */}
         <div className="mt-16 flex flex-col lg:flex-row gap-8">

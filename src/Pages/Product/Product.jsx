@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Product1 from '../../assets/Product1.png';
 import Dashboard from '../../assets/Dashboard.png';
 import Create from '../../assets/Create-Product.png';
-
+import { Boxes,List,Tag,Layers,Bell,BarChart3,Package,Warehouse,ShoppingCart,Settings } from 'lucide-react';
 export default function Product(){
     const { t } = useTranslation();
     const images = [Dashboard,Product1,Create];
@@ -14,6 +14,38 @@ export default function Product(){
       import.meta.glob('../../assets/scroll/logos*.jpg', {eager: true})
      ).map((mod) => mod.default);
    
+     const featuresProductManagement = [
+      {
+        title: "Manajemen Inventaris",
+        desc: "Kelola stok produk secara real-time agar ketersediaan selalu terjaga.",
+        icon: <Boxes className="w-12 h-12 text-green-600 mx-auto" />, // pakai icon Boxes dari lucide-react
+      },
+      {
+        title: "Katalog Produk",
+        desc: "Atur daftar produk dengan kategori, harga, dan deskripsi yang lengkap.",
+        icon: <List className="w-12 h-12 text-green-600 mx-auto" />, // List
+      },
+      {
+        title: "Harga dan Diskon",
+        desc: "Tetapkan harga produk dan atur promo atau diskon dengan fleksibel.",
+        icon: <Tag className="w-12 h-12 text-green-600 mx-auto" />, // Tag
+      },
+      {
+        title: "Manajemen Variasi",
+        desc: "Kelola varian produk seperti ukuran, warna, atau tipe dengan mudah.",
+        icon: <Layers className="w-12 h-12 text-green-600 mx-auto" />, // Layers
+      },
+      {
+        title: "Pengaturan Stok Minimum",
+        desc: "Atur notifikasi saat stok produk hampir habis untuk menghindari kehabisan.",
+        icon: <Bell className="w-12 h-12 text-green-600 mx-auto" />, // Bell
+      },
+      {
+        title: "Laporan Produk",
+        desc: "Pantau performa penjualan produk melalui laporan yang mudah dipahami.",
+        icon: <BarChart3 className="w-12 h-12 text-green-600 mx-auto" />, // BarChart3
+      },
+    ];
     
     const navLeft = [
         {
@@ -75,6 +107,31 @@ export default function Product(){
              />
            </div>
          </div>
+          {/* Section why choose */}
+       {/* Keunggulan */}
+       <section className="py-16 px-6 md:px-12 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Kenapa Harus Pakai Sistem Akutansi Kami?
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+            Dapatkan pengalaman pembukuan modern yang efisien, aman, dan bisa kamu akses kapan pun.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuresProductManagement.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+              >
+                <div className="mb-4">{item.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
          <section className="bg-white px-6  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
            <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
            <div className="overflow-hidden">
@@ -91,24 +148,7 @@ export default function Product(){
              </div>
            </div>
          </section>
-         {/* SECTION: Fitur Unggulan */}
-         <section className="bg-gray-50 py-20 px-6 md:px-20">
-           <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
-           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-             {[
-               { icon: "📊", title: t("home.features.realtime"), desc: t("Product.features.realtime") },
-               { icon: "🔒", title: t("home.features.security"), desc: t("Product.features.securityDesc") },
-               { icon: "🔗", title: t("home.features.integration"), desc: t("Product.features.integrationDesc") },
-               { icon: "📥", title: t("home.features.export"), desc: t("home.features.exportDesc") },
-             ].map((item, idx) => (
-               <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
-                 <div className="text-4xl mb-4">{item.icon}</div>
-                 <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
-                 <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
-               </div>
-             ))}
-           </div>
-         </section>
+        
          {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
          <section className="px-5">
          <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Product.items1.title")}</h2>
@@ -160,7 +200,24 @@ export default function Product(){
              </div>
            </div>
          </section>
-        
+          {/* SECTION: Fitur Unggulan */}
+          <section className="bg-white py-20 px-6 md:px-20">
+            <h2 className="text-3xl font-bold text-center mb-12">{t("Product.features.title")}</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                { icon: <Package className="w-12 h-12 text-green-600 mx-auto" />, title: t("Product.features.feature1.title"), desc: t("Product.features.feature1.desc") },
+                { icon: <Warehouse className="w-12 h-12 text-green-600 mx-auto" />, title: t("Product.features.feature2.title"), desc: t("Product.features.feature2.desc") },
+                { icon: <ShoppingCart className="w-12 h-12 text-green-600 mx-auto" />, title: t("Product.features.feature3.title"), desc: t("Product.features.feature3.desc") },
+                { icon: <Settings className="w-12 h-12 text-green-600 mx-auto" />, title: t("Product.features.feature4.title"), desc: t("Product.features.feature4.desc") },
+              ].map((item, idx) => (
+                <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
+                  <div className="mb-4">{item.icon}</div>
+                  <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
          {/* SECTION: Testimoni */}
          <section className="bg-white py-20 px-6 md:px-20">
            <h2 className="text-3xl font-bold text-center mb-12">{t("home.testimonial.title")}</h2>
