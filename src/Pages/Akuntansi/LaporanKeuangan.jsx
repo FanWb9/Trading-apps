@@ -110,6 +110,24 @@ export default function LaporanKeuangan() {
           />
         </div>
       </div>
+       {/* Slide Show */}
+       <section className="bg-white px-6  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
+        <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
+        <div className="overflow-hidden">
+          <div className="flex animate-scroll will-change-transform gap-6 min-w-max">
+          {[...Logos, ...Logos, ...Logos].map((img,idx) => (
+  
+           <img
+           key={idx}
+           src={img}
+           alt={`Logo ${idx + 1}`}
+           className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
+         />
+          ))}
+          </div>
+        </div>
+      </section>
+      
       {/* Section why choose */}
        {/* Keunggulan */}
        <section className="py-16 px-6 md:px-12 bg-white">
@@ -135,23 +153,7 @@ export default function LaporanKeuangan() {
           </div>
         </div>
       </section>
-      {/* Slide Show */}
-      <section className="bg-white px-6  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
-        <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
-        <div className="overflow-hidden">
-          <div className="flex animate-scroll will-change-transform gap-6 min-w-max">
-          {[...Logos, ...Logos, ...Logos].map((img,idx) => (
-  
-           <img
-           key={idx}
-           src={img}
-           alt={`Logo ${idx + 1}`}
-           className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
-         />
-          ))}
-          </div>
-        </div>
-      </section>
+     
      
       {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
       <section className="px-5">

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import Stok from '../../assets/Stok.png';
 import Dashboard from '../../assets/Dashboard.png';
-import { Boxes,History,Bell,Edit,ClipboardCheck,Truck } from 'lucide-react';
+import { Boxes,History,Bell,Edit,ClipboardCheck,Truck,Archive, Package, PieChart } from 'lucide-react';
 
 export default function Inventaris (){
      const { t } = useTranslation();
@@ -71,7 +71,7 @@ export default function Inventaris (){
        
          return (
            <div className="lg:px-[50px]">
-             <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-10 py-[90px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-10 ">
+             <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-10 py-[90px] md:py-[40px] lg:py-[80px]  flex flex-col-reverse md:flex-row items-center justify-between gap-10 ">
                
                {/* Kiri: Konten */}
                <div className="w-full md:w-1/2 text-center md:text-left">
@@ -142,24 +142,7 @@ export default function Inventaris (){
               </div>
             </div>
           </section>
-             {/* SECTION: Fitur Unggulan */}
-             <section className="bg-gray-50 py-20 px-6 md:px-20">
-               <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
-               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                 {[
-                   { icon: "📊", title: t("home.features.realtime"), desc: t("Product.features.realtime") },
-                   { icon: "🔒", title: t("home.features.security"), desc: t("Product.features.securityDesc") },
-                   { icon: "🔗", title: t("home.features.integration"), desc: t("Product.features.integrationDesc") },
-                   { icon: "📥", title: t("home.features.export"), desc: t("home.features.exportDesc") },
-                 ].map((item, idx) => (
-                   <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
-                     <div className="text-4xl mb-4">{item.icon}</div>
-                     <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
-                     <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
-                   </div>
-                 ))}
-               </div>
-             </section>
+            
              {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
              <section className="px-5">
              <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Inventori.items1.title")}</h2>
@@ -212,6 +195,25 @@ export default function Inventaris (){
                </div>
              </section>
             
+             {/* SECTION: Fitur Unggulan */}
+             <section className="bg-white py-20 px-6 md:px-20">
+               <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
+               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                 {[
+                   { icon: <Archive className= "w-12 h-12 text-blue-600 mx-auto"/>, title: t("Inventori.features.feature1.title"), desc: t("Inventori.features.feature1.desc") },
+                   { icon:<Truck className= "w-12 h-12 text-blue-600 mx-auto"/>, title: t("Inventori.features.feature2.title"), desc: t("Inventori.features.feature2.desc") },
+                   { icon: <Package className= "w-12 h-12 text-blue-600 mx-auto"/>, title: t("Inventori.features.feature3.title"), desc: t("Inventori.features.feature3.desc") },
+                   { icon: <PieChart className= "w-12 h-12 text-blue-600 mx-auto"/>, title: t("Inventori.features.feature4.title"), desc: t("Inventori.features.feature4.desc") },
+                 ].map((item, idx) => (
+                   <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
+                     <div className="text-4xl mb-4">{item.icon}</div>
+                     <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
+                     <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
+                   </div>
+                 ))}
+               </div>
+             </section>
+             
              {/* SECTION: Testimoni */}
              <section className="bg-white py-20 px-6 md:px-20">
                <h2 className="text-3xl font-bold text-center mb-12">{t("home.testimonial.title")}</h2>
