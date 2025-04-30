@@ -3,9 +3,10 @@ import { useEffect, useState } from "react";
 import Akun1 from '../../assets/Akun1.png';
 import Dashboard from '../../assets/Dashboard.png';
 import Hak from '../../assets/Hak_akun.png';
+import User from '../../assets/Pic 19.png';
 export default function Akun(){
      const {t} = useTranslation();
-        const images = [Dashboard,Akun1,Hak];
+        const images = [User];
         const [currentImage, setCurrentImage] = useState(0);
         const [selectedTab, setSelectedTab] = useState(0);
          const Logos = Object.values(
@@ -33,13 +34,13 @@ export default function Akun(){
         
         ]
         
-        useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImage((prev) => (prev + 1) % images.length);
-        }, 5000);
+        // useEffect(() => {
+        // const interval = setInterval(() => {
+        //     setCurrentImage((prev) => (prev + 1) % images.length);
+        // }, 5000);
     
-        return () => clearInterval(interval);
-        }, []);
+        // return () => clearInterval(interval);
+        // }, []);
         return(
             <div className="lg:px-[50px]">
             <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-10 py-[90px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-10 ">
@@ -67,9 +68,9 @@ export default function Akun(){
               {/* Kanan: Gambar */}
               <div className="w-full md:w-1/2 flex justify-center">
                 <img
-                  src={images[currentImage]}
+                  src={images}
                   alt="Ilustrasi Keuangan"
-                  className="rounded-lg shadow-xl max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
+                  className="rounded-lg  max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
                 />
               </div>
             </div>
