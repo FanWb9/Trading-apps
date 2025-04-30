@@ -4,6 +4,7 @@ import Akun1 from '../../assets/Akun1.png';
 import Dashboard from '../../assets/Dashboard.png';
 import Hak from '../../assets/Hak_akun.png';
 import User from '../../assets/Pic 19.png';
+import { Users,UserPlus,Settings,ShieldCheck,Clock,FileText,} from "lucide-react";
 export default function Akun(){
      const {t} = useTranslation();
         const images = [User];
@@ -13,7 +14,39 @@ export default function Akun(){
         import.meta.glob('../../assets/scroll/logos*.jpg', {eager: true})
         ).map((mod) => mod.default);
     
-    
+        const featuresUserManagement = [
+          {
+            title: "Kelola Pengguna",
+            desc: "Atur dan kelola seluruh pengguna dalam satu tempat.",
+            icon: <Users className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+          {
+            title: "Tambah Akun",
+            desc: "Buat akun baru untuk admin, staf, atau pengguna lainnya.",
+            icon: <UserPlus className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+          {
+            title: "Hak Akses",
+            desc: "Tentukan peran dan izin akses setiap pengguna.",
+            icon: <ShieldCheck className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+          {
+            title: "Aktivitas Pengguna",
+            desc: "Pantau histori login dan aktivitas pengguna secara real-time.",
+            icon: <Clock className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+          {
+            title: "Pengaturan Akun",
+            desc: "Ubah informasi profil dan keamanan akun dengan mudah.",
+            icon: <Settings className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+          {
+            title: "Laporan Pengguna",
+            desc: "Unduh laporan aktivitas dan data pengguna secara lengkap.",
+            icon: <FileText className="w-12 h-12 text-blue-600 mx-auto" />,
+          },
+        ];
+        
         const navLeft = [
             {
             title: t("Laporan-Keuangan.navbar.section1.title"),
@@ -90,25 +123,32 @@ export default function Akun(){
                 </div>
               </div>
             </section>
-            {/* SECTION: Fitur Unggulan */}
-            <section className="bg-gray-50 py-20 px-6 md:px-20">
-              <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {[
-                  { icon: "📊", title: t("home.features.realtime"), desc: t("User.features.realtime") },
-                  { icon: "🔒", title: t("home.features.security"), desc: t("User.features.securityDesc") },
-                  { icon: "🔗", title: t("home.features.integration"), desc: t("User.features.integrationDesc") },
-                  { icon: "📥", title: t("home.features.export"), desc: t("home.features.exportDesc") },
-                ].map((item, idx) => (
-                  <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
-                    <div className="text-4xl mb-4">{item.icon}</div>
-                    <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
-                    <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-            {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
+
+            <section className="py-16 px-6 md:px-12 bg-white">
+          <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Kenapa Harus Pakai Sistem Pembukuan Kami?
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+            Dapatkan kemudahan dalam mencatat dan mengelola keuangan bisnismu dengan sistem pembukuan yang cepat, aman, dan mudah diakses kapan saja.
+          </p>
+
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {featuresUserManagement.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+                >
+                  <div className="mb-4">{item.icon}</div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                  <p className="text-sm text-gray-600">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>            
+        {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
             <section className="px-5">
             <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("User.items1.title")}</h2>
             <div className="mt-16 flex flex-col lg:flex-row gap-6">
@@ -159,7 +199,24 @@ export default function Akun(){
                 </div>
               </div>
             </section>
-           
+           {/* SECTION: Fitur Unggulan */}
+           <section className=" py-20 px-6 md:px-20">
+              <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {[
+                {icon: <Users className="w-12 h-12 text-blue-600 mx-auto" />, title: t("User.features.feature1.title"), desc: t("User.features.feature1.desc") },
+                {icon: <UserPlus className="w-12 h-12 text-blue-600 mx-auto" />, title: t("User.features.feature2.title"), desc: t("User.features.feature2.desc") },
+                {icon: <ShieldCheck className="w-12 h-12 text-blue-600 mx-auto" />, title: t("User.features.feature3.title"), desc: t("User.features.feature3.desc") },
+                {icon: <Clock className="w-12 h-12 text-blue-600 mx-auto" />,title: t("User.features.feature4.title"), desc: t("User.features.feature4.desc") },
+                ].map((item, idx) => (
+                  <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
+                    <div className="text-4xl mb-4">{item.icon}</div>
+                    <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
+                    <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
             {/* SECTION: Testimoni */}
             <section className="bg-white py-20 px-6 md:px-20">
               <h2 className="text-3xl font-bold text-center mb-12">{t("home.testimonial.title")}</h2>

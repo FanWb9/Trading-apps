@@ -398,9 +398,22 @@
       "title":"Kelola Gudang Anda Secara Akurat"
     },
     "features": {
-      "realtime": "Tinggalkan pencatatan gudang manual yang rentan kesalahan! Beralih ke TheCore Sistem Manajemen Gudang dan nikmati pemantauan stok dan pergerakan barang secara real-time, cepat, dan akurat.",
-      "securityDesc": "Lindungi data gudang Anda dengan sistem keamanan berstandar tinggi dari TheCore. Keamanan stok, riwayat transaksi, dan integritas data menjadi prioritas utama kami!",
-      "integrationDesc": "Kelola gudang Anda tanpa perlu instalasi tambahan yang rumit. TheCore menawarkan solusi manajemen gudang yang lengkap, terintegrasi, dan siap langsung mendukung operasional Anda."
+      "feature1":{
+        "title": "Manajemen Stok",
+        "desc": "Kelola stok barang di gudang dengan mudah, termasuk pengaturan kuantitas, kategori, dan lokasi penyimpanan."
+      },
+      "feature2":{
+        "title":"Keamanan Gudang",
+        "desc":"Pastikan semua barang dan data gudang terlindungi dengan sistem keamanan tingkat lanjut."
+      },
+      "feature3":{
+        "title":"Integrasi Sistem",
+        "desc":"Integrasi dengan sistem lain untuk mempermudah alur kerja dan sinkronisasi data secara otomatis."
+      },
+      "feature4":{
+        "title":"Ekspor Data",
+        "desc":"Ekspor data stok gudang ke format xlsx atau PDF untuk laporan dan analisis lebih lanjut."
+      }
     }
   },
   "Pengeluaran":{
@@ -473,7 +486,7 @@
   "User": {
     "Items": {
       "title": "Manajemen Pengguna",
-      "desc": "Kelola, pantau, dan kontrol akses serta aktivitas pengguna secara real-time untuk menjaga keamanan sistem dan meningkatkan efisiensi operasional.",
+      "desc": "Kontrol akses pengguna real-time untuk keamanan dan efisiensi sistem.",
       "desc1": "Dapatkan wawasan menyeluruh tentang perilaku pengguna dan pola akses untuk mengoptimalkan pengaturan izin, meningkatkan kolaborasi, dan mendukung pengambilan keputusan strategis."
     },
     "Navbar": {
@@ -490,9 +503,22 @@
       "title": "Kelola Akun dan Izin Pengguna dengan Efisien"
     },
     "features": {
-      "realtime": "Tinggalkan pengaturan akun manual yang merepotkan! Dengan TheCore User Management System, Anda dapat membuat, memantau, dan menyesuaikan akun serta izin pengguna secara real-time dengan cepat dan tepat.",
-      "securityDesc": "Amankan akses sistem Anda dengan sistem keamanan canggih dari TheCore. Menjaga integritas peran pengguna, hak akses, dan keamanan operasional adalah prioritas utama kami!",
-      "integrationDesc": "Kelola akun dan izin pengguna dengan mudah tanpa perlu instalasi tambahan. TheCore menyediakan solusi lengkap dan terintegrasi untuk manajemen akses dan peran pengguna secara seamless."
+      "feature1":{
+        "title":"Manajemen Pengguna",
+        "desc":"Kelola seluruh pengguna dalam satu tempat."
+      },
+      "feature2":{
+        "title":"Tambah Pengguna Baru",
+        "desc":"Tambahkan akun admin atau staf dengan mudah."
+      },
+      "feature3":{
+        "title":"Kontrol Akses",
+        "desc":"Atur hak akses dan peran setiap pengguna."
+      },
+      "feature4":{
+        "title": "Aktivitas Pengguna",
+        "desc":"Pantau riwayat login dan penggunaan aplikasi."
+      }
     }
   },
   "Pembeli":{
