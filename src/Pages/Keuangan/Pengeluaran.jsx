@@ -15,33 +15,33 @@ export default function Pengeluaran(){
 
     const featuresExpenseManagement = [
       {
-        title: "Catat Pengeluaran",
-        desc: "Input semua jenis pengeluaran dengan kategori yang jelas.",
+        title: t("Pengeluaran.grid.section1.title"),
+        desc:  t("Pengeluaran.grid.section1.desc"),
         icon: <Wallet className="w-12 h-12 text-green-600 mx-auto" />,
       },
       {
-        title: "Kontrol Anggaran",
-        desc: "Tetapkan batas anggaran dan pantau penggunaannya.",
+        title: t("Pengeluaran.grid.section2.title"),
+        desc:  t("Pengeluaran.grid.section2.desc"),
         icon: <CreditCard className="w-12 h-12 text-green-600 mx-auto" />,
       },
       {
-        title: "Riwayat Transaksi",
-        desc: "Lihat histori pengeluaran harian, mingguan, dan bulanan.",
+        title:  t("Pengeluaran.grid.section3.title"),
+        desc:  t("Pengeluaran.grid.section3.desc"),
         icon: <Clock className="w-12 h-12 text-green-600 mx-auto" />,
       },
       {
-        title: "Analisis Biaya",
-        desc: "Tampilkan ringkasan biaya dalam grafik dan persentase.",
+        title:  t("Pengeluaran.grid.section4.title"),
+        desc:  t("Pengeluaran.grid.section4.desc"),
         icon: <PieChart className="w-12 h-12 text-green-600 mx-auto" />,
       },
       {
-        title: "Pengingat Pembayaran",
-        desc: "Dapatkan notifikasi sebelum jatuh tempo tagihan.",
+        title:  t("Pengeluaran.grid.section5.title"),
+        desc:  t("Pengeluaran.grid.section5.desc"),
         icon: <AlarmClock className="w-12 h-12 text-green-600 mx-auto" />,
       },
       {
-        title: "Export Data",
-        desc: "Unduh data pengeluaran ke Excel atau PDF untuk arsip.",
+        title:  t("Pengeluaran.grid.section6.title"),
+        desc:  t("Pengeluaran.grid.section6.desc"),
         icon: <Download className="w-12 h-12 text-green-600 mx-auto" />,
       },
     ];

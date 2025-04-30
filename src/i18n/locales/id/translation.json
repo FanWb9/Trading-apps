@@ -49,6 +49,33 @@
       "title":"Satu Platform untuk Kendalikan Operasional & Finansial Bisnis Anda",
       "desc":"Manage the two most important aspects of your business - operations and finances - in one integrated system. Thecore is an online accounting solution that delivers real-time data for faster, more informed decisions."
     },
+    "grid" : {
+      "section1" : {
+      "title":  "Desain Sederhana & Intuitif",
+      "desc" : "Antarmuka bersih, mudah digunakan, cocok untuk semua kalangan."
+      },
+      "section2" : {
+        "title" :"Akses dari Mana Saja",
+        "desc" : "Kelola pembukuan kapan saja lewat cloud yang aman dan cepat."
+      },
+      "section3" : {
+        "title" : "Kolaborasi Tim Lebih Mudah",
+        "desc" :   "Tim bisa bekerja bersama dalam satu platform tanpa ribet."
+      },
+      "section4" : {
+        "title" :"Support Langsung & Cepat",
+        "desc" : "Tim kami siap bantu kamu lewat chat atau call tanpa ribet."
+      },
+      "section5" : {
+        "title" : "Data Terlindungi",
+        "desc" : "Keamanan data terjamin dengan enkripsi dan standar global."
+      },
+      "section6" : {
+        "title" : "Integrasi Fleksibel",
+        "desc" : "Bisa dihubungkan ke aplikasi lain untuk alur kerja yang efisien."
+      }
+      
+    },
     "features": {
       "feature1": {
         "title": "Mudah Digunakan",
@@ -266,6 +293,15 @@
       "feature4": {
         "title": "Manajemen Variasi",
         "desc": "Kelola varian produk seperti ukuran, warna, atau tipe dengan mudah."
+      },
+
+      "feature5": {
+        "title": "Pengaturan Stok Minimum",
+        "desc": "Atur notifikasi saat produk hampir habis untuk menghindari kehabisan."
+      },
+      "feature6": {
+        "title": "Laporan Produk",
+        "desc": "Pantau performa penjualan produk melalui laporan yang mudah dipahami."
       }
     },
   
@@ -292,6 +328,33 @@
         "title":"Perdataan Stok",
         "desc":"Dengan sinkronisasi otomatis pada setiap transaksi, data stok produk akan selalu terbarui secara real-time tanpa perlu pembaruan manual, sehingga rekapitulasi stok menjadi lebih akurat dan sesuai kondisi terkini. Sistem juga secara otomatis mencatat jumlah produk yang tersedia, sementara notifikasi akan dikirimkan saat stok mulai menipis, membantu Anda merencanakan produksi dan penjualan dengan lebih efektif."
       }
+    },
+    "grid" : {
+      "section1" : {
+      "title":  "Pemantauan Stok Real-Time",
+      "desc" : "Lihat jumlah stok terkini untuk memastikan ketersediaan produk selalu terjaga."
+      },
+      "section2" : {
+        "title" :"Riwayat Pergerakan Barang",
+        "desc" : "Catat semua aktivitas keluar dan masuk barang untuk kontrol penuh."
+      },
+      "section3" : {
+        "title" : "Notifikasi Stok Minimum",
+        "desc" :   "Dapatkan peringatan otomatis saat stok mencapai batas minimum."
+      },
+      "section4" : {
+        "title" :"Penyesuaian Manual Stok",
+        "desc" : "Edit jumlah stok secara manual untuk koreksi atau penyesuaian."
+      },
+      "section5" : {
+        "title" : "Audit dan Pengecekan Stok",
+        "desc" : "Lakukan pengecekan berkala untuk memastikan data stok sesuai dengan fisik."
+      },
+      "section6" : {
+        "title" : "Manajemen Pengiriman",
+        "desc" : "Atur pengiriman masuk dan keluar barang agar distribusi tetap efisien."
+      }
+      
     },
     "features":{
       "feature1":{
@@ -345,6 +408,33 @@
       "title": "Manajemen Keuangan",
       "desc": "Kendalikan arus kas untuk menjaga stabilitas keuangan",
       "desc1": "Dapatkan insight mendalam tentang pola pengeluaran dan arus kas keluar untuk mengoptimalkan anggaran, meningkatkan efisiensi biaya, dan memperkuat pengambilan keputusan keuangan Anda."
+    },
+    "grid" : {
+      "section1" : {
+      "title":  "Catat Pengeluaran",
+      "desc" : "Input semua jenis pengeluaran dengan kategori yang jelas."
+      },
+      "section2" : {
+        "title" :"Kontrol Anggaran",
+        "desc" : "Tetapkan batas anggaran dan pantau penggunaannya."
+      },
+      "section3" : {
+        "title" : "Riwayat Transaksi",
+        "desc" :   "Lihat histori pengeluaran harian, mingguan, dan bulana."
+      },
+      "section4" : {
+        "title" :"Analisis Biaya",
+        "desc" : "Tampilkan ringkasan biaya dalam grafik dan persentase."
+      },
+      "section5" : {
+        "title" : "Pengingat Pembayaran",
+        "desc" : "Dapatkan notifikasi sebelum jatuh tempo tagihan."
+      },
+      "section6" : {
+        "title" : "Export Data",
+        "desc" : "Unduh data pengeluaran ke Excel atau PDF untuk arsip."
+      }
+      
     },
     
     "navbar": {

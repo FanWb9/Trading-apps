@@ -16,33 +16,33 @@ export default function Inventaris (){
        
          const featuresInventoryManagement = [
           {
-            title: "Pemantauan Stok Real-Time",
-            desc: "Lihat jumlah stok terkini untuk memastikan ketersediaan produk selalu terjaga.",
+            title: t("Inventori.grid.section1.title"),
+            desc: t("Inventori.grid.section1.desc"),
             icon: <Boxes className="w-12 h-12 text-blue-600 mx-auto" />,
           },
           {
-            title: "Riwayat Pergerakan Barang",
-            desc: "Catat semua aktivitas keluar dan masuk barang untuk kontrol penuh.",
+            title:  t("Inventori.grid.section2.title"),
+            desc:  t("Inventori.grid.section2.desc"),
             icon: <History className="w-12 h-12 text-blue-600 mx-auto" />,
           },
           {
-            title: "Notifikasi Stok Minimum",
-            desc: "Dapatkan peringatan otomatis saat stok mencapai batas minimum.",
+            title: t("Inventori.grid.section3.title"),
+            desc: t("Inventori.grid.section3.desc"),
             icon: <Bell className="w-12 h-12 text-blue-600 mx-auto" />,
           },
           {
-            title: "Penyesuaian Manual Stok",
-            desc: "Edit jumlah stok secara manual untuk koreksi atau penyesuaian.",
+            title:  t("Inventori.grid.section4.title"),
+            desc:  t("Inventori.grid.section4.desc"),
             icon: <Edit className="w-12 h-12 text-blue-600 mx-auto" />,
           },
           {
-            title: "Audit dan Pengecekan Stok",
-            desc: "Lakukan pengecekan berkala untuk memastikan data stok sesuai dengan fisik.",
+            title: t("Inventori.grid.section5.title"),
+            desc: t("Inventori.grid.section5.desc"),
             icon: <ClipboardCheck className="w-12 h-12 text-blue-600 mx-auto" />,
           },
           {
-            title: "Manajemen Pengiriman",
-            desc: "Atur pengiriman masuk dan keluar barang agar distribusi tetap efisien.",
+            title: t("Inventori.grid.section6.title"),
+            desc: t("Inventori.grid.section6.title"),
             icon: <Truck className="w-12 h-12 text-blue-600 mx-auto" />,
           },
         ];

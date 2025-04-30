@@ -16,33 +16,33 @@ export default function Product(){
    
      const featuresProductManagement = [
       {
-        title: "Manajemen Inventaris",
-        desc: "Kelola stok produk secara real-time agar ketersediaan selalu terjaga.",
+        title: t("Product.features.feature1.title"),
+        desc:  t("Product.features.feature1.desc"),
         icon: <Boxes className="w-12 h-12 text-green-600 mx-auto" />, // pakai icon Boxes dari lucide-react
       },
       {
-        title: "Katalog Produk",
-        desc: "Atur daftar produk dengan kategori, harga, dan deskripsi yang lengkap.",
+        title: t("Product.features.feature2.title"),
+        desc:  t("Product.features.feature2.desc"),
         icon: <List className="w-12 h-12 text-green-600 mx-auto" />, // List
       },
       {
-        title: "Harga dan Diskon",
-        desc: "Tetapkan harga produk dan atur promo atau diskon dengan fleksibel.",
+        title: t("Product.features.feature3.title"),
+        desc:  t("Product.features.feature3.desc"),
         icon: <Tag className="w-12 h-12 text-green-600 mx-auto" />, // Tag
       },
       {
-        title: "Manajemen Variasi",
-        desc: "Kelola varian produk seperti ukuran, warna, atau tipe dengan mudah.",
+        title:  t("Product.features.feature4.title"),
+        desc:  t("Product.features.feature4.desc"),
         icon: <Layers className="w-12 h-12 text-green-600 mx-auto" />, // Layers
       },
       {
-        title: "Pengaturan Stok Minimum",
-        desc: "Atur notifikasi saat stok produk hampir habis untuk menghindari kehabisan.",
+        title:  t("Product.features.feature5.title"),
+        desc:  t("Product.features.feature5.desc"),
         icon: <FileCog className="w-12 h-12 text-green-600 mx-auto" />, // Bell
       },
       {
-        title: "Laporan Produk",
-        desc: "Pantau performa penjualan produk melalui laporan yang mudah dipahami.",
+        title:  t("Product.features.feature6.title"),
+        desc:  t("Product.features.feature6.desc"),
         icon: <BarChart3 className="w-12 h-12 text-green-600 mx-auto" />, // BarChart3
       },
     ];

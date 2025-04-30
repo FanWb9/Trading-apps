@@ -23,33 +23,33 @@ export default function Home() {
 
   const features1 = [
     {
-      title: "Desain Sederhana & Intuitif",
-      desc: "Antarmuka bersih, mudah digunakan, cocok untuk semua kalangan.",
+      title: t("home.grid.section1.title"),
+      desc: t("home.grid.section1.desc"),
       icon: <LayoutDashboard className="w-12 h-12 text-blue-600 mx-auto" />,
     },
     {
-      title: "Akses dari Mana Saja",
-      desc: "Kelola pembukuan kapan saja lewat cloud yang aman dan cepat.",
+      title: t("home.grid.section2.title"),
+      desc: t("home.grid.section2.desc"),
       icon: <Cloud className="w-12 h-12 text-blue-600 mx-auto" />,
     },
     {
-      title: "Kolaborasi Tim Lebih Mudah",
-      desc: "Tim bisa bekerja bersama dalam satu platform tanpa ribet.",
+      title:  t("home.grid.section3.title"),
+      desc:  t("home.grid.section3.desc"),
       icon: <Users className="w-12 h-12 text-blue-600 mx-auto" />,
     },
     {
-      title: "Support Langsung & Cepat",
-      desc: "Tim kami siap bantu kamu lewat chat atau call tanpa ribet.",
+      title:  t("home.grid.section4.title"),
+      desc: t("home.grid.section4.desc"),
       icon: <LifeBuoy className="w-12 h-12 text-blue-600 hover:text-teal-500 duration-700 mx-auto" />,
     },
     {
-      title: "Data Terlindungi",
-      desc: "Keamanan data terjamin dengan enkripsi dan standar global.",
+      title:  t("home.grid.section5.title"),
+      desc:  t("home.grid.section5.desc"),
       icon: <ShieldCheck className="w-12 h-12 text-blue-600 mx-auto" />,
     },
     {
-      title: "Integrasi Fleksibel",
-      desc: "Bisa dihubungkan ke aplikasi lain untuk alur kerja yang efisien.",
+      title: t("home.grid.section6.title"),
+      desc: t("home.grid.section6.desc"),
       icon: <Layers3 className="w-12 h-12 text-blue-600 mx-auto" />,
     },
   ];

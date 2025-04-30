@@ -58,6 +58,33 @@
       "title": "Automated finance tracking, focus on growing your business",
       "desc": "A smart system that helps manage financial reports and transactions instantly, anytime."
     },
+    "grid" : {
+      "section1" : {
+      "title":  "Simple & Intuitive Design",
+      "desc" : "Clean interface, easy to use, suitable for everyone."
+      },
+      "section2" : {
+        "title" :"Access from Anywhere",
+        "desc" : "Manage your bookkeeping anytime in the cloud securely and quickly."
+      },
+      "section3" : {
+        "title" : "Easier Team Collaboration",
+        "desc" :   "Teams can work together on one platform without any hassle."
+      },
+      "section4" : {
+        "title" :"Direct & Fast Support",
+        "desc" : "Our team is ready to help you via chat or call without any hassle.."
+      },
+      "section5" : {
+        "title" : "Protected Data",
+        "desc" : "Guaranteed data security with encryption and global standards."
+      },
+      "section6" : {
+        "title" : "Flexible Integration",
+        "desc" : "Can be connected to other apps for efficient workflow."
+      }
+      
+    },
     "features": {
       "feature1": {
         "title": "Easy to Use",
@@ -265,15 +292,24 @@
       },
       "feature2": {
         "title": "Product Catalog",
-        "desc": "Manage product lists with complete categories, prices, and descriptions."
+        "desc": "Organize product lists with categories, prices, and complete descriptions."
       },
       "feature3": {
-        "title": "Price and Discount",
-        "desc": "Set product prices and set promotions or discounts flexibly."
+        "title": "Pricing and Discounts",
+        "desc": "Set product prices and organize promos or discounts flexibly."
       },
       "feature4": {
-        "title": "Variation Management",
+        "title": "Variety Management",
         "desc": "Manage product variants such as size, color, or type easily."
+      },
+
+      "feature5": {
+        "title": "Minimum Stock Setting",
+        "desc": "Set notifications when products are running low to avoid running out."
+      },
+      "feature6": {
+        "title": "Product Report",
+        "desc": "Monitor product sales performance through easy-to-understand reports."
       }
     },
     "Navbar":{
@@ -292,6 +328,51 @@
       "title":"Inventory Management",
       "desc":"Monitor your product inventory and stock levels in real-time & accurately.",
       "desc1":"Understand stock and product flow clearly to optimize your business strategies."
+    },
+    "grid" : {
+      "section1" : {
+      "title":  "Real-Time Stock Monitoring",
+      "desc" : "View up-to-date stock quantities to ensure product availability is always maintained."
+      },
+      "section2" : {
+        "title" :"Goods Movement History",
+        "desc" : "Record all activities of goods in and out for full control.."
+      },
+      "section3" : {
+        "title" : "Minimum Stock Notification",
+        "desc" :   "Get automatic alerts when stock reaches the minimum limit."
+      },
+      "section4" : {
+        "title" :"Stock Manual Adjustment",
+        "desc" : "Edit stock quantities manually for corrections or adjustments."
+      },
+      "section5" : {
+        "title" : "Stock Audit and Check",
+        "desc" : "Perform periodic checks to ensure stock data is in line with physical data."
+      },
+      "section6" : {
+        "title" : "Delivery Management",
+        "desc" : "Organize inbound and outbound shipments to keep distribution efficient."
+      }
+      
+    },
+    "features":{
+      "feature1":{
+        "title":"Goods Storage",
+        "desc":"Manage and archive products easily." 
+      },
+      "feature2":{
+        "title":"Shipping",
+        "desc":"Monitor and manage product shipments efficiently." 
+      },
+      "feature3":{
+        "title":"Packaging", 
+        "desc":"Manage packing and product units for distribution." 
+      },
+      "feature4":{
+        "title":"Stock Report", 
+        "desc":"Monitor product performance and stock with visual reports." 
+      }
     },
     "Navbar":{
       "section1":{
@@ -334,6 +415,33 @@
       "desc": "Control cash flow to maintain financial stability",
       "desc1": "Gain in-depth insights into spending patterns and cash outflows to optimize budgets, improve cost efficiency, and strengthen your financial decision-making."
     },
+    "grid" : {
+      "section1" : {
+      "title":  "Record Expenses",
+      "desc" : "Input all types of expenses with clear categories."
+      },
+      "section2" : {
+        "title" :"Budget Control",
+        "desc" : "Set a budget limit and monitor its use."
+      },
+      "section3" : {
+        "title" : "Transaction History",
+        "desc" :   "View daily, weekly, and monthly spending historya."
+      },
+      "section4" : {
+        "title" :"Cost Analysis",
+        "desc" : "Show cost summary in graphs and percentages."
+      },
+      "section5" : {
+        "title" : "Payment Reminder",
+        "desc" : "Get notifications before bills are due."
+      },
+      "section6" : {
+        "title" : "Export Data",
+        "desc" : "Download expense data to Excel or PDF for archive."
+      }
+      
+    },
     "navbar":{
       "section1":{
         "title":"Cost",
@@ -348,9 +456,23 @@
       "title": "Manage Your Cash Flow and Expenses Accurately"
     },
     "features": {
-      "realtime": "Say goodbye to confusing manual records! With TheCore Financial Management System, you can monitor bank transactions and business expenses in real-time with speed and precision.",
-      "securityDesc": "Safeguard your financial data with TheCore's advanced security system. The safety of your transactions, cash flow, and expense records is our top priority!",
-      "integrationDesc": "Handle your financial operations smoothly without the need for complex installations. TheCore provides a complete, integrated solution to manage both your bank accounts and business expenditures seamlessly."
+      "feature1":{
+        "title":"Record Expenses",
+        "desc":"Keep all expense transactions neat and structured."
+      },
+      "feature2":{
+        "title":"Transaction Details",
+        "desc":"View details of each transaction complete with date and category."
+      },
+      "feature3":{
+        "title":"Payment Reminder",
+        "desc":"Get notifications for upcoming bills or regular expenses."
+      },
+      "feature4":{
+        "title":"Export Report",
+        "desc":"Download expense reports in PDF or Excel format anytime."
+      }
+      
     }
   },
   "User":{
@@ -406,8 +528,8 @@
         "desc" : "Integrate a system to track payment and inventory status from suppliers."
       },
       "section6" : {
-        "title" : "Pengingat Pembayaran",
-        "desc" : "Dapatkan pengingat untuk pembayaran yang harus dilakukan kepada pemasok."
+        "title" : "Remembering Payment",
+        "desc" : "Get reminders for payments due to suppliers."
       }
       
     },
