@@ -3,6 +3,16 @@ import { useEffect, useState } from "react";
 import Gudang1 from '../../assets/Data_gudang.png';
 import Dashboard from '../../assets/Dashboard.png';
 import Create from '../../assets/Create_gudang.png';
+import {
+  Boxes,
+  ClipboardList,
+  PackageCheck,
+  Move,
+  AlarmClock,
+  FileDown,
+  ShieldCheck,
+  Link2
+} from "lucide-react";
 export default function  Gudang() {
     const {t} = useTranslation();
     const images = [Dashboard,Gudang1,Create];
@@ -12,7 +22,38 @@ export default function  Gudang() {
     import.meta.glob('../../assets/scroll/logos*.jpg', {eager: true})
     ).map((mod) => mod.default);
 
-
+    const featuresWarehouseManagement = [
+      {
+        title: "Stok Barang",
+        desc: "Pantau jumlah stok barang secara real-time dan akurat.",
+        icon: <Boxes className="w-12 h-12 text-yellow-600 mx-auto" />,
+      },
+      {
+        title: "Pencatatan Barang Masuk",
+        desc: "Catat semua barang yang masuk ke dalam gudang dengan detail.",
+        icon: <ClipboardList className="w-12 h-12 text-yellow-600 mx-auto" />,
+      },
+      {
+        title: "Barang Keluar",
+        desc: "Kelola distribusi dan pencatatan barang yang keluar dari gudang.",
+        icon: <PackageCheck className="w-12 h-12 text-yellow-600 mx-auto" />,
+      },
+      {
+        title: "Perpindahan Gudang",
+        desc: "Rekam perpindahan barang antar lokasi atau gudang.",
+        icon: <Move className="w-12 h-12 text-yellow-600 mx-auto" />,
+      },
+      {
+        title: "Pengingat Stok Minimum",
+        desc: "Dapatkan notifikasi saat stok mendekati batas minimum.",
+        icon: <AlarmClock className="w-12 h-12 text-yellow-600 mx-auto" />,
+      },
+      {
+        title: "Laporan Gudang",
+        desc: "Unduh laporan stok dan aktivitas gudang dalam format PDF atau Excel.",
+        icon: <FileDown className="w-12 h-12 text-yellow-600 mx-auto" />,
+      },
+    ];
     const navLeft = [
         {
         title: t("Laporan-Keuangan.navbar.section1.title"),
@@ -89,24 +130,33 @@ export default function  Gudang() {
             </div>
           </div>
         </section>
-        {/* SECTION: Fitur Unggulan */}
-        <section className="bg-gray-50 py-20 px-6 md:px-20">
-          <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { icon: "📊", title: t("home.features.realtime"), desc: t("Gudang.features.realtime") },
-              { icon: "🔒", title: t("home.features.security"), desc: t("Gudang.features.securityDesc") },
-              { icon: "🔗", title: t("home.features.integration"), desc: t("Gudang.features.integrationDesc") },
-              { icon: "📥", title: t("home.features.export"), desc: t("home.features.exportDesc") },
-            ].map((item, idx) => (
-              <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
-              </div>
-            ))}
+           {/* Section why choose */}
+       {/* Keunggulan */}
+       <section className="py-16 px-6 md:px-12 bg-white">
+          <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Kenapa Harus Pakai Sistem Pembukuan Kami?
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+            Dapatkan kemudahan dalam mencatat dan mengelola keuangan bisnismu dengan sistem pembukuan yang cepat, aman, dan mudah diakses kapan saja.
+          </p>
+
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {featuresWarehouseManagement.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+                >
+                  <div className="mb-4">{item.icon}</div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                  <p className="text-sm text-gray-600">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
+       
         {/* SECTION: FITUR SLIDE CONTOH/EXAMPL */}
         <section className="px-5">
         <h2 className="text-center pt-[50px] font-bold text-2xl lg:text-3xl">{t("Gudang.items1.title")}</h2>
@@ -158,7 +208,23 @@ export default function  Gudang() {
             </div>
           </div>
         </section>
-       
+        <section className="bg-white py-20 px-6 md:px-20">
+        <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            { icon: <Boxes  className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Gudang.features.feature1.title"), desc: t("Gudang.features.feature1.desc") },
+            { icon: <ShieldCheck  className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Gudang.features.feature2.title"), desc: t("Gudang.features.feature2.desc") },
+            { icon: <Link2 className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Gudang.features.feature3.title"), desc: t("Gudang.features.feature3.desc") },
+            { icon: <FileDown className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Gudang.features.feature4.title"), desc: t("Gudang.features.feature4.desc") },
+          ].map((item, idx) => (
+            <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
+              <div className="mb-4">{item.icon}</div>
+              <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
+              <p className="text-gray-600 text-xl font-medium">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
         {/* SECTION: Testimoni */}
         <section className="bg-white py-20 px-6 md:px-20">
           <h2 className="text-3xl font-bold text-center mb-12">{t("home.testimonial.title")}</h2>

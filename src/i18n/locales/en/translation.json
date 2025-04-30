@@ -248,10 +248,23 @@
       "title": "Manage Your Warehouse Accurately"
     },
     "features": {
-      "realtime": "Leave behind confusing manual warehouse records! Switch to TheCore Warehouse Management System and enjoy real-time, fast, and accurate tracking of stock and inventory movements.",
-      "securityDesc": "Protect your warehouse data with TheCore's advanced security system. Stock security, transaction history, and data integrity are our top priorities!",
-      "integrationDesc": "Manage your warehouse operations effortlessly without the need for additional installations. TheCore delivers a complete, integrated solution ready to support your warehouse management seamlessly."
-    }
+      "feature1":{
+      "title": "Stock Management",
+      "desc": "Manage your warehouse stock easily, including setting quantity, category, and storage location."
+      },
+      "feature2":{
+      "title":"Warehouse Security",
+      "desc":"Ensure all warehouse goods and data are protected with an advanced security system."
+      },
+      "feature3":{
+      "title":"System Integration",
+      "desc":"Integration with other systems to simplify workflow and automatically synchronize data."
+      },
+      "feature4":{
+      "title":"Data Export",
+      "desc":"Export warehouse stock data to xlsx or PDF format for further reporting and analysis."
+      }
+      }
   },
   "Pengeluaran":{
    "Items": {
@@ -281,7 +294,7 @@
   "User":{
     "Items":{
       "title": "User Management",
-      "desc": "Manage, monitor, and control user access and activities in real-time to maintain system security and operational efficiency.",
+      "desc": "Real-time user access control for system security and efficiency.",
       "desc1": "Gain comprehensive insights into user behavior and access patterns to optimize permissions, enhance collaboration, and support strategic decision-making."
     },
     "Navbar":{
@@ -298,10 +311,23 @@
       "title": "Manage User Accounts and Permissions Efficiently"
     },
     "features": {
-      "realtime": "Say goodbye to complicated manual user setups! With TheCore User Management System, you can create, monitor, and adjust user accounts and permissions in real-time with speed and precision.",
-      "securityDesc": "Safeguard your system access with TheCore's advanced security system. Ensuring the integrity of user roles, access rights, and operational security is our top priority!",
-      "integrationDesc": "Manage user accounts and permissions effortlessly without the need for complex installations. TheCore offers a complete, integrated solution for streamlined user access and role management."
+      "feature1":{
+        "title": "User Management",
+        "desc":"Manage all users from one place."
+      },
+      "feature2":{
+        "title": "Add New Users",
+        "desc":"Easily add admin or staff accounts."
+      },
+      "feature3":{
+        "title":"Access Control",
+        "desc": "Set permissions and roles for each user."
+      },
+      "feature4":{
+        "title": "User Activity",
+        "desc":"Track user login and usage history."
       }
+    }
   },
   "Pembeli":{
     "Items": {
