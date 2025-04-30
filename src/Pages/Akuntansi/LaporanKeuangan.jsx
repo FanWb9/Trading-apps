@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import Rugi from '../../assets/Rugi.png';
+import Pic4 from '../../assets/Pic 5.png';
 import Dashboard from '../../assets/Dashboard.png';
 import Tahunan from '../../assets/Rugi_Tahunan.png';
 import { BarChart3, TrendingDown, FileText, PieChart, Download,AlarmClock ,Activity, Shield, Link, UploadCloud } from "lucide-react";
 
 export default function LaporanKeuangan() {
   const { t } = useTranslation();
-  const images = [Rugi, Dashboard,Tahunan];
+  const images = [Pic4];
   const [currentImage, setCurrentImage] = useState(0);
   const [selectedTab, setSelectedTab] = useState(0);
 
@@ -68,13 +69,13 @@ export default function LaporanKeuangan() {
      
     ]
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000);
+//  const interval = setInterval(() => {
+//       setCurrentImage((prev) => (prev + 1) % images.length);
+//     }, 5000);
 
-    return () => clearInterval(interval);
-  }, []);
+//     return useEffect(() => {
+//      () => clearInterval(interval);
+//   }, []);
 
   return (
     <div className="lg:px-[50px]">
@@ -104,9 +105,9 @@ export default function LaporanKeuangan() {
         {/* Kanan: Gambar */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
-            src={images[currentImage]}
+            src={images}
             alt="Ilustrasi Keuangan"
-            className="rounded-lg shadow-xl max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
+            className="rounded-lg  max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
           />
         </div>
       </div>

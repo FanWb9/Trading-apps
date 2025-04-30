@@ -361,9 +361,23 @@
       "title": "Kelola Arus Kas dan Pengeluaran dengan Akurat"
     },
     "features": {
-      "realtime": "Tinggalkan pencatatan manual yang membingungkan! Dengan TheCore Financial Management System, Anda dapat memonitor transaksi bank dan pengeluaran bisnis secara real-time dengan cepat dan akurat.",
-      "securityDesc": "Lindungi data keuangan Anda dengan sistem keamanan canggih dari TheCore. Keamanan transaksi, arus kas, dan catatan pengeluaran adalah prioritas utama kami!",
-      "integrationDesc": "Kelola operasional keuangan Anda dengan lancar tanpa perlu instalasi tambahan. TheCore menyediakan solusi terintegrasi lengkap untuk mengelola akun bank dan pengeluaran bisnis Anda secara seamless."
+      "feature1":{
+        "title":"Catat Pengeluaran",
+        "desc":"Simpan semua transaksi pengeluaran secara rapi dan terstruktur."
+      },
+      "feature2":{
+        "title":"Detail Transaksi",
+        "desc":"Lihat rincian setiap transaksi lengkap dengan tanggal dan kategori."
+      },
+      "feature3":{
+        "title":"Pengingat Pembayaran",
+        "desc":"Dapatkan notifikasi untuk tagihan atau pengeluaran rutin yang akan datang."
+      },
+      "feature4":{
+        "title":"Ekspor Laporan",
+        "desc":"Unduh laporan pengeluaran dalam format PDF atau Excel kapan saja."
+      }
+      
     }
   },
   "User": {

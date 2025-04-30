@@ -205,10 +205,10 @@ export default function Pengeluaran(){
         <h2 className="text-3xl font-bold text-center mb-12">{t("home.features.title")}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: <Wallet className="w-12 h-12 text-blue-600 mx-auto" />, title: t("home.features.realtime"), desc: t("home.features.realtimeDesc") },
-            { icon: <ClipboardList className="w-12 h-12 text-blue-600 mx-auto" />, title: t("home.features.security"), desc: t("home.features.securityDesc") },
-            { icon: <AlarmClock className="w-12 h-12 text-blue-600 mx-auto" />, title: t("home.features.integration"), desc: t("home.features.integrationDesc") },
-            { icon: <Download className="w-12 h-12 text-blue-600 mx-auto" />, title: t("home.features.export"), desc: t("home.features.exportDesc") },
+            { icon: <Wallet className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Pengeluaran.features.feature1.title"), desc: t("Pengeluaran.features.feature1.desc") },
+            { icon: <ClipboardList className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Pengeluaran.features.feature2.title"), desc: t("Pengeluaran.features.feature2.desc") },
+            { icon: <AlarmClock className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Pengeluaran.features.feature3.title"), desc: t("Pengeluaran.features.feature3.desc") },
+            { icon: <Download className="w-12 h-12 text-blue-600 mx-auto" />, title: t("Pengeluaran.features.feature4.title"), desc: t("Pengeluaran.features.feature4.desc") },
           ].map((item, idx) => (
             <div key={idx} className="bg-white shadow p-6 rounded-xl text-center hover:shadow-lg transition">
               <div className="mb-4">{item.icon}</div>
