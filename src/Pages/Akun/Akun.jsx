@@ -16,33 +16,33 @@ export default function Akun(){
     
         const featuresUserManagement = [
           {
-            title: "Kelola Pengguna",
-            desc: "Atur dan kelola seluruh pengguna dalam satu tempat.",
+            title: t("User.grid.section1.title"),
+            desc: t("User.grid.section1.desc"),
             icon: <Users className="w-12 h-12 text-blue-600 mx-auto" />,
           },
           {
-            title: "Tambah Akun",
-            desc: "Buat akun baru untuk admin, staf, atau pengguna lainnya.",
+            title:t("User.grid.section2.title"),
+            desc:t("User.grid.section2.desc"),
             icon: <UserPlus className="w-12 h-12 text-blue-600 mx-auto" />,
           },
           {
-            title: "Hak Akses",
-            desc: "Tentukan peran dan izin akses setiap pengguna.",
+            title: t("User.grid.section3.title"),
+            desc: t("User.grid.section3.desc"),
             icon: <ShieldCheck className="w-12 h-12 text-blue-600 mx-auto" />,
           },
           {
-            title: "Aktivitas Pengguna",
-            desc: "Pantau histori login dan aktivitas pengguna secara real-time.",
+            title:t("User.grid.section4.title"),
+            desc: t("User.grid.section4.desc"),
             icon: <Clock className="w-12 h-12 text-blue-600 mx-auto" />,
           },
           {
-            title: "Pengaturan Akun",
-            desc: "Ubah informasi profil dan keamanan akun dengan mudah.",
+            title: t("User.grid.section5.title"),
+            desc:t("User.grid.section5.desc"),
             icon: <Settings className="w-12 h-12 text-blue-600 mx-auto" />,
           },
           {
-            title: "Laporan Pengguna",
-            desc: "Unduh laporan aktivitas dan data pengguna secara lengkap.",
+            title: t("User.grid.section6.title"),
+            desc: t("User.grid.section6.desc"),
             icon: <FileText className="w-12 h-12 text-blue-600 mx-auto" />,
           },
         ];

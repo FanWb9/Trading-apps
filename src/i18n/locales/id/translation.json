@@ -499,6 +499,33 @@
         "desc": "Atur dan kelola izin pengguna dengan mudah menggunakan TheCore. Tentukan apa saja yang dapat diakses dan dikontrol oleh setiap pengguna untuk menjaga keamanan operasional dan memperlancar manajemen tugas."
       }
     },
+    "grid" : {
+      "section1" : {
+      "title":  "Kelola Pengguna",
+      "desc" : "Atur dan kelola seluruh pengguna dalam satu tempat."
+      },
+      "section2" : {
+        "title" :"Tambah Akun",
+        "desc" : "Buat akun baru untuk admin, staf, atau pengguna lainnya."
+      },
+      "section3" : {
+        "title" : "Hak Akses",
+        "desc" :   "Tentukan peran dan izin akses setiap pengguna."
+      },
+      "section4" : {
+        "title" :"Aktivitas Pengguna",
+        "desc" : "Pantau histori login dan aktivitas pengguna secara real-time."
+      },
+      "section5" : {
+        "title" : "Pengaturan Akun",
+        "desc" : "Ubah informasi profil dan keamanan akun dengan mudah."
+      },
+      "section6" : {
+        "title" : "Laporan Pengguna",
+        "desc" : "Unduh laporan aktivitas dan data pengguna secara lengkap."
+      }
+      
+    },
     "items1": {
       "title": "Kelola Akun dan Izin Pengguna dengan Efisien"
     },

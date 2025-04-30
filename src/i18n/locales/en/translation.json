@@ -494,6 +494,33 @@
       "desc": "Real-time user access control for system security and efficiency.",
       "desc1": "Gain comprehensive insights into user behavior and access patterns to optimize permissions, enhance collaboration, and support strategic decision-making."
     },
+    "grid" : {
+      "section1" : {
+      "title":  "Manage Users",
+      "desc" : "Organize and manage all users in one place."
+      },
+      "section2" : {
+        "title" :"Add Account",
+        "desc" : "Create a new account for admin, staff, or other users."
+      },
+      "section3" : {
+        "title" : "Access Rights",
+        "desc" :   "Define the roles and access permissions of each user."
+      },
+      "section4" : {
+        "title" :"User Activity",
+        "desc" : "Monitor login history and user activity in real-time."
+      },
+      "section5" : {
+        "title" : "Account Settings",
+        "desc" : "Easily change profile and account security information."
+      },
+      "section6" : {
+        "title" : "User Report",
+        "desc" : "Download full activity reports and user data."
+      }
+      
+    },
     "Navbar":{
       "section1": {
         "title": "Account Creation",
