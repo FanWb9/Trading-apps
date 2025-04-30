@@ -47,7 +47,7 @@
     "Page":{
       "Judul":"thecore",
       "title":"Satu Platform untuk Kendalikan Operasional & Finansial Bisnis Anda",
-      "desc":"Kelola dua aspek terpenting bisnis Anda — operasional dan keuangan — dalam satu sistem yang terintegrasi. Thecore hadir sebagai solusi akuntansi online yang memberikan data real-time untuk keputusan yang lebih cepat dan tepat."
+      "desc":"Manage the two most important aspects of your business - operations and finances - in one integrated system. Thecore is an online accounting solution that delivers real-time data for faster, more informed decisions."
     },
     "features": {
       "feature1": {
@@ -118,6 +118,33 @@
     "why": "Mengapa Memilih"
   },
   "Laporan-Keuangan":{
+    "grid":{
+      "section1":{
+        "title":"Laporan Pendapatan",
+        "desc":"Lacak semua pemasukan bisnismu dengan detail dan mudah dipahami."
+      },
+      "section2":{
+        "title" : "Laporan Pengeluaran",
+        "desc" :"Pantau pen geluaran harian, mingguan, hingga bulanan dengan rapi."
+      },
+      "section3" : {
+        "title" :  "Rekapitulasi Keuangan",
+        "desc" : "Sajikan semua transaksi ke dalam laporan keuangan lengkap."
+      },
+      "section4" : {
+        "title" :  "Analisa Keuangan",
+        "desc" :  "Visualisasikan data keuangan dengan grafik untuk analisa yang lebih mudah."
+      },
+      "section5" : {
+        "title" : "Export Laporan",
+        "desc" :  "Unduh laporan keuangan dalam format PDF atau Excel dengan sekali klik."
+      },
+      "section6" : {
+        "title" : "Reminder Keuangan",
+        "desc": "Dapatkan pengingat otomatis untuk tagihan, jatuh tempo, dan laporan bulanan."
+      }
+      
+    },
     "Items":{
       "title":"Arus Kas & Bisnis",
       "desc":"Pantau keuangan bisnismu secara real-time & akurat",
@@ -150,6 +177,34 @@
       "title":"Pembukuan",
       "desc":"Pantau Pembukuan Bisnis secara real-time & akurat",
       "desc1":"Gak perlu ribet lagi! Cek pembukuan bisnismu kapan aja, real-time dan super akurat. Biar keuangan Bisnismu makin teratur."
+    },
+
+    "grid" : {
+      "section1" : {
+      "title": "Pencatatan Transaksi",
+      "desc" : "Catat semua transaksi bisnis secara cepat dan akurat setiap hari."
+      },
+      "section2" : {
+        "title" : "Pengelompokan Kategori",
+        "desc" : "Kelompokkan transaksi berdasarkan kategori seperti penjualan, pembelian, dan biaya operasional."
+      },
+      "section3" : {
+        "title" : "Pembuatan Invoice",
+        "desc" :  "Buat dan kelola invoice profesional untuk klien dan customer dengan mudah."
+      },
+      "section4" : {
+        "title" :"Jadwal Pembayaran",
+        "desc" : "Atur dan pantau jadwal pembayaran untuk menghindari keterlambatan."
+      },
+      "section5" : {
+        "title" : "Manajemen Kas",
+        "desc" : "Kelola saldo kas masuk dan keluar untuk memastikan arus kas tetap sehat."
+      },
+      "section6" : {
+        "title" : "Pengecekan Laporan",
+        "desc" : "Tinjau dan validasi laporan pembukuan untuk memastikan akurasi data."
+      }
+      
     },
     "features":{
       "feature1":{
@@ -351,6 +406,33 @@
         "title": "Penjualan",
         "desc": "Kelola penjualan produk kepada pelanggan dengan akurat melalui sistem terintegrasi. TheCore membantu Anda memastikan setiap transaksi penjualan tercatat dengan baik, meningkatkan pelayanan, dan mempercepat proses bisnis."
       }
+    },
+    "grid" : {
+      "section1" : {
+      "title":  "Manajemen Pemasok",
+      "desc" : "Kelola pemasok dengan mudah dan efisien untuk menjaga hubungan yang baik."
+      },
+      "section2" : {
+        "title" :"Pencatatan Pembelian",
+        "desc" : "Catat setiap transaksi pembelian dengan detail untuk memantau pengeluaran bisnis."
+      },
+      "section3" : {
+        "title" : "Pengaturan Pembayaran",
+        "desc" :   "Kelola jadwal pembayaran kepada pemasok agar tidak ada keterlambatan."
+      },
+      "section4" : {
+        "title" :"Laporan Pemasok",
+        "desc" : "Tinjau laporan pembayaran dan transaksi dengan pemasok secara menyeluruh."
+      },
+      "section5" : {
+        "title" : "Integrasi Pemasok",
+        "desc" : "Integrasikan sistem untuk melacak status pembayaran dan inventaris dari pemasok."
+      },
+      "section6" : {
+        "title" : "Pengingat Pembayaran",
+        "desc" : "Dapatkan pengingat untuk pembayaran yang harus dilakukan kepada pemasok."
+      }
+      
     },
     "items1": {
       "title": "Kelola Pembelian dan Penjualan dengan Terorganisir"

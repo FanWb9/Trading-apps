@@ -20,33 +20,33 @@ export default function Pembukuan() {
 
   const featuresBookkeeping = [
     {
-      title: "Pencatatan Transaksi",
-      desc: "Catat semua transaksi bisnis secara cepat dan akurat setiap hari.",
+      title: t("Pembukuan1.grid.section1.title"),
+      desc: t("Pembukuan1.grid.section1.desc"),
       icon: <NotebookPen className="w-12 h-12 text-purple-600 mx-auto" />,
     },
     {
-      title: "Pengelompokan Kategori",
-      desc: "Kelompokkan transaksi berdasarkan kategori seperti penjualan, pembelian, dan biaya operasional.",
+      title: t("Pembukuan1.grid.section2.title"),
+      desc: t("Pembukuan1.grid.section2.desc"),
       icon: <ListOrdered className="w-12 h-12 text-purple-600 mx-auto" />,
     },
     {
-      title: "Pembuatan Invoice",
-      desc: "Buat dan kelola invoice profesional untuk klien dan customer dengan mudah.",
+      title: t("Pembukuan1.grid.section3.title"),
+      desc:t("Pembukuan1.grid.section3.desc"),
       icon: <ReceiptText className="w-12 h-12 text-purple-600 mx-auto" />,
     },
     {
-      title: "Jadwal Pembayaran",
-      desc: "Atur dan pantau jadwal pembayaran untuk menghindari keterlambatan.",
+      title: t("Pembukuan1.grid.section4.title"),
+      desc: t("Pembukuan1.grid.section4.desc"),
       icon: <CalendarDays className="w-12 h-12 text-purple-600 mx-auto" />,
     },
     {
-      title: "Manajemen Kas",
-      desc: "Kelola saldo kas masuk dan keluar untuk memastikan arus kas tetap sehat.",
+      title:t("Pembukuan1.grid.section5.title"),
+      desc: t("Pembukuan1.grid.section5.desc"),
       icon: <Banknote className="w-12 h-12 text-purple-600 mx-auto" />,
     },
     {
-      title: "Pengecekan Laporan",
-      desc: "Tinjau dan validasi laporan pembukuan untuk memastikan akurasi data.",
+      title: t("Pembukuan1.grid.section6.title"),
+      desc: t("Pembukuan1.grid.section6.desc"),
       icon: <ClipboardCheck className="w-12 h-12 text-purple-600 mx-auto" />,
     },
   ];

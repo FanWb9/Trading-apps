@@ -16,33 +16,33 @@ export default function Pembeli(){
 
     const featuresSupplierManagement = [
         {
-          title: "Manajemen Pemasok",
-          desc: "Kelola pemasok dengan mudah dan efisien untuk menjaga hubungan yang baik.",
+          title: t("Pembeli.grid.section1.title"),
+          desc: t("Pembeli.grid.section1.desc"),
           icon: <Users className="w-12 h-12 text-blue-600 mx-auto" />,
         },
         {
-          title: "Pencatatan Pembelian",
-          desc: "Catat setiap transaksi pembelian dengan detail untuk memantau pengeluaran bisnis.",
+          title: t("Pembeli.grid.section2.title"),
+          desc: t("Pembeli.grid.section2.desc"),
           icon: <ShoppingBag className="w-12 h-12 text-blue-600 mx-auto" />,
         },
         {
-          title: "Pengaturan Pembayaran",
-          desc: "Kelola jadwal pembayaran kepada pemasok agar tidak ada keterlambatan.",
+          title: t("Pembeli.grid.section3.title"),
+          desc: t("Pembeli.grid.section3.desc"),
           icon: <Calendar className="w-12 h-12 text-blue-600 mx-auto" />,
         },
         {
-          title: "Laporan Pemasok",
-          desc: "Tinjau laporan pembayaran dan transaksi dengan pemasok secara menyeluruh.",
+          title: t("Pembeli.grid.section4.title"),
+          desc: t("Pembeli.grid.section4.desc"),
           icon: <FileText className="w-12 h-12 text-blue-600 mx-auto" />,
         },
         {
-          title: "Integrasi Pemasok",
-          desc: "Integrasikan sistem untuk melacak status pembayaran dan inventaris dari pemasok.",
+          title: t("Pembeli.grid.section5.title"),
+          desc:t("Pembeli.grid.section5.desc"),
           icon: <Link className="w-12 h-12 text-blue-600 mx-auto" />,
         },
         {
-          title: "Pengingat Pembayaran",
-          desc: "Dapatkan pengingat untuk pembayaran yang harus dilakukan kepada pemasok.",
+          title:  t("Pembeli.grid.section6.title"),
+          desc:  t("Pembeli.grid.section6.desc"),
           icon: <AlarmClock className="w-12 h-12 text-blue-600 mx-auto" />,
         },
       ];

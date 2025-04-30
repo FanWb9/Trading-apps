@@ -17,33 +17,33 @@ export default function LaporanKeuangan() {
 
   const featuresFinancialReport = [
     {
-      title: "Laporan Pendapatan",
-      desc: "Lacak semua pemasukan bisnismu dengan detail dan mudah dipahami.",
+      title: t("Laporan-Keuangan.grid.section1.title"),
+      desc: t("Laporan-Keuangan.grid.section1.desc"),
       icon: <BarChart3 className="w-12 h-12 text-green-600 mx-auto" />,
     },
     {
-      title: "Laporan Pengeluaran",
-      desc: "Pantau pengeluaran harian, mingguan, hingga bulanan dengan rapi.",
+      title:  t("Laporan-Keuangan.grid.section2.title"),
+      desc:  t("Laporan-Keuangan.grid.section2.desc"),
       icon: <TrendingDown className="w-12 h-12 text-green-600 mx-auto" />,
     },
     {
-      title: "Rekapitulasi Keuangan",
-      desc: "Sajikan semua transaksi ke dalam laporan keuangan lengkap.",
+      title: t("Laporan-Keuangan.grid.section3.title"),
+      desc:t("Laporan-Keuangan.grid.section3.desc"),
       icon: <FileText className="w-12 h-12 text-green-600 mx-auto" />,
     },
     {
-      title: "Analisa Keuangan",
-      desc: "Visualisasikan data keuangan dengan grafik untuk analisa yang lebih mudah.",
+      title: t("Laporan-Keuangan.grid.section4.title"),
+      desc: t("Laporan-Keuangan.grid.section4.desc"),
       icon: <PieChart className="w-12 h-12 text-green-600 mx-auto" />,
     },
     {
-      title: "Export Laporan",
-      desc: "Unduh laporan keuangan dalam format PDF atau Excel dengan sekali klik.",
+      title:  t("Laporan-Keuangan.grid.section5.title"),
+      desc:  t("Laporan-Keuangan.grid.section5.desc"),
       icon: <Download className="w-12 h-12 text-green-600 mx-auto" />,
     },
     {
-      title: "Reminder Keuangan",
-      desc: "Dapatkan pengingat otomatis untuk tagihan, jatuh tempo, dan laporan bulanan.",
+      title:  t("Laporan-Keuangan.grid.section6.title"),
+      desc:  t("Laporan-Keuangan.grid.section6.desc"),
       icon: <AlarmClock className="w-12 h-12 text-green-600 mx-auto" />,
     },    
   ];

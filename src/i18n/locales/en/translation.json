@@ -45,6 +45,11 @@
   "language": "Language",
 
   "home": {
+    "Page":{ 
+    "Judul":"thecore", 
+    "title":"One Platform to Control Your Business Operations & Finances", 
+    "desc":"Manage the two most important aspects of your business - operations and finances - in one integrated system. The core is an online accounting solution that delivers real-time data for faster, more informed decisions." 
+    },
     "slide1": {
       "title": "thecore: One Platform for All Business Needs",
       "desc": "From sales, purchasing, inventory, to payroll — all can be managed in a single web-based system with no user limit. Save time, work efficiently."
@@ -121,11 +126,41 @@
     "why": "Why Choose"
   },
   "Laporan-Keuangan": {
+
+    "grid":{
+     "section1":{
+      "title":"Income Report",
+      "desc":"Track all your business income in detail and easy to understand."
+      },
+     "section2":{
+      "title" : "Expense Report",
+      "desc" :"Monitor daily, weekly, and monthly expenses neatly."
+      },
+      "section3" : {
+      "title" : "Financial Recapitulation",
+      "desc" : "Present all transactions into a complete financial report."
+      },
+      "section4" : {
+      "title" : "Financial Analysis",
+      "desc" : "Visualize financial data with graphs for easier analysis."
+      },
+      "section5" : {
+      "title" : "Export Report",
+      "desc" : "Download financial reports in PDF or Excel format with one click."
+      },
+      "section6" : {
+      "title" : "Financial Reminder",
+      "desc": "Get automatic reminders for bills, due dates, and monthly statements."
+      }
+      },
+
+    
     "Items":{
       "title": "Cash Flow & Business",
       "desc":"Monitor your business finances in real-time & accurately",
       "desc1":"Get insights into your company's cash flow and balance sheet to make better decisions."
     },
+    
     "navbar":{
       "section1":{
         "title":"Dashboard",
@@ -153,10 +188,50 @@
       "desc":"Monitor Business Bookkeeping in real-time & accurately",
       "desc1":"No need to be complicated anymore! Check your business bookkeeping anytime, real-time and super accurate. So that your business finances are more organized."
     },
+    "grid" : {
+      "section1" : {
+      "title": "Transaction Recording",
+      "desc" : "Record all business transactions quickly and accurately every day."
+      },
+      "section2" : {
+        "title" : "Category Grouping",
+        "desc" : "Group transactions by categories such as sales, purchases, and operating expenses.."
+      },
+      "section3" : {
+        "title" : "Invoice Creation",
+        "desc" :  "Easily create and manage professional invoices for clients and customers."
+      },
+      "section4" : {
+        "title" :"Payment Schedule",
+        "desc" : "Set and monitor payment schedules to avoid delays."
+      },
+      "section5" : {
+        "title" : "Cash Management",
+        "desc" : "Manage incoming and outgoing cash balances to ensure cash flow remains healthy."
+      },
+      "section6" : {
+        "title" : "Report Checking",
+        "desc" : "Review and validate bookkeeping reports to ensure data accuracy."
+      }
+      
+    },
     "features":{
-      "realtime":"Leave the slow manual process! Switch to TheCore Bookkeeping System and experience the ease of efficient real-time data access!",
-      "securityDesc":"Protect your business data with TheCore's high-level security system. Data privacy and integrity are our priority!",
-      "integrationDesc":"Use TheCore easily without the need for complicated installations or additional systems. All features are ready to use and immediately support your workflow!"
+      "feature1":{
+        "title":"Transaction Recording",
+        "desc":"From transactions to reports, everything is recorded quickly and accurately every day."
+      },
+      "feature2":{
+        "title": "Category Grouping",
+        "desc": "Efficiently group transactions by categories such as sales, purchases, and operating expenses.."
+      },
+      "feature3":{
+        "title":"Invoice Creation",
+        "desc": "Easily create and manage professional invoices for clients and customers.."
+      },
+      "feature4":{
+        "title": "Payment Schedule",
+        "desc":"Set and monitor payment schedules to avoid delays and keep cash flow smooth."
+      }
     },
     "Navbar":{
       "section1":{
@@ -308,6 +383,33 @@
       "title": "Supplier Management",
       "desc": "Control the purchasing and selling process in an integrated manner",
       "desc1": "Gain complete insights into supplier transaction history to optimize purchasing, improve supply chain efficiency, and support strategic business growth."
+    },
+    "grid" : {
+      "section1" : {
+      "title":  "Supplier Management",
+      "desc" : "Manage suppliers easily and efficiently to maintain good relationships."
+      },
+      "section2" : {
+        "title" :"Purchase Recording",
+        "desc" : "Record every purchase transaction in detail to monitor business expenses."
+      },
+      "section3" : {
+        "title" : "Payment Settings",
+        "desc" :   "Manage payment schedules to suppliers so that there are no delays."
+      },
+      "section4" : {
+        "title" :"Supplier Report",
+        "desc" : "Review payment and transaction reports with suppliers thoroughly."
+      },
+      "section5" : {
+        "title" : "Supplier Integration",
+        "desc" : "Integrate a system to track payment and inventory status from suppliers."
+      },
+      "section6" : {
+        "title" : "Pengingat Pembayaran",
+        "desc" : "Dapatkan pengingat untuk pembayaran yang harus dilakukan kepada pemasok."
+      }
+      
     },
     "Navbar": {
       "section1": {
