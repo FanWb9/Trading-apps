@@ -11,10 +11,10 @@ export default function Harga()  {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* STARTER */}
-          <div className="bg-gradient-to-b from-teal-200 to-white rounded-2xl border shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col">
+          <div className="bg-blue-50 rounded-2xl border border-sky-500 hover:border-teal-700 shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col">
             <h3 className="text-xl font-semibold mb-2 text-gray-800">Standar</h3>
             <p className="text-gray-500 mb-4">Untuk bisnis kecil yang mulai digitalisasi</p>
-            <div className="bg-blue-50 rounded p-4 text-sm text-blue-900 mb-4">
+            <div className="bg-white shadow-xl rounded p-4 text-sm text-blue-900 mb-4">
               <ul className="space-y-1 list-disc pl-5">
                 <li>Pembukuan sederhana</li>
                 <li>Auto invoice & pembayaran</li>
@@ -39,10 +39,10 @@ export default function Harga()  {
           </div>
 
           {/* BUSINESS */}
-          <div className="bg-gradient-to-b from-teal-200 to-white rounded-2xl border shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col">
+          <div className="bg-blue-50 rounded-2xl border border-sky-500 hover:border-teal-700 shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col">
             <h3 className="text-xl font-semibold mb-2 text-gray-800">Plus</h3>
             <p className="text-gray-500 mb-4">Untuk tim growing dengan operasional kompleks</p>
-            <div className=" bg-blue-50 rounded p-4 text-sm text-blue-900 mb-4">
+            <div className=" bg-white shadow-xl rounded p-4 text-sm text-blue-900 mb-4">
               <ul className="space-y-1 list-disc pl-5">
                 <li>Multi lokasi & user</li>
                 <li>Approval bertingkat</li>
@@ -67,11 +67,11 @@ export default function Harga()  {
           </div>
 
           {/* ENTERPRISE */}
-          <div className="relative bg-gradient-to-b from-teal-200 to-white border border-teal-700 rounded-2xl shadow-lg p-6 flex flex-col">
+          <div className="relative bg-blue-50 border border-sky-500 rounded-2xl shadow-lg p-6 flex flex-col hover:border-teal-700 hover:shadow-xl">
             <div className="absolute top-0 right-0 mt-2 mr-3 bg-teal-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Paling Populer</div>
             <h3 className="text-xl font-semibold mb-2 text-gray-800">Enterprise</h3>
             <p className="text-gray-600 mb-4">Solusi enterprise lengkap untuk manufaktur & distribusi</p>
-            <div className="bg-blue-50 rounded p-4 text-sm text-blue-900 mb-4 shadow-sm">
+            <div className="bg-white rounded p-4 text-sm text-blue-900 mb-4 shadow-xl">
               <ul className="space-y-1 list-disc pl-5">
                 <li>Produksi kompleks</li>
                 <li>Tracking batch & expiry</li>

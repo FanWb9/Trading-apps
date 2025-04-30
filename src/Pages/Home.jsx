@@ -309,9 +309,9 @@ export default function Home() {
             {features1.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition"
-              >
-                <div className="mb-4">{item.icon}</div>
+                className="bg-white hover:bg-gray-100 duration-300 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+              >  
+               <div className="mb-4">{item.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600">{item.desc}</p>
               </div>
