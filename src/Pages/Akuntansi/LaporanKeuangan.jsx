@@ -84,7 +84,7 @@ export default function LaporanKeuangan() {
         
         {/* Kiri: Konten */}
         <div className="w-full md:w-1/2 text-left">
-          <h2 className="text-lg text-indigo-600 font-semibold mb-2">{t("Laporan-Keuangan.Items.title")}</h2>
+          <h2 className="text-lg text-teal-600 font-semibold mb-2">{t("Laporan-Keuangan.Items.title")}</h2>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
           {t("Laporan-Keuangan.Items.desc")}
           </h1>
@@ -93,10 +93,10 @@ export default function LaporanKeuangan() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
+            className="bg-teal-500 hover:bg-teal-700 text-white px-6 py-3 rounded-lg shadow">
               {t("home.buttons.whatsapp")}
             </button>
-            <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
+            <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-teal-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
             {t("home.buttons.freeTrial")}
             </button>
           </div>
@@ -195,7 +195,7 @@ export default function LaporanKeuangan() {
               <p className="text-gray-600 leading-relaxed">{navLeft[selectedTab].desc}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-[30px]">
                     <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
+                    className="bg-teal-500 hover:bg-teal-700 text-white px-6 py-3 rounded-lg shadow">
                       {t("home.buttons.whatsapp")}
                     </button>
                     <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">

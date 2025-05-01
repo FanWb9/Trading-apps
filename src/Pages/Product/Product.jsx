@@ -3,11 +3,12 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import Product1 from '../../assets/Product1.png';
 import Dashboard from '../../assets/Dashboard.png';
+import Pic1 from '../../assets/Pic 9.png';
 import Create from '../../assets/Create-Product.png';
 import { Boxes,List,Tag,Layers,BarChart3,Package,Warehouse,ShoppingCart,Settings, FileCog } from 'lucide-react';
 export default function Product(){
     const { t } = useTranslation();
-    const images = [Dashboard,Product1,Create];
+    const images = [Pic1];
     const [currentImage, setCurrentImage] = useState(0);
     const [selectedTab, setSelectedTab] = useState(0);
     const Logos = Object.values(
@@ -66,13 +67,13 @@ export default function Product(){
       
       ]
    
-     useEffect(() => {
-       const interval = setInterval(() => {
-         setCurrentImage((prev) => (prev + 1) % images.length);
-       }, 5000);
+    //  useEffect(() => {
+    //    const interval = setInterval(() => {
+    //      setCurrentImage((prev) => (prev + 1) % images.length);
+    //    }, 5000);
    
-       return () => clearInterval(interval);
-     }, []);
+    //    return () => clearInterval(interval);
+    //  }, []);
    
      return (
        <div className="lg:px-[50px]">
@@ -80,7 +81,7 @@ export default function Product(){
            
            {/* Kiri: Konten */}
            <div className="w-full md:w-1/2 text-left">
-             <h2 className="text-lg text-indigo-600 font-semibold mb-2">{t("Product.Items.title")}</h2>
+             <h2 className="text-lg text-teal-600 font-semibold mb-2">{t("Product.Items.title")}</h2>
              <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
              {t("Product.Items.desc")}
              </h1>
@@ -89,10 +90,10 @@ export default function Product(){
              </p>
              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
-               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
+               className="bg-teal-500 hover:bg-teal-700 text-white px-6 py-3 rounded-lg shadow">
                  {t("home.buttons.whatsapp")}
                </button>
-               <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
+               <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-teal-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
                {t("home.buttons.freeTrial")}
                </button>
              </div>
@@ -101,9 +102,9 @@ export default function Product(){
            {/* Kanan: Gambar */}
            <div className="w-full md:w-1/2 flex justify-center">
              <img
-               src={images[currentImage]}
+               src={images}
                alt="Ilustrasi Keuangan"
-               className="rounded-lg shadow-xl max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
+               className="rounded-lg  max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
              />
            </div>
          </div>
@@ -163,7 +164,7 @@ export default function Product(){
                      onClick={() => setSelectedTab(idx)}
                      className={`whitespace-nowrap px-4 py-2 rounded-md shadow font-semibold transition-colors duration-700 ${
                        selectedTab === idx
-                         ? "bg-blue-100 text-blue-700"
+                         ? "bg-teal-400 text-white"
                          : "bg-white text-gray-700 hover:bg-blue-50"
                      }`}
                    >
@@ -183,16 +184,16 @@ export default function Product(){
                  />
                )}
                <div>
-                 <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                 <h3 className="text-2xl font-bold text-gray-800 mb-4 ">
                    {navLeft[selectedTab].title}
                  </h3>
                  <p className="text-gray-600 leading-relaxed">{navLeft[selectedTab].desc}</p>
                  <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-[30px]">
                        <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
-                       className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
+                       className="bg-teal-500 hover:bg-teal-700 text-white px-6 py-3 rounded-lg shadow">
                          {t("home.buttons.whatsapp")}
                        </button>
-                       <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
+                       <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-teal-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
                        {t("home.buttons.freeTrial")}
                        </button>
                    </div>

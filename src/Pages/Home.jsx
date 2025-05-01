@@ -256,7 +256,7 @@ export default function Home() {
                   onClick={() => setSelectedTab(idx)}
                   className={`whitespace-nowrap px-4 py-2 rounded-md shadow font-semibold transition-colors duration-500 ${
                     selectedTab === idx
-                      ? "bg-teal-400 text-white"
+                      ? "bg-blue-100 text-blue-700"
                       : "bg-white text-gray-700 hover:bg-blue-50"
                   }`}
                 >

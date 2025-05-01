@@ -4,13 +4,14 @@ import Buku from '../../assets/Buku_besar.png';
 import Jurnal from '../../assets/Jurnal.png';
 import Dashboard from '../../assets/Dashboard.png';
 import Akun from '../../assets/Akun.png';
+import pic1 from '../../assets/Pic 12.png';
 import Neraca from '../../assets/Neraca.png';
 import { NotebookPen, ListOrdered, ReceiptText, CalendarDays, Banknote, ClipboardCheck,FilePlus,Tag,Clipboard,Clock  } from "lucide-react";
 import { title } from 'framer-motion/client';
 
 export default function Pembukuan() {
  const { t } = useTranslation();
-  const images = [Jurnal, Dashboard,Akun,Buku, Neraca];
+  const images = [pic1];
   const [currentImage, setCurrentImage] = useState(0);
   const [selectedTab, setSelectedTab] = useState(0);
 
@@ -75,13 +76,13 @@ export default function Pembukuan() {
      
     ]
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentImage((prev) => (prev + 1) % images.length);
+  //   }, 5000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <div className="lg:px-[50px]">
@@ -89,7 +90,7 @@ export default function Pembukuan() {
         
         {/* Kiri: Konten */}
         <div className="w-full md:w-1/2 text-left">
-          <h2 className="text-lg text-indigo-600 font-semibold mb-2">{t("Pembukuan1.Items.title")}</h2>
+          <h2 className="text-lg text-teal-600 font-semibold mb-2">{t("Pembukuan1.Items.title")}</h2>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
           {t("Pembukuan1.Items.desc")}
           </h1>
@@ -98,10 +99,10 @@ export default function Pembukuan() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
+            className="bg-teal-500 hover:bg-teal-700 text-white px-6 py-3 rounded-lg shadow">
               {t("home.buttons.whatsapp")}
             </button>
-            <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
+            <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-teal-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
             {t("home.buttons.freeTrial")}
             </button>
           </div>
@@ -110,9 +111,9 @@ export default function Pembukuan() {
         {/* Kanan: Gambar */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
-            src={images[currentImage]}
+            src={images}
             alt="Ilustrasi Keuangan"
-            className="rounded-lg shadow-xl max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
+            className="rounded-lg  max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
           />
         </div>
       </div>
@@ -202,10 +203,10 @@ export default function Pembukuan() {
               <p className="text-gray-600 leading-relaxed">{navLeft[selectedTab].desc}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-[30px]">
                     <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
+                    className="bg-teal-500 hover:bg-teal-700 text-white px-6 py-3 rounded-lg shadow">
                       {t("home.buttons.whatsapp")}
                     </button>
-                    <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
+                    <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-teal-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
                     {t("home.buttons.freeTrial")}
                     </button>
                 </div>
