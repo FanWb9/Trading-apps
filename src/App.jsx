@@ -11,6 +11,7 @@ import Gudang from "./Pages/Product/Gudang";
 import Pengeluaran from "./Pages/Keuangan/Pengeluaran";
 import Akun from "./Pages/Akun/Akun";
 import Pembeli from "./Pages/Pembeli/Pembeli";
+import Company from "./Pages/About/company";
 import Contac from "./Pages/Payments/Contac";
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/Costs-expenses" element={<Pengeluaran/>}/>
           <Route path="/Contac" element={<Contac/>}/>
           <Route path="/Supplier-management" element={<Pembeli/>}/>
+          <Route path="/About-us" element={<Company/>}/>
           <Route path="/Warehouse" element={<Gudang/>}/>
         </Route>
       </Routes>

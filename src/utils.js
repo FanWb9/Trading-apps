@@ -134,8 +134,9 @@ export const Menus = () => {
       subMenuHeading: [t("Overview")],
       subMenu: [
         {
-          name: t("Enterprise"),
+          name: t("About us"),
           desc: t("Overview"),
+          path:"/About-us",
           icon: ShieldPlus,
         },
         // {

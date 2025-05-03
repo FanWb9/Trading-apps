@@ -6,6 +6,7 @@
   "Management Pembayaran":"Manajemen Keuangan",
   "Pantau Keuangan":"Pantau Keuangan",
   "Contact": "Kontak",
+  "About us":"Tentang Kami",
   "Akuntansi": "Akuntansi",
   "Supply Chain Management": "Manajemen Rantai Pasokan",
   "Integration & Platform": "Integrasi & Platform",
@@ -37,7 +38,7 @@
   "Center": "Pusat",
   "Community": "Komunitas",
   "Project help": "Bantuan proyek",
-  "Overview": "Ikhtisar",
+  "Overview": "View",
   "Design together": "Desain bersama",
   "Collaboration": "Kolaborasi",
  
@@ -660,5 +661,8 @@
     "time":" Jam Operasional: 09.00 – 17.00 WIB",
     "meeting":"Jadwalkan Meeting",
     "choose":" Pilih waktu terbaik Anda untuk sesi demo pribadi bersama tim profesional kami."
+  },
+  "about":{
+    "desc":"thecore adalah solusi digital dari PT Cipta Karya Multidinamika yang dirancang untuk membantu bisnis Anda tumbuh dengan data yang akurat dan kendali penuh atas operasional."
   }
 }

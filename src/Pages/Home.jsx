@@ -167,47 +167,47 @@ export default function Home() {
     <div className="" >
       <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-[80px] py-[50px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-8 ">
           
-          {/* Kiri: Konten */}
-          <div className="w-full md:w-1/2 text-left">
-            <h2 className="text-3xl text-teal-600 font-semibold mb-2">{t("home.Page.Judul")}</h2>
-            <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-4">
-            {t("home.Page.title")}
-            </h1>
-            <p className="text-base md:text-lg mb-8">
-            {t("home.Page.desc")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
-              className="bg-teal-500 hover:bg-teal-700 text-white px-6 py-3 rounded-lg shadow">
-                {t("home.buttons.whatsapp")}
-              </button>
-              <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-teal-600 text-blue-600 hover:bg-teal-50 px-6 py-3 rounded-lg">
-              {t("home.buttons.freeTrial")}
-              </button>
-            </div>
-          </div>
-  
-          {/* Kanan: Gambar */}
-          <div className="w-full md:w-1/2 flex justify-center">
-            <img
-              src={images[currentImage]}
-              alt="Ilustrasi Keuangan"
-              className="rounded-xl  max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
-            />
+        {/* Kiri: Konten */}
+        <div className="w-full md:w-1/2 text-left">
+          <h2 className="text-3xl text-teal-600 font-semibold mb-2">{t("home.Page.Judul")}</h2>
+          <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-4">
+          {t("home.Page.title")}
+          </h1>
+          <p className="text-base md:text-lg mb-8">
+          {t("home.Page.desc")}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
+            className="bg-teal-500 hover:bg-teal-700 text-white px-6 py-3 rounded-lg shadow">
+              {t("home.buttons.whatsapp")}
+            </button>
+            <button onClick={() => window.location.href = "https://thecoreaccounting.com/"} className="border border-teal-600 text-blue-600 hover:bg-teal-50 px-6 py-3 rounded-lg">
+            {t("home.buttons.freeTrial")}
+            </button>
           </div>
         </div>
-        <section className="bg-white px-6 md:px-14  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
+
+        {/* Kanan: Gambar */}
+        <div className="w-full md:w-1/2 flex justify-center">
+          <img
+            src={images[currentImage]}
+            alt="Ilustrasi Keuangan"
+            className="rounded-xl  max-h-[300px]  md:max-h-[500px] w-full object-contain transition-all duration-700 ease-in-out "
+          />
+        </div>
+    </div>
+      <section className="bg-white px-6 md:px-14  sm:h-[450px] md:h-[250px] lg:h-[250px] py-7">
         <h2 className="text-2xl text-center font-bold">{t("home.items.title")}</h2>
         <div className="overflow-hidden">
           <div className="flex animate-scroll will-change-transform gap-6 min-w-max">
           {[...logos, ...logos, ...logos].map((img,idx) => (
   
-           <img
-           key={idx}
-           src={img}
-           alt={`Logo ${idx + 1}`}
-           className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
-         />
+          <img
+          key={idx}
+          src={img}
+          alt={`Logo ${idx + 1}`}
+          className="h-[130px] w-auto object-contain hover:scale-110 transition-transform duration-700"
+        />
           ))}
           </div>
         </div>
@@ -323,7 +323,7 @@ export default function Home() {
 
      
       {/* Keunggulan */}
-      <section className="py-16 px-6 md:px-12 bg-gray-50">
+      <section className="py-16 px-6 md:px-12 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-5">
               {t("home.grid.title")}
@@ -333,7 +333,7 @@ export default function Home() {
             {features1.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white hover:bg-gray-100 duration-300 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+                className="bg-white hover:bg-gray-100 duration-300 p-6 rounded-2xl shadow-xl hover:shadow-md transition"
               >  
                <div className="mb-4">{item.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
