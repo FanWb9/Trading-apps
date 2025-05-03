@@ -59,6 +59,7 @@
       "desc": "A smart system that helps manage financial reports and transactions instantly, anytime."
     },
     "grid" : {
+      "title":"thecore Complete & Flexible Modern Accounting Solutions",
       "section1" : {
       "title":  "Simple & Intuitive Design",
       "desc" : "Clean interface, easy to use, suitable for everyone."
@@ -84,6 +85,28 @@
         "desc" : "Can be connected to other apps for efficient workflow."
       }
       
+    },
+    "faq":{
+      "section1": {
+        "question": "What is TheCore Accounting?",
+        "answer": "TheCore Accounting is a software solution designed to digitally and efficiently record, manage, and evaluate business financial transactions."
+      },
+      "section2": {
+        "question": "What is the purpose of financial reports in business?",
+        "answer": "Financial reports help business owners understand their financial condition, monitor performance, and make better-informed decisions."
+      },
+      "section3": {
+        "question": "How does TheCore Accounting help companies?",
+        "answer": "With automation features and data accuracy, TheCore Accounting simplifies accounting processes, saves time, and reduces the risk of errors."
+      },
+      "section4": {
+        "question": "What types of reports are available in TheCore?",
+        "answer": "Available reports include balance sheets, profit and loss statements, cash flow statements, and changes in equity — all designed to follow accounting standards."
+      },
+      "section5": {
+        "question": "Can user access be restricted by role?",
+        "answer": "Absolutely. TheCore Accounting supports role-based access control, so each department only sees data relevant to their responsibilities."
+      }
     },
     "features": {
       "feature1": {
@@ -115,9 +138,22 @@
     },
     "testimonial": {
       "title":"What Do They Say?",
-      "msg1": "Since using The Core, financial reports have become neater and easier to understand.",
-      "msg2": "We can make business decisions faster because of real-time reporting.",
-      "msg3": "I never thought a small SME like us could have reports on par with those of a large company!"
+      "client1": {
+        "title": "PT Hadiprana",
+        "desc": "TheCore Accounting gives us full visibility over cash flow and financial reports. It's not only user-friendly but also powerful for business analysis."
+      },
+      "client2": {
+        "title": "PT Tarassemesta",
+        "desc": "This application addresses our challenges in managing financial data across branches. The automated reporting feature greatly supports our strategic planning."
+      },
+      "client3": {
+        "title": "P3SRS Mangga Dua Court",
+        "desc": "We are greatly assisted by its accurate bookkeeping and reconciliation system. TheCore Accounting makes our internal audit process significantly faster and more efficient."
+      },
+      "client4": {
+        "title": "PT ITochu Indonesia",
+        "desc": "TheCore Accounting is a modern solution for our financial management. With this system, we can focus on business development without worrying about financial records."
+      }
       },
     "navbar":{
       "section1":{
@@ -617,6 +653,17 @@
         "desc": "Track shipments from suppliers and ensure they arrive on time without any issues."
       }
     }
+  },
+  "conctac": {
+    "title": "Contact Us",
+    "desc": "Discuss Your Business Needs With Us",
+    "live": "Live Chat",
+    "desc1": "Connect directly with our consultants via web chat or phone for quick solutions.",
+    "call": "Call Center",
+    "desc2": "Discuss your various business needs with our team.",
+    "time": "Business Hours: 09:00 AM – 05:00 PM (GMT+7)",
+    "meeting": "Schedule a Meeting",
+    "choose": "Choose the best time for a personal demo session with our professional team."
   }
 }
 

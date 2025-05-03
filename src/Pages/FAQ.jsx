@@ -2,31 +2,9 @@
 import { useState } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 
-const questions = [
-    {
-      question: 'Apa itu TheCore Accounting?',
-      answer: 'TheCore Accounting adalah solusi perangkat lunak untuk mencatat, mengelola, dan mengevaluasi transaksi keuangan bisnis secara digital dan efisien.'
-    },
-    {
-      question: 'Apa fungsi laporan keuangan dalam bisnis?',
-      answer: 'Laporan keuangan membantu pemilik usaha memahami kondisi keuangan, memantau performa, serta mengambil keputusan yang lebih tepat.'
-    },
-    {
-      question: 'Bagaimana TheCore Accounting membantu perusahaan?',
-      answer: 'Dengan fitur otomatisasi dan akurasi data, TheCore Accounting mempermudah proses akuntansi, menghemat waktu, dan mengurangi risiko kesalahan.'
-    },
-    {
-      question: 'Jenis laporan apa saja yang tersedia di TheCore?',
-      answer: 'Laporan yang tersedia meliputi neraca, laporan laba rugi, arus kas, dan perubahan modal yang dirancang sesuai standar akuntansi.'
-    },
-    {
-      question: 'Apakah bisa membatasi akses untuk tiap pengguna?',
-      answer: 'Tentu. TheCore Accounting mendukung kontrol akses berdasarkan peran, sehingga tiap departemen hanya melihat data yang relevan.'
-    },
-  ];
-  
 
-export default function FAQ() {
+
+export default function FAQ({items}) {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggle = (index) => {
@@ -39,7 +17,7 @@ export default function FAQ() {
             Frequently Asked Questions (FAQ)
         </h2>
         <div className="space-y-6">
-            {questions.map((item, index) => (
+            {items.map((item, index) => (
             <div key={index} className="border rounded-xl shadow-md overflow-hidden">
                 <button
                 onClick={() => toggle(index)}

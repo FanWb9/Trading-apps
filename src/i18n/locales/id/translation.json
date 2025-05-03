@@ -50,6 +50,7 @@
       "desc":"Manage the two most important aspects of your business - operations and finances - in one integrated system. Thecore is an online accounting solution that delivers real-time data for faster, more informed decisions."
     },
     "grid" : {
+      "title":"thecore Solusi Akuntansi Modern yang Lengkap & Fleksibel",
       "section1" : {
       "title":  "Desain Sederhana & Intuitif",
       "desc" : "Antarmuka bersih, mudah digunakan, cocok untuk semua kalangan."
@@ -74,7 +75,28 @@
         "title" : "Integrasi Fleksibel",
         "desc" : "Bisa dihubungkan ke aplikasi lain untuk alur kerja yang efisien."
       }
-      
+    },
+    "faq":{
+      "section1":{
+        "question":"Apa itu thecore Accounting?",
+        "answer":"TheCore Accounting adalah solusi perangkat lunak untuk mencatat, mengelola, dan mengevaluasi transaksi keuangan bisnis secara digital dan efisien."
+      },
+      "section2":{
+        "question":"Apa fungsi laporan keuangan dalam bisnis?",
+        "answer":"Laporan keuangan membantu pemilik usaha memahami kondisi keuangan, memantau performa, serta mengambil keputusan yang lebih tepat."
+      },
+      "section3":{
+        "question":"Bagaimana thecore Accounting membantu perusahaan?",
+        "answer":"Dengan fitur otomatisasi dan akurasi data, TheCore Accounting mempermudah proses akuntansi, menghemat waktu, dan mengurangi risiko kesalahan."
+      },
+      "section4":{
+        "question":"Jenis laporan apa saja yang tersedia di thecore?",
+        "answer":"Laporan yang tersedia meliputi neraca, laporan laba rugi, arus kas, dan perubahan modal yang dirancang sesuai standar akuntansi."
+      },
+      "section5":{
+        "question":"Apakah bisa membatasi akses untuk tiap pengguna?",
+        "answer":"Tentu. thecore Accounting mendukung kontrol akses berdasarkan peran, sehingga tiap departemen hanya melihat data yang relevan."
+      }
     },
     "features": {
       "feature1": {
@@ -105,9 +127,23 @@
     },
     "testimonial": {
       "title": "Apa Kata Mereka?",
-      "msg1": "Sejak pakai The Core, laporan keuangan jadi lebih rapi dan mudah dipahami.",
-      "msg2": "Kami bisa ambil keputusan bisnis lebih cepat karena laporan real-time.",
-      "msg3": "Gak nyangka UMKM kecil seperti kami bisa punya laporan sekelas perusahaan besar!"
+      "client1":{
+        "title":"PT Hadiprana",
+        "desc":"TheCore Accounting memberikan kami visibilitas penuh terhadap arus kas dan laporan keuangan. Tidak hanya user-friendly, tetapi juga powerful untuk analisis bisnis."
+      },
+      "client2":{
+        "title":"PT Tarassemesta",
+        "desc":"Aplikasi ini menjawab tantangan kami dalam mengelola data keuangan lintas cabang. Fitur pelaporan otomatis sangat membantu dalam menyusun strategi usaha ke depan."
+      },
+      "client3":{
+        "title":"P3SRS Mangga Dua Court",
+        "desc":"Kami sangat terbantu dengan sistem pencatatan dan rekonsiliasi yang akurat. TheCore Accounting membuat proses audit internal menjadi jauh lebih cepat dan efisien."
+      },
+      "client4":{
+        "title":"PT ITochu Indonesia",
+        "desc":"TheCore Accounting menjadi solusi modern untuk manajemen keuangan kami. Dengan sistem ini, kami bisa fokus pada pengembangan usaha tanpa khawatir akan pencatatan keuangan."
+      }
+
       },
      
     "navbar":{
@@ -613,6 +649,16 @@
           "desc": "Lacak pengiriman barang dari pemasok dan pastikan barang sampai tepat waktu tanpa masalah."
         }
       }
-  
+  },
+  "conctac":{
+    "title":"Hubungi Kami",
+    "desc":" Bicarakan Kebutuhan Bisnis Anda Bersama Kami",
+    "live":"Live Chat",
+    "desc1":"Terhubung langsung dengan konsultan kami melalui web chat atau telepon untuk solusi cepat.",
+    "call":"Call Center",
+    "desc2":" Diskusikan berbagai kebutuhan bisnis Anda bersama tim kami.",
+    "time":" Jam Operasional: 09.00 – 17.00 WIB",
+    "meeting":"Jadwalkan Meeting",
+    "choose":" Pilih waktu terbaik Anda untuk sesi demo pribadi bersama tim profesional kami."
   }
 }

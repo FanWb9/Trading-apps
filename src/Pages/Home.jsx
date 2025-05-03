@@ -58,6 +58,30 @@ export default function Home() {
   ];
   
 
+  const questions = [
+    {
+      question: t("home.faq.section1.question"),
+      answer: t("home.faq.section1.answer"),
+    },
+    {
+      question: t("home.faq.section2.question"),
+      answer: t("home.faq.section2.answer"),
+    },
+    {
+      question: t("home.faq.section3.question"),
+      answer: t("home.faq.section3.answer"),
+    },
+    {
+      question: t("home.faq.section4.question"),
+      answer: t("home.faq.section4.answer"),
+    },
+    {
+      question: t("home.faq.section5.question"),
+      answer: t("home.faq.section5.answer"),
+    },
+  ];
+  
+
   // const slides = [
   //   {
   //     image: pic1,
@@ -301,13 +325,10 @@ export default function Home() {
       {/* Keunggulan */}
       <section className="py-16 px-6 md:px-12 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Kenapa Harus Pakai Sistem Akutansi Kami?
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-5">
+              {t("home.grid.title")}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-            Dapatkan pengalaman pembukuan modern yang efisien, aman, dan bisa kamu akses kapan pun.
-          </p>
-
+         
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {features1.map((item, idx) => (
               <div
@@ -324,13 +345,13 @@ export default function Home() {
       </section>
       
       <section className="min-h-screen md:min-h-[70vh] bg-white py-10">
-        <FAQ/>
+        <FAQ items={questions}/>
       </section>
 
       <section className="py-20 bg-white text-center px-4 sm:px-8 md:px-16 min-h-screen md:h-min-[50vh] lg:min-h-[50vh]">
-      <h2 className="text-gray-700 font-semibold mb-2">Hubungi Kami</h2>
+      <h2 className="text-gray-700 font-semibold mb-2">{t("conctac.title")}</h2>
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-10">
-        Bicarakan Kebutuhan Bisnis Anda Bersama Kami
+       {t("conctac.desc")}
       </h1>
 
       <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-6">
@@ -339,9 +360,9 @@ export default function Home() {
           <div className="flex justify-center mb-4">
             <MessageCircle className="w-10 h-10 sm:w-12 sm:h-12 text-blue-500" />
           </div>
-          <h3 className="text-lg sm:text-xl font-semibold mb-2">Live Chat</h3>
+          <h3 className="text-lg sm:text-xl font-semibold mb-2">{t("conctac.live")}</h3>
           <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">
-            Terhubung langsung dengan konsultan kami melalui web chat atau telepon untuk solusi cepat.
+            {t("conctac.desc1")}
           </p>
           <button
             onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
@@ -356,10 +377,10 @@ export default function Home() {
           <div className="flex justify-center mb-4">
             <Phone className="w-10 h-10 sm:w-12 sm:h-12 text-blue-500" />
           </div>
-          <h3 className="text-lg sm:text-xl font-semibold mb-2">Call Center</h3>
+          <h3 className="text-lg sm:text-xl font-semibold mb-2">{t("conctac.call")}</h3>
           <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">
-            Diskusikan berbagai kebutuhan bisnis Anda bersama tim kami. <br />
-            Jam Operasional: 09.00 – 17.00 WIB
+           {t("conctac.desc2")} <br />
+           {t("conctac.time")}
           </p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full w-full font-semibold">
             (021) 7243085
@@ -371,9 +392,9 @@ export default function Home() {
           <div className="flex justify-center mb-4">
             <CalendarDays className="w-10 h-10 sm:w-12 sm:h-12 text-blue-500" />
           </div>
-          <h3 className="text-lg sm:text-xl font-semibold mb-2">Jadwalkan Meeting</h3>
+          <h3 className="text-lg sm:text-xl font-semibold mb-2">{t("conctac.meeting")}</h3>
           <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">
-            Pilih waktu terbaik Anda untuk sesi demo pribadi bersama tim profesional kami.
+           {t("conctac.choose")}
           </p>
           <button
             onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}

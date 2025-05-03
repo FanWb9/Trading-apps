@@ -15,7 +15,7 @@ export default function NavbarLayout() {
   const { t, i18n } = useTranslation();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const handleSignIn = () => {
-    window.location.href = "https://thecoreaccounting.com/"; // Ganti dengan URL website tujuan kamu
+    window.location.href = "https://thecoreaccounting.com/"; 
   };
   
   const handleName = () => navigate("/dashboard")
