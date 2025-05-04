@@ -22,6 +22,7 @@ export default function Home() {
   const logos = Object.values(
     import.meta.glob('../assets/scroll/logos*.jpg', { eager: true })
   ).map((mod) => mod.default);
+  const [showSuccess, setShowSuccess] = useState(false);
   const [isOpen, setIsopen] = useState(false);
   const [formData , setFormData] = useState({
     'name': '',
@@ -54,7 +55,8 @@ export default function Home() {
       });
   
       if (response.ok) {
-        alert("Jadwal berhasil dikirim!");
+        setShowSuccess(true);
+        setTimeout(() => setShowSuccess(false), 3000);
         setIsopen(false);
         setFormData({
           name: '',
@@ -216,6 +218,12 @@ export default function Home() {
 
   return (
     <div className="" >
+      {showSuccess && (
+          <div className="fixed top-5 right-5 bg-green-500 text-white px-4 py-3 rounded shadow-lg z-50 transition-all duration-300">
+            Jadwal berhasil dikirim!
+          </div>
+        )}
+
       <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-[80px] py-[50px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-8 ">
           
         {/* Kiri: Konten */}
