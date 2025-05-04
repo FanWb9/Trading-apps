@@ -35,22 +35,41 @@ export default function Home() {
     setFormData({...formData, [e.target.name]: e.target.value});
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const queryString = new URLSearchParams({
-      namalengkap: formData.name,
-      namaperusahaan: formData.Company,
-      email: formData.Email,
-      jenisindustri: formData.Industri,
-      notelpon: formData.phoneNumber,
-    }).toString();
+    try {
+      const response = await fetch("https://thecoreaccounting.com/inc/simpan_jadwal_demo.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          namalengkap: formData.name,
+          namaperusahaan: formData.Company,
+          email: formData.Email,
+          jenisindustri: formData.Industri,
+          notelpon: formData.phoneNumber,
+        }),
+      });
   
-    // Redirect ke URL PHP kamu
-    window.location.href = `https://thecoreaccounting.com/inc/simpan_jadwal_demo.php?${queryString}`;
-  
-    // Optional reset data kalau tidak redirect
-    // setFormData({ name: '', Email: '', Company: '', Industri: '', phoneNumber: '' });
+      if (response.ok) {
+        alert("Jadwal berhasil dikirim!");
+        setIsopen(false);
+        setFormData({
+          name: '',
+          Email: '',
+          Company: '',
+          Industri: '',
+          phoneNumber: '',
+        });
+      } else {
+        alert("Gagal mengirim jadwal!");
+      }
+    } catch (error) {
+      console.error("Error saat kirim:", error);
+      alert("Terjadi kesalahan!");
+    }
   };
   
 

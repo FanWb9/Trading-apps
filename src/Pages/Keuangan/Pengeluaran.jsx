@@ -157,10 +157,10 @@ export default function Pengeluaran(){
        <section className="py-16 px-6 md:px-12 bg-white">
           <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Kenapa Harus Pakai Sistem Pembukuan Kami?
+          Kenapa Fitur Manajemen Keuangan Kami Layak Digunakan?
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-            Dapatkan kemudahan dalam mencatat dan mengelola keuangan bisnismu dengan sistem pembukuan yang cepat, aman, dan mudah diakses kapan saja.
+          Kelola keuangan bisnismu secara rapi dan efisien dengan fitur-fitur yang mempermudah pencatatan, pengawasan, hingga pelaporan pengeluaran.
           </p>
 
 

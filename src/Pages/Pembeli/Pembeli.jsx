@@ -155,10 +155,10 @@ export default function Pembeli(){
        <section className="py-16 px-6 md:px-12 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Kenapa Harus Pakai Sistem Akutansi Kami?
+          Kenapa Fitur Manajemen Pemasok Kami Penting?
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-            Dapatkan pengalaman pembukuan modern yang efisien, aman, dan bisa kamu akses kapan pun.
+          Kelola hubungan dengan pemasok secara profesional, efisien, dan terintegrasi dalam satu sistem.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
