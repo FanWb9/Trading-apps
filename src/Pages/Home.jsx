@@ -428,35 +428,74 @@ export default function Home() {
             Jadwalkan Meeting
           </button>
           {isOpen && (
-            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-              <div className="bg-white p-6 rounded-lg w-full max-w-md shadow-xl">
-                <h2 className="text-xl font-bold mb-4">Form Jadwal Meeting</h2>
+            <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity duration-300">
+              <div className="bg-white p-6 sm:p-8 rounded-2xl w-full max-w-md shadow-2xl border border-gray-200">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Jadwal Meeting</h2>
                 <form onSubmit={handleSubmit} className="space-y-4">
-                  <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} className="w-full border border-black p-2 rounded " required />
-                  <input type="email" name="Email" placeholder="Email" value={formData.Email} onChange={handleChange} className="w-full border border-black p-2 rounded" required />
-                  <input type="text" name="Company" placeholder="Company Name" value={formData.Company} onChange={handleChange} className="w-full border border-black p-2 rounded" required />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full border border-gray-300 focus:ring-2 focus:ring-blue-400 p-3 rounded-lg outline-none transition"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Email"
+                    value={formData.Email}
+                    onChange={handleChange}
+                    className="w-full border border-gray-300 focus:ring-2 focus:ring-blue-400 p-3 rounded-lg outline-none transition"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="Company"
+                    placeholder="Company Name"
+                    value={formData.Company}
+                    onChange={handleChange}
+                    className="w-full border border-gray-300 focus:ring-2 focus:ring-blue-400 p-3 rounded-lg outline-none transition"
+                    required
+                  />
                   <select
                     name="Industri"
                     value={formData.Industri}
                     onChange={handleChange}
-                    className="w-full border border-black p-2 rounded"
+                    className="w-full border border-gray-300 focus:ring-2 focus:ring-blue-400 p-3 rounded-lg outline-none transition"
                     required
                   >
                     <option value="">Pilih Industri</option>
                     <option value="Trading">Trading</option>
                     <option value="Food">Food & Beverages</option>
-                    <option value="Propessional">Professional Services</option>
+                    <option value="Professional">Professional Services</option>
                     <option value="Hospital">Hospital Education</option>
                     <option value="Consumer">Consumer Services</option>
                     <option value="Lainnya">Lainnya</option>
                   </select>
+                  <input
+                    type="number"
+                    name="phoneNumber"
+                    placeholder="Phone Number"
+                    value={formData.phoneNumber}
+                    onChange={handleChange}
+                    className="w-full border border-gray-300 focus:ring-2 focus:ring-blue-400 p-3 rounded-lg outline-none transition [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    required
+                  />
 
-                  <input type="number" name="phoneNumber" placeholder="Phone Number" value={formData.phoneNumber} onChange={handleChange} className="w-full border border-black p-2 rounded" required />
                   <div className="flex justify-end gap-2">
-                    <button type="button" onClick={() => setIsopen(false)} className="px-4 py-2 border rounded">
+                    <button
+                      type="button"
+                      onClick={() => setIsopen(false)}
+                      className="px-4 py-2 text-gray-600 hover:text-gray-900 border rounded-lg transition"
+                    >
                       Cancel
                     </button>
-                    <button type="submit" className="bg-blue-100 text-blue-700 px-4 py-2 rounded">
+                    <button
+                      type="submit"
+                      className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition"
+                    >
                       Save
                     </button>
                   </div>
@@ -464,6 +503,7 @@ export default function Home() {
               </div>
             </div>
           )}
+
 
         </div>
       </div>
