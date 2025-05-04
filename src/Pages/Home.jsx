@@ -4,14 +4,13 @@ import { useTranslation } from "react-i18next";
 import pic9 from "../assets/Pic 11.png";
 import pic10 from "../assets/Pic 2.png";
 import pic1 from "../assets/pic1.png";
-// import pic2 from "../assets/pic 2.jpg";
+
 import pic3 from "../assets/Akuntansi.png";
 import Pic4 from "../assets/4.png";
 import Pic5 from "../assets/2.png";
 import FAQ from "./FAQ";
 import Pic6 from "../assets/1.png";
 import { ShieldCheck, Cloud, Users, LayoutDashboard, LifeBuoy, Layers3,Globe2,  Database , MessageCircle, Phone, CalendarDays } from "lucide-react";
-import { ChatBubbleLeftRightIcon, PhoneIcon, CalendarDaysIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -23,6 +22,32 @@ export default function Home() {
   const logos = Object.values(
     import.meta.glob('../assets/scroll/logos*.jpg', { eager: true })
   ).map((mod) => mod.default);
+  const [isOpen, setIsopen] = useState(false);
+  const [formData , setFormData] = useState({
+    'name': '',
+    'Email':'',
+    'Company': '',
+    'Industri':'',
+    'phoneNumber': '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value});
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Data Jadwal', formData);
+    setIsopen(false);
+
+    setFormData({
+      name: '',
+      Email: '',
+      Company: '',
+      Industri: '',
+      phoneNumber: '',
+    });
+  };
 
   const features1 = [
     {
@@ -397,11 +422,49 @@ export default function Home() {
            {t("conctac.choose")}
           </p>
           <button
-            onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"}
+            onClick={() => setIsopen(true)}
             className="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700 w-full md:mt-[25px]"
           >
-            Chat WhatsApp
+            Jadwalkan Meeting
           </button>
+          {isOpen && (
+            <div className="fixed inset-0 bg-white/30 flex items-center justify-center z-50">
+              <div className="bg-white p-6 rounded-lg w-full max-w-md">
+                <h2 className="text-xl font-bold mb-4">Form Jadwal Meeting</h2>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} className="w-full border border-black p-2 rounded " required />
+                  <input type="email" name="Email" placeholder="Email" value={formData.Email} onChange={handleChange} className="w-full border border-black p-2 rounded" required />
+                  <input type="text" name="Company" placeholder="Company Name" value={formData.Company} onChange={handleChange} className="w-full border border-black p-2 rounded" required />
+                  <select
+                    name="Industri"
+                    value={formData.Industri}
+                    onChange={handleChange}
+                    className="w-full border border-black p-2 rounded"
+                    required
+                  >
+                    <option value="">Pilih Industri</option>
+                    <option value="Trading">Trading</option>
+                    <option value="Food">Food & Beverages</option>
+                    <option value="Propessional">Professional Services</option>
+                    <option value="Hospital">Hospital Education</option>
+                    <option value="Consumer">Consumer Services</option>
+                    <option value="Lainnya">Lainnya</option>
+                  </select>
+
+                  <input type="number" name="phoneNumber" placeholder="Phone Number" value={formData.phoneNumber} onChange={handleChange} className="w-full border border-black p-2 rounded" required />
+                  <div className="flex justify-end gap-2">
+                    <button type="button" onClick={() => setIsopen(false)} className="px-4 py-2 border rounded">
+                      Cancel
+                    </button>
+                    <button type="submit" className="bg-blue-100 text-blue-700 px-4 py-2 rounded">
+                      Save
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          )}
+
         </div>
       </div>
     </section>
