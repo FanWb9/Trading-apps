@@ -56,8 +56,8 @@ export default function Harga()  {
               <strong className="block mb-2">✅ Fitur Utama</strong>
               <ul className="space-y-1">
                 <li>✔ Semua fitur Starter</li>
-                <li>✔ Multi gudang & multi user</li>
                 <li>✔ Konsolidasi laporan</li>
+                <li>✔ 5 pengguna</li>
               </ul>
             </div>
             <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"} className="bg-blue-600 hover:bg-blue-700 transition text-white py-2 rounded-lg mb-2 w-full mt-8">💬 WhatsApp Sales</button>
@@ -69,7 +69,7 @@ export default function Harga()  {
           {/* ENTERPRISE */}
           <div className="relative bg-blue-50 border border-sky-500 rounded-2xl shadow-lg p-6 flex flex-col hover:border-teal-700 hover:shadow-xl">
             <div className="absolute top-0 right-0 mt-2 mr-3 bg-teal-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Paling Populer</div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-800">Enterprise</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Premium</h3>
             <p className="text-gray-600 mb-4">Solusi enterprise lengkap untuk manufaktur & distribusi</p>
             <div className="bg-white rounded p-4 text-sm text-blue-900 mb-4 shadow-xl">
               <ul className="space-y-1 list-disc pl-5">
@@ -83,8 +83,8 @@ export default function Harga()  {
               <strong className="block mb-2">✅ Fitur Utama</strong>
               <ul className="space-y-1">
                 <li>✔ Semua fitur Business</li>
-                <li>✔ Bill of Materials, serial, expiry</li>
-                <li>✔ 5 pengguna, multi gudang</li>
+                <li>✔ Multi gudang & multi user</li>
+                <li>✔ Tidak terbatas pengguna </li>
               </ul>
             </div>
             <button onClick={() => window.location.href = "https://wa.me/6285215319526?text=Halo%2C%20Saya%20ingin%20tanya%20tentang%20thecore"} className="bg-blue-600 hover:bg-blue-700 transition text-white py-2 rounded-lg mb-2 w-full">💬 WhatsApp Sales</button>
