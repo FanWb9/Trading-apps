@@ -218,16 +218,17 @@ export default function Home() {
 
   return (
     <div className="" >
-      {/* {showSuccess && (
-          <div className="fixed top-5 right-5 bg-green-500 text-white px-4 py-3 rounded shadow-lg z-50 transition-all duration-300">
-            Jadwal berhasil dikirim!
-          </div>
-        )} */}
       {showSuccess && (
+        <div className="fixed top-5 right-5 bg-green-500 text-white px-6 py-7 text-lg font-semibold rounded shadow-lg z-50 transition-all duration-300">
+          Jadwal berhasil dikirim!
+        </div>
+      )}
+
+      {/* {showSuccess && (
         <div className="fixed top-0 left-0 right-0 bg-green-500 text-white px-4 py-3 rounded shadow-lg z-50 text-center transition-all duration-300">
           Jadwal berhasil dikirim
         </div>
-      )}
+      )} */}
 
       <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-[80px] py-[50px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-8 ">
           
