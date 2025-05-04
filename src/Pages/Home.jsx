@@ -44,7 +44,6 @@ export default function Home() {
         headers: {
           "Content-Type": "application/json",
         },
-        redirect: "manual", // tambahkan ini
         body: JSON.stringify({
           namalengkap: formData.name,
           namaperusahaan: formData.Company,
@@ -54,8 +53,7 @@ export default function Home() {
         }),
       });
   
-      const data = await response.json();
-      if (data[0] === "berhasil") {
+      if (response.ok) {
         alert("Jadwal berhasil dikirim!");
         setIsopen(false);
         setFormData({
@@ -73,6 +71,7 @@ export default function Home() {
       alert("Terjadi kesalahan!");
     }
   };
+  
   
   
 
