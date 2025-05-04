@@ -37,17 +37,22 @@ export default function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Data Jadwal', formData);
-    setIsopen(false);
-
-    setFormData({
-      name: '',
-      Email: '',
-      Company: '',
-      Industri: '',
-      phoneNumber: '',
-    });
+  
+    const queryString = new URLSearchParams({
+      namalengkap: formData.name,
+      namaperusahaan: formData.Company,
+      email: formData.Email,
+      jenisindustri: formData.Industri,
+      notelpon: formData.phoneNumber,
+    }).toString();
+  
+    // Redirect ke URL PHP kamu
+    window.location.href = `https://thecoreaccounting.com/inc/simpan_jadwal_demo.php?${queryString}`;
+  
+    // Optional reset data kalau tidak redirect
+    // setFormData({ name: '', Email: '', Company: '', Industri: '', phoneNumber: '' });
   };
+  
 
   const features1 = [
     {
