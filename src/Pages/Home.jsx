@@ -225,7 +225,7 @@ export default function Home() {
       )}
 
       {/* {showSuccess && (
-        <div className="fixed top-0 left-0 right-0 bg-green-500 text-white px-4 py-3 rounded shadow-lg z-50 text-center transition-all duration-300">
+        <div className="fixed top-0 left-0 right-0 bg-green-500 text-bla px-4 py-3 rounded shadow-lg z-50 text-center transition-all duration-300">
           Jadwal berhasil dikirim
         </div>
       )} */}
