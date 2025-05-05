@@ -135,7 +135,7 @@ export default function  Gudang() {
             </div>
           </div>
   
-          {/* Kanan: Gambar */}
+          {/* Kanan: Gambaar */}
           <div className="w-full md:w-1/2 flex justify-center">
             <img
               src={images}
