@@ -22,6 +22,7 @@ export default function  Gudang() {
     const images = [pic1];
     const [currentImage, setCurrentImage] = useState(0);
     const [selectedTab, setSelectedTab] = useState(0);
+    const [showSuccess, setShowSuccess] = useState(false);
      const Logos = Object.values(
     import.meta.glob('../../assets/scroll/logos*.jpg', {eager: true})
     ).map((mod) => mod.default);
@@ -38,19 +39,44 @@ export default function  Gudang() {
       setFormData({...formData, [e.target.name]: e.target.value});
     };
   
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
       e.preventDefault();
-      console.log('Data Jadwal', formData);
-      setIsopen(false);
-  
-      setFormData({
-        name: '',
-        Email: '',
-        Company: '',
-        Industri: '',
-        phoneNumber: '',
-      });
-    };
+    
+      try {
+        const response = await fetch("https://thecoreaccounting.com/inc/simpan_jadwal_demo.php", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            namalengkap: formData.name,
+            namaperusahaan: formData.Company,
+            email: formData.Email,
+            jenisindustri: formData.Industri,
+            notelpon: formData.phoneNumber,
+          }),
+        });
+    
+        if (response.ok) {
+          setShowSuccess(true);
+          setTimeout(() => setShowSuccess(false), 3000);
+          setIsopen(false);
+          setFormData({
+            name: '',
+            Email: '',
+            Company: '',
+            Industri: '',
+            phoneNumber: '',
+          });
+        } else {
+          alert("Gagal mengirim jadwal!");
+        }
+      } catch (error) {
+        console.error("Error saat kirim:", error);
+        alert("Terjadi kesalahan!");
+      }
+    };    
+   
 
     const featuresWarehouseManagement = [
       {
@@ -113,6 +139,11 @@ export default function  Gudang() {
     // }, []);
     return(
         <div className="lg:px-[50px]">
+          {showSuccess && (
+              <div className="fixed top-5 right-5 bg-green-500 text-white px-6 py-7 text-lg font-semibold rounded shadow-lg z-50 transition-all duration-300">
+                Jadwal berhasil dikirim!
+              </div>
+            )}
         <div className="min-h-screen md:min-h-[60vh] lg:min-h-[100vh] bg-white text-gray-900 px-6 md:px-10 py-[90px] md:py-[40px] lg:py-[80px] flex flex-col-reverse md:flex-row items-center justify-between gap-10 ">
           
           {/* Kiri: Konten */}
