@@ -12,7 +12,11 @@ import Pengeluaran from "./Pages/Keuangan/Pengeluaran";
 import Akun from "./Pages/Akun/Akun";
 import Pembeli from "./Pages/Pembeli/Pembeli";
 import Company from "./Pages/About/company";
+import Layanan from "./Pages/Help/Layanan";
+import Vidio from "./Pages/Help/Vidio";
 import Contac from "./Pages/Payments/Contac";
+import Help from "./Pages/Help/Help";
+import Faq from "./Pages/Help/Faq";
 export default function App() {
   return (
     <>
@@ -30,7 +34,11 @@ export default function App() {
           <Route path="/Costs-expenses" element={<Pengeluaran/>}/>
           <Route path="/Contac" element={<Contac/>}/>
           <Route path="/Supplier-management" element={<Pembeli/>}/>
+          <Route path="/Tutorial" element={<Vidio/>}/>
           <Route path="/About-us" element={<Company/>}/>
+          <Route path="/faq" element={<Faq/>}/>
+          <Route path="/Help" element={<Help/>}/>
+          <Route path="/training" element={<Layanan/>}/>
           <Route path="/Warehouse" element={<Gudang/>}/>
         </Route>
       </Routes>

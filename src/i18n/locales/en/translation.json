@@ -665,6 +665,9 @@
     "time": "Business Hours: 09:00 AM – 05:00 PM (GMT+7)",
     "meeting": "Schedule a Meeting",
     "choose": "Choose the best time for a personal demo session with our professional team."
+  },
+  "about":{
+    "desc":"thecore is a digital solution from PT Cipta Karya Multidinamika designed to help your business grow with accurate data and full control over operations."
   }
 }
 

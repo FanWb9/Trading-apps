@@ -104,7 +104,7 @@ export default function Company() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0109485724447!2d106.79672087597986!3d-6.262287293726288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f19e8f2275db%3A0x6947313d0c5c5201!2sJl.%20Sawo%20III%2C%20RT.11%2FRW.5%2C%20Cipete%20Utara%2C%20Kec.%20Kby.%20Baru%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012150!5e0!3m2!1sid!2sid!4v1746289237408!5m2!1sid!2sid"
                 allowFullScreen=""
                 loading="lazy"
-                className="w-full h-[500px] border-0 "  
+                className="w-full h-[400px] border-0 md:h-[500px] "  
             ></iframe>
 
         </div>

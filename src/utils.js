@@ -120,6 +120,7 @@ export const Menus = () => {
           name: t("Help"),
           desc: t("Center"),
           icon: CircleHelp,
+          path: "/Help",
         },
         // {
         //   name: t("Community"),
