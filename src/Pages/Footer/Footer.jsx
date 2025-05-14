@@ -19,7 +19,7 @@ const Footer = () => {
             <h2 className="font-semibold">
               Jl. SAWO III, KOMPLEK VILA SAWO KAV.36, KEL. CIPETE UTARA, KEC. KEBAYORAN BARU, KOTA. JAKARTA SELATAN, DKI JAKARTA 12150
             </h2>
-            <p className="font-semibold">Telp: (021) 7243085</p>
+            <p className="font-semibold">Telp: 085215319526</p>
             <p className="font-semibold">Email: ciptakarya.multi@gmail.com</p>
           </div>
         </div>

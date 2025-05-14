@@ -327,7 +327,7 @@ export default function Pembeli(){
            {t("conctac.time")}
           </p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full w-full font-semibold">
-            (021) 7243085
+           085215319526
           </button>
         </div>
 

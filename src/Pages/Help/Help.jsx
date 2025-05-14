@@ -36,7 +36,7 @@ export default function Help() {
 
   return (
     <div>
-      <section className="py-20 bg-gradient-to-br from-sky-500 to-blue-600 text-white text-center px-4 sm:px-8 md:px-16 rounded-b-[40px] md:rounded-b-[80px] shadow-lg">
+      <section className="py-20 bg-gradient-to-b from-blue-500 to-sky-600 text-white text-center px-4 sm:px-8 md:px-16 rounded-b-[40px] md:rounded-b-[80px] shadow-lg">
         <h1 className="font-bold text-3xl md:text-5xl mb-4">Welcome to our Help Center</h1>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
           Kami siap membantu Anda dengan semua pertanyaan atau kendala yang Anda miliki.
